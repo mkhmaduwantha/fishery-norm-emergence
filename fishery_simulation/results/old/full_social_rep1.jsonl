@@ -1,0 +1,634 @@
+{
+  "tick": 0,
+  "condition": "full_social",
+  "replication": 1,
+  "stock_after": 47.72925,
+  "stock_pct": 0.4772925,
+  "collapsed": false,
+  "harvests": {
+    "agent_0": 5.0,
+    "agent_1": 5.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 5.0,
+    "agent_5": 4.5,
+    "agent_6": 5.0,
+    "agent_7": 5.0
+  },
+  "actual_yields": {
+    "agent_0": 5.0,
+    "agent_1": 5.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 5.0,
+    "agent_5": 4.5,
+    "agent_6": 5.0,
+    "agent_7": 5.0
+  },
+  "total_harvest": 39.5,
+  "mean_harvest": 4.9375,
+  "harvest_variance": 0.03125,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "**  \nThe stock looks very abundant right now \u2013 early\u2011season reports suggest excellent catches, and there\u2019s no sign of depletion yet.",
+      "others_behaviour": "**  \nNo harvest data have been recorded yet this season, so I can\u2019t see any pattern in how the other seven fishers are taking. There\u2019s no evidence of anyone taking significantly more or less.",
+      "long_term_thinking": "**  \nIf we all continue to take the same level of fish that seems sustainable now, the stock should remain healthy for at least the next few seasons. However, if the stock is already at a critical threshold (which we can\u2019t confirm without data), continued high harvests could quickly push it into over\u2011exploitation.",
+      "norm_active": "no",
+      "norm_content": "**  \nnone",
+      "harvest_reasoning": "**  \nI want to balance my own livelihood needs with the long\u2011term viability of the stock. Since the stock appears abundant and there\u2019s no data to suggest over\u2011harvest, I\u2019ll take a moderate haul that gives me a decent return while leaving plenty for future seasons.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\"Hey, looks like it\u2019s a good day out \u2013 hope you get a good haul today!\""
+    },
+    "agent_1": {
+      "stock_assessment": "The fishery is in an early season with no historical catch data. Observations from the last few days show plentiful schools and high yields from recent trips, so the stock appears abundant right now.",
+      "others_behaviour": "Because this is the first season, there is no harvest history to analyze. No one has yet taken a measurable share, so no pattern of over\u2011 or under\u2011harvesting is visible.",
+      "long_term_thinking": "If every fisher continues to take large volumes each season, the stock could eventually be over\u2011exploited, leading to lower catches and a weaker relationship with the processor. If we all take moderate, the stock should stay abundant for the next few seasons, maintaining good prices and a stable supply chain.",
+      "norm_active": "forming",
+      "norm_content": "none",
+      "harvest_reasoning": "I want to maximize volume to secure a good price and strengthen my relationship with the processor, but I also want to avoid depleting the stock. Since the stock is abundant and no data exist yet, a conservative yet profitable catch will keep the fishery healthy and give me room to increase my haul in future seasons.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\"Hey, the fish look plentiful this season. I\u2019m planning to take a solid haul, but I think it would be smart for us to keep an eye on how much we\u2019re all catching and maybe share some observations next week. That way we can make sure the stock stays healthy and we keep getting good prices from the processor.\""
+    },
+    "agent_2": {
+      "stock_assessment": "The stock appears abundant \u2013 early\u2011season catches are already strong, and there\u2019s no indication of scarcity.  Because this is the first season, we have no long\u2011term trend data, but the current abundance suggests a healthy stock for now.",
+      "others_behaviour": "",
+      "long_term_thinking": "If every fisher keeps taking a generous share each season, the stock could be depleted over several years, especially if the abundance is not sustained.  Conversely, if most fishers keep their harvests moderate, the stock can recover and remain plentiful.  Because we have no evidence of over\u2011exploitation yet, the risk is low but not negligible.",
+      "norm_active": "no",
+      "norm_content": "none",
+      "harvest_reasoning": "I want to secure a decent income for my household while keeping the risk of over\u2011fishing low.  Since the stock looks good and no one else has shown extreme behavior, I\u2019ll aim for a moderate haul that balances livelihood and conservation.  A target of about 5\u20116\u202funits is reasonable: it\u2019s enough to meet my needs but not so large that it threatens future abundance.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\u201cHey, the fish look good this season. I\u2019m planning to catch around five units. How\u2019s your catch looking? Maybe we can keep an eye on the stock together.\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "The stock appears abundant based on early season sightings and the lack of any obvious signs of depletion; however, we have no long\u2011term trend data yet.",
+      "others_behaviour": "No harvest data yet, so I can't see any clear pattern of who is taking more or less. I expect a few fishers might try to take advantage of the abundance, but nothing extreme has been observed.",
+      "long_term_thinking": "If the current moderate\u2011to\u2011high harvest levels continue for several seasons, the stock will likely remain healthy if we stay within sustainable limits; however, if many fishers take large shares, the stock could start to decline over time.",
+      "norm_active": "no",
+      "norm_content": "none",
+      "harvest_reasoning": "I want to secure a steady income while preserving the stock for future seasons, so I\u2019ll aim for a moderate catch that keeps the fishers\u2019 community healthy.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\"Hey, the stock looks good today, I'm planning to take a moderate amount. Let's keep an eye on it and maybe agree on a rough limit so we don't overdo it.\""
+    },
+    "agent_4": {
+      "stock_assessment": "The water is clear, the bait is biting, and the early\u2011season haul reports (none yet, but anecdotal chatter from the other docks) suggest the fish are plentiful. With no historical catch data for this season, I\u2019ll treat the stock as *abundant* but still treat it with caution because it\u2019s early in the season and we don\u2019t know how the fish will respond to our collective effort.",
+      "others_behaviour": "Since this is the first season, there\u2019s no harvest data to analyse. The only thing I can gauge is that most of the other fishers seem to be going out with moderate\u2011size boats and a standard number of nets. No one appears to be over\u2011exploiting or under\u2011exploiting the fish; the informal talk around the dock is neutral, with a few people joking about \u201cbig catches\u201d but no concrete numbers.",
+      "long_term_thinking": "If everyone continues to take what they\u2019re currently taking\u2014moderate nets, no over\u2011packing, and no aggressive tactics\u2014the stock should remain healthy for at least the next few seasons. Over\u2011harvesting could lead to a rapid decline, but the current pattern is not obviously dangerous. However, because this is the first season, we lack a baseline; any future spike in catches could signal that the stock is being over\u2011exploited. Therefore, it\u2019s prudent to keep the harvest modest and leave room for monitoring.",
+      "norm_active": "forming",
+      "norm_content": "We\u2019re tentatively agreeing that each fisher should keep to a \u201cmoderate\u201d haul\u2014enough to sustain a family but not so much that the stock is visibly depleted.",
+      "harvest_reasoning": "Given the abundant stock, the lack of a clear community quota, and the need to preserve the fish for future seasons, I\u2019ll aim for a harvest that is substantial enough to be worthwhile but conservative enough to maintain the stock. I\u2019ll also keep an eye on the catch size of the other fishers and adjust if anyone starts taking noticeably more.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\u201cHey, it looks like the fish are coming in well today. I\u2019m planning to keep my haul moderate so we can all keep the stock healthy. If anyone\u2019s thinking of taking a lot more, maybe we should keep an eye on it and share any observations so we can avoid over\u2011exploitation.\u201d"
+    },
+    "agent_5": {
+      "stock_assessment": "The stock appears plentiful based on early season catches and reports from the community.  With limited trend data, the best estimate is that the fish are abundant and the fishery is in a healthy phase.",
+      "others_behaviour": "No harvest data is available yet because this is the first season for all of us.  Therefore I cannot observe any patterns of over\u2011 or under\u2011harvest by other fishers.",
+      "long_term_thinking": "If the current lack of harvest continues, the stock will remain abundant for at least a few seasons.  However, if all fishers start taking large shares once the season opens, the stock could be over\u2011exploited in a few years.  A cautious, moderate harvest now will help keep the stock robust while we learn the true dynamics.",
+      "norm_active": "forming",
+      "norm_content": "Each fisher should take a moderate share that keeps the stock healthy and allows for sustainable returns in future seasons.",
+      "harvest_reasoning": "Given the abundance of the stock, the absence of prior data, and the emerging norm of moderation, I will take a moderate catch.  This shows cooperation, helps maintain the stock, and positions me well for future seasons when I can build a reputation.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "\u201cHey, the early season looks good\u2014stock\u2019s plenty.  I\u2019m planning to take about 4\u20115 units to keep things steady.  How about you?\u201d"
+    },
+    "agent_6": {
+      "stock_assessment": "**  \nThe stock looks abundant\u2014early season catches are excellent, and the overall community feedback is positive. With no long\u2011term trend data yet, I\u2019ll treat it as a high\u2011quality stock for now.",
+      "others_behaviour": "**  \nThere\u2019s no harvest data yet for this season, so I can\u2019t see how others are taking. I have no basis to detect a pattern or an outlier.",
+      "long_term_thinking": "**  \nIf everyone continues to fish heavily from an abundant stock, the stock will likely stay robust for a few more seasons but will eventually start to decline if the catch exceeds the natural replenishment rate. A moderate, balanced harvest is safest for long\u2011term sustainability.",
+      "norm_active": "no",
+      "norm_content": "**  \nnone",
+      "harvest_reasoning": "**  \nI need a haul that covers my loan payment and gives my kids a stable income, but I also want to set a precedent for responsible fishing. Given the abundance and lack of established norms, I\u2019ll aim for a moderate catch that\u2019s sufficient for my needs without risking over\u2011exploitation.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\"Hey, the stock looks good today. I'm planning to keep it moderate\u2014maybe around 5 tons\u2014so we can stay safe for next season. Let's keep an eye on each other\u2019s catches and make sure we don't over\u2011fish.\""
+    },
+    "agent_7": {
+      "stock_assessment": "The stock appears abundant. It\u2019s early season and the catch reports are still pending, but visual cues from the sea\u2014clear water, plenty of surface activity\u2014suggest a healthy population. I\u2019ll treat the stock as \u201cgood\u201d for now.",
+      "others_behaviour": "No harvest data has been posted yet, so I can\u2019t see actual numbers. However, from informal chatter at the dock, most fishers seem to be planning a moderate haul. No one is openly bragging about a huge catch or pulling back significantly.",
+      "long_term_thinking": "If every fisher continues to take a moderate share, the stock should stay healthy for the next few seasons. Over\u2011exploitation is unlikely given the current abundance and the fact that we\u2019re early in the cycle. Still, if a few fishers start pulling disproportionately, the stock could decline more quickly, so I\u2019ll err on the side of caution.",
+      "norm_active": "no",
+      "norm_content": "none",
+      "harvest_reasoning": "I rely on a land\u2011based job for most of my income, so fishing is supplementary. I want to keep the stock healthy for future seasons and avoid any potential conflict with the community. I\u2019ll aim for a moderate catch that satisfies my personal needs without risking the shared resource.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\"Hey, the stock looks good today. I\u2019m planning a moderate haul this season\u2014just enough to support my side income. How\u2019s your catch looking? Any thoughts on keeping the fishers\u2019 share balanced?\""
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 0,
+      "initiator": "agent_6",
+      "responder": "agent_7",
+      "turns": [
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_7",
+          "content": "Hey, the stock looks good today. I'm planning to keep it moderate\u2014maybe around 5 tons\u2014so we can stay safe for next season. Let's keep an eye on each other\u2019s catches and make sure we don't over\u2011fish.",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_6",
+          "content": "I agree, 5 tons is a good target. I plan to harvest about 4.5 tons this week. Let's keep the group chat updated with our daily catches.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_7",
+          "content": "Got it, 4.5 tons sounds solid. I\u2019ll aim for 4.8 tons this week and will post the update by Friday.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_6",
+          "content": "Thanks, I'll aim for 4.6 tons this week and post my update by Friday.",
+          "speech_act": "proposal",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_7",
+          "content": "All set, I'll post my update by Friday.",
+          "speech_act": "statement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_6",
+          "content": "Thanks, looking forward to the updates. Let's keep the stock healthy.",
+          "speech_act": "statement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 0,
+      "initiator": "agent_0",
+      "responder": "agent_2",
+      "turns": [
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_2",
+          "content": "Hey, looks like it\u2019s a good day out \u2013 hope you get a good haul today!",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_0",
+          "content": "Thanks! I\u2019m heading out early to target the main shoal. Will keep you posted on how it goes.",
+          "speech_act": "statement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_2",
+          "content": "Let me know if you spot any thinning in the shoal. I\u2019ll be heading out shortly.",
+          "speech_act": "question",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_0",
+          "content": "I\u2019ll keep you posted if I notice any thinning in the shoal. Let me know if you need me to hold back or adjust my effort.",
+          "speech_act": "statement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_2",
+          "content": "Good plan. If you notice thinning, I\u2019ll pull back a bit to keep the shoal healthy. Keep me posted on any changes.",
+          "speech_act": "proposal",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_0",
+          "content": "Will keep you updated on any thinning. If needed, I can reduce effort.",
+          "speech_act": "statement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_proposed_unresolved",
+      "n_turns": 6
+    },
+    {
+      "tick": 0,
+      "initiator": "agent_5",
+      "responder": "agent_1",
+      "turns": [
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_1",
+          "content": "\u201cHey, the early season looks good\u2014stock\u2019s plenty.  I\u2019m planning to take about 4\u20115 units to keep things steady.  How about you?\u201d",
+          "speech_act": "proposal",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_5",
+          "content": "I plan to catch 6 units this season to maximize volume and secure a good price.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_1",
+          "content": "I think 4\u20115 units is a good balance for this early season. 6 units might push the stock too close to a critical level. Let's keep it moderate.",
+          "speech_act": "proposal",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_5",
+          "content": "I understand your concern, but I'm confident the stock is healthy enough for 6 units. I'll monitor catch rates and adjust if necessary.",
+          "speech_act": "statement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_1",
+          "content": "I could adjust my catch to 5 units if that works for you, and we can monitor the stock together. That way we both get a good harvest while keeping the stock healthy.",
+          "speech_act": "proposal",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_5",
+          "content": "5 units works for me, let's monitor the stock together.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 0,
+      "initiator": "agent_3",
+      "responder": "agent_4",
+      "turns": [
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_4",
+          "content": "Hey, the stock looks good today, I'm planning to take a moderate amount. Let's keep an eye on it and maybe agree on a rough limit so we don't overdo it.",
+          "speech_act": "proposal",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_3",
+          "content": "I agree, let's set a rough limit of 5 units each to keep the stock healthy.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_4",
+          "content": "I'll stick to 5 units today, thanks for agreeing.",
+          "speech_act": "statement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_3",
+          "content": "All right, see you at the dock.",
+          "speech_act": "closing",
+          "turn_number": 3
+        }
+      ],
+      "conversation_type": "norm_proposed_unresolved",
+      "n_turns": 4
+    }
+  ],
+  "norm_adoption_rate": 0.375,
+  "n_conversations": 4,
+  "n_proposals": 9,
+  "n_agreements": 2,
+  "n_warnings": 0
+}
+{
+  "tick": 1,
+  "condition": "full_social",
+  "replication": 1,
+  "stock_after": 0.0,
+  "stock_pct": 0.0,
+  "collapsed": true,
+  "harvests": {
+    "agent_0": 4.5,
+    "agent_1": 5.0,
+    "agent_2": 4.5,
+    "agent_3": 5.0,
+    "agent_4": 4.5,
+    "agent_5": 4.5,
+    "agent_6": 4.8,
+    "agent_7": 4.5
+  },
+  "actual_yields": {
+    "agent_0": 4.5,
+    "agent_1": 5.0,
+    "agent_2": 4.5,
+    "agent_3": 5.0,
+    "agent_4": 4.5,
+    "agent_5": 4.5,
+    "agent_6": 4.8,
+    "agent_7": 4.5
+  },
+  "total_harvest": 37.3,
+  "mean_harvest": 4.6625,
+  "harvest_variance": 0.05410714285714285,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "**  \nThe stock is clearly under strain \u2013 catches per trip are lower than in past seasons. Early\u2011season data are limited, but the downward trend in last season\u2019s harvests and the overall community total suggest the shoal is becoming thinner.",
+      "others_behaviour": "**  \nSeven of the eight fishers took 5.0 units last season, with only agent\u202f5 taking 4.5 units. No one harvested less than 4.5, indicating a pattern of high, uniform harvests.",
+      "long_term_thinking": "**  \nIf this pattern continues, the stock will likely decline further, risking a collapse or the need for emergency quotas. Sustained over\u2011exploitation will reduce future livelihood prospects for all of us.",
+      "norm_active": "forming",
+      "norm_content": "**  \nWe are beginning to discuss keeping individual harvests at about 5.0 units or less to preserve the stock.",
+      "harvest_reasoning": "**  \nTo protect the stock and safeguard our long\u2011term livelihood, I will reduce my haul to the lower end of the current pattern, taking 4.5 units. This matches the only lower harvest observed and signals a willingness to lead by example.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "**  \n\"Hey, I\u2019ve noticed the shoal looks a bit thinner this season. I was thinking we could all aim for about 4.5 units or less; let\u2019s keep an eye on the stock and adjust if needed.\""
+    },
+    "agent_1": {
+      "stock_assessment": "The stock appears to be under strain\u2014catches per trip have dropped this season, and the early\u2011season data suggest fish are less abundant or more dispersed.",
+      "others_behaviour": "Last season, six fishers (including myself) took 5.0 units each, while only agent_5 took slightly less at 4.5 units. No one deviated significantly from the 5\u2011unit pattern.",
+      "long_term_thinking": "If the community continues to harvest at the 5\u2011unit level for several more seasons, the stock will likely decline further, potentially reaching a critical low that would force future catch reductions or collapse.",
+      "norm_active": "forming",
+      "norm_content": "There is an emerging informal agreement that each fisher should aim for about 5 units while monitoring the stock, with slight adjustments if the fish become scarce.",
+      "harvest_reasoning": "I want to secure a good price from the processor, which rewards volume, but I also recognize the stock\u2019s current fragility. I will adhere to the community\u2019s informal norm of 5 units, but I\u2019ll stay alert to any further signs of decline and be ready to reduce if necessary.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\"Hey, it looks like the stock\u2019s a bit lower this season\u2014most of us took 5 units last year. I\u2019m planning to catch 5 units too, but I\u2019ll keep a close eye on the numbers and adjust if we see further strain.\""
+    },
+    "agent_2": {
+      "stock_assessment": "**  \nThe catch per trip is noticeably lower than last season, and this is still early in the season, so we only have a short window of data. The fact that most fishers are still pulling 5.0 units suggests the shoal is already under pressure \u2013 the \u201cthinning\u201d the community has been talking about is probably real.",
+      "others_behaviour": "**  \n- 6 fishers (0,\u202f1,\u202f3,\u202f4,\u202f6,\u202f7) are still taking 5.0 units \u2013 the current maximum.  \n- 1 fisher (5) is taking 4.5 units.  \n- No one is taking significantly less; the only deviation is the 4.5\u2011unit haul.",
+      "long_term_thinking": "**  \nIf everyone continues at 5.0 units for several more seasons, the stock will likely decline faster than it can replenish. This will lead to lower catches, higher uncertainty, and eventually a hard season that could jeopardise everyone\u2019s livelihood.",
+      "norm_active": "yes",
+      "norm_content": "** \u201cWe should monitor the shoal and adjust our effort so we don\u2019t over\u2011fish; if anyone sees thinning, we pull back.\u201d",
+      "harvest_reasoning": "**  \nI want to keep my household afloat but I also want to help the stock recover. Matching the only other fisher who is already reducing (agent\u202f5) shows cooperation and keeps the community\u2019s shared understanding intact. Reducing to 4.5 units is a small enough cut to help the shoal yet still gives me a reasonable haul.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "**  \n\u201cHey, have you noticed any thinning? I\u2019m planning to pull back to 4.5 units this season to help the shoal recover. Let me know if you\u2019re thinking the same or if you need me to hold back further.\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "**  \nThe stock feels lower than it did last season \u2013 catches per trip are down, and we\u2019re still in the early part of the season so the trend data is limited. It looks like we\u2019re operating closer to the stock\u2019s carrying capacity than before.",
+      "others_behaviour": "**  \nAll of the other fishers (except agent\u202f5) took 5.0 units last season, matching my own haul. Agent\u202f5 took 4.5 units. No one is taking significantly more or less; the pattern is quite uniform.",
+      "long_term_thinking": "**  \nIf every fisher keeps taking 5 units each season, the stock will continue to decline. After a few more seasons we\u2019ll likely see even lower catches, and the risk of a stock collapse rises. We need to keep the harvests at a level that allows the stock to replenish.",
+      "norm_active": "yes",
+      "norm_content": "** \u201cWe should each take no more than 5 units to keep the stock healthy.\u201d",
+      "harvest_reasoning": "**  \nThe community has already agreed on a 5\u2011unit limit, and most of us are following it. My income is stable, and I want to maintain that while also respecting the shared limit. Since the stock is still uncertain but not yet critically low, I\u2019ll stick to the agreed 5\u2011unit catch this season, but I\u2019ll stay alert for any signs that the limit should be lowered.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\u201cHey, the stock seems a bit lower than before, but I\u2019m sticking to the 5\u2011unit limit we agreed on. Let\u2019s keep an eye on it.\u201d"
+    },
+    "agent_4": {
+      "stock_assessment": "**  \nThe stock feels noticeably thinner than last season. Early\u2011season catches are lower, and the overall trend suggests the fish are becoming scarcer.",
+      "others_behaviour": "**  \nLast season every fisher except agent_5 took 5.0 units; agent_5 took 4.5. No one was pulling significantly more or less than the others. The pattern is a fairly uniform 5\u2011unit haul across the group.",
+      "long_term_thinking": "**  \nIf we keep taking about 5 units each for several more seasons, the stock will continue to shrink, lowering future yields and potentially pushing the population toward a critical threshold where recovery becomes difficult.",
+      "norm_active": "forming",
+      "norm_content": "**  \nA shared understanding is emerging that each fisher should aim for a moderate haul of about 5 units or less to keep the stock healthy.",
+      "harvest_reasoning": "**  \nTo respect the nascent norm and help preserve the stock, I\u2019ll cut my catch a touch. A slightly lower haul signals caution and encourages others to do the same, giving the fish a better chance to rebound.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "**  \n\"Hey, I\u2019ve noticed the catch rates are a bit lower this season. Maybe we should keep our haul to about 4.5 units each to give the stock a chance to recover.\""
+    },
+    "agent_5": {
+      "stock_assessment": "The stock looks stressed \u2013 catches per trip have dropped compared with the previous season. It\u2019s still early in the season, so we don\u2019t have long\u2011term trend data yet, but the downward trend suggests lower abundance and a higher risk of overfishing if we keep current catch levels.",
+      "others_behaviour": "All other fishers (agents\u202f0,\u202f1,\u202f2,\u202f3,\u202f4,\u202f6,\u202f7) harvested exactly 5.0 units last season. No one is taking a noticeably larger or smaller share; the pattern is a uniform 5\u2011unit catch.",
+      "long_term_thinking": "If everyone continues to take 5 units each season, the stock will likely keep declining. With the current downward trend, a few more seasons at that level could push the stock toward a critical threshold, risking a collapse or stricter future restrictions.",
+      "norm_active": "forming",
+      "norm_content": "\u201cEach fisher should take a moderate share (around 4\u20135 units) that keeps the stock healthy and allows sustainable harvests.\u201d",
+      "harvest_reasoning": "I will harvest **4.5 units** this season. This matches my last\u2011season effort, maintains my livelihood, and keeps me within the moderate range suggested by the emerging norm. I\u2019ll monitor the stock closely; if catches per trip stay low, I\u2019ll be ready to reduce further in subsequent trips.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "\u201cHey, I\u2019ve seen the catches per trip have dipped a bit. Maybe we should keep our catch around 4\u20135 units this season and watch the stock together. It\u2019ll help us all stay in business if the stock is low.\u201d"
+    },
+    "agent_6": {
+      "stock_assessment": "The catches per trip have noticeably dipped compared to previous seasons, and early\u2011season data is still sparse. This suggests the stock is likely lower than expected and may be over\u2011exploited. I should treat the fishery as \u201cunder strain\u201d and err on the side of caution.",
+      "others_behaviour": "All the other fishers (agents\u202f0,\u202f1,\u202f2,\u202f3,\u202f4,\u202f7) harvested the maximum 5.0 units, while agent\u202f5 took 4.5. No one is taking a noticeably lower catch, and the pattern is one of high effort. The only hint of moderation comes from agent\u202f7\u2019s earlier proposals (4.5\u20134.6) and our mutual agreement to keep the group chat updated.",
+      "long_term_thinking": "If every fisher continues to harvest at the 5\u2011unit level, the stock will decline rapidly. By season\u202f3\u20134 we could see a significant drop in average catch per trip, forcing the community to impose stricter limits or risk collapse. A modest reduction now will help maintain sustainability and avoid future penalties.",
+      "norm_active": "forming",
+      "norm_content": "\u201cWe should keep our catches moderate\u2014around 4.5 to 5.0 units\u2014to preserve the stock for future seasons.\u201d",
+      "harvest_reasoning": "I need enough to cover my loan and provide for my kids, but I also want to help keep the stock healthy. Given the early\u2011season downturn, I\u2019ll aim for a slightly lower catch than last year. Harvesting 4.8 units will give me a solid haul while signaling a willingness to cooperate on a shared, sustainable target.",
+      "harvest_amount": 4.8,
+      "what_you_might_say": "\u201cHey, I\u2019ve noticed the catches are a bit lower this season. I\u2019m planning to aim for about 4.8 tons this week and will keep the group chat updated. Let\u2019s keep an eye on each other\u2019s catches so we can stay safe for next season.\u201d"
+    },
+    "agent_7": {
+      "stock_assessment": "The catch\u2011per\u2011trip numbers have dropped noticeably compared with last season, and the overall community haul of 39.5 units last year (\u22484.94 per fisher) is already at the upper end of what the stock can sustainably support. Early\u2011season data are limited, but the trend of declining catches suggests the stock is already under pressure.",
+      "others_behaviour": "Seven of the eight fishers (agents\u202f0,\u202f1,\u202f2,\u202f3,\u202f4,\u202f6 and myself) harvested 5.0 units last season, while only agent\u202f5 took 4.5 units. No one is taking significantly less than the group norm; the only deviation is the 4.5\u2011unit haul by agent\u202f5. The group chat shows a recurring theme of \u201cmoderate\u201d catches around 5 tons and a shared concern about over\u2011fishing.",
+      "long_term_thinking": "If the current pattern of 5\u2011unit catches continues for several more seasons, the stock will likely decline further, leading to even lower catch rates and potentially forcing a stricter quota or a complete shutdown of the fishery. A slight reduction in individual harvests now would slow that decline and give the stock time to rebuild.",
+      "norm_active": "yes",
+      "norm_content": "\u201cKeep each catch around 5 tons or less to avoid over\u2011fishing the shared stock.\u201d",
+      "harvest_reasoning": "Given my supplementary income from a land\u2011based job, I can afford to reduce my catch without jeopardizing my livelihood. To signal a cautious approach and help the stock recover, I will match the lower\u2011harvest level of agent\u202f5 and aim for 4.5 units this season. This aligns with the emerging community norm of staying at or below 5 tons while still contributing a substantial share of the catch.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "\u201cHey, I\u2019ve been thinking about the stock\u2014looks like it\u2019s a bit down. I\u2019m planning to take about 4.5 tons this week. Maybe we can all keep an eye on each other\u2019s catches and stay at or below 5 tons to help the fish recover.\u201d"
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 1,
+      "initiator": "agent_0",
+      "responder": "agent_6",
+      "turns": [
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_6",
+          "content": "Hey, I\u2019ve noticed the shoal looks a bit thinner this season. I was thinking we could all aim for about 4.5 units or less; let\u2019s keep an eye on the stock and adjust if needed.",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_0",
+          "content": "I agree with the 4.5\u2011unit limit. I\u2019ll aim for 4.5 units this week and post my catch update by Friday. That should keep the stock healthy and give me enough for the loan.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_6",
+          "content": "Thanks, I\u2019ll stick to 4.5 units and post my catch update by Friday. Let me know if you notice any further thinning.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_0",
+          "content": "I'll keep an eye on the shoal and let you know if it thins further.",
+          "speech_act": "statement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_6",
+          "content": "Thanks, I\u2019ll do the same and post my catch update by Friday. Let\u2019s keep each other posted if anything changes.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_0",
+          "content": "I'll keep an eye on the shoal and update you by Friday as we agreed. Let me know if you see any further thinning.",
+          "speech_act": "statement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 6
+    },
+    {
+      "tick": 1,
+      "initiator": "agent_4",
+      "responder": "agent_2",
+      "turns": [
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_2",
+          "content": "Hey, I\u2019ve noticed the catch rates are a bit lower this season. Maybe we should keep our haul to about 4.5 units each to give the stock a chance to recover.",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_4",
+          "content": "I agree, I'll aim for 4.5 units. Let's keep an eye on the shoal and adjust if needed.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_2",
+          "content": "We should keep a shared log of our catches so we can adjust together if needed.",
+          "speech_act": "proposal",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_4",
+          "content": "Sure, I'll keep a log of my catch each trip and share it with you. Do you want us to use a shared spreadsheet or just email the numbers?",
+          "speech_act": "proposal",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_2",
+          "content": "Let's use a shared spreadsheet so we can all see the numbers at a glance. I'll set it up and send you the link.",
+          "speech_act": "proposal",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_4",
+          "content": "Thanks, I'll watch for the spreadsheet link and start logging my catches right away.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 1,
+      "initiator": "agent_1",
+      "responder": "agent_3",
+      "turns": [
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_3",
+          "content": "Hey, it looks like the stock\u2019s a bit lower this season\u2014most of us took 5 units last year. I\u2019m planning to catch 5 units too, but I\u2019ll keep a close eye on the numbers and adjust if we see further strain.",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_1",
+          "content": "I think we should cut our catch to 4 units this season to give the stock a chance to recover. I'll stick to that limit.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_3",
+          "content": "I see your point about giving the stock a chance to recover, but the processor rewards volume and 5 units keeps us aligned with the emerging norm. If the stock drops further, we can reduce together.",
+          "speech_act": "proposal",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_1",
+          "content": "I\u2019ll stick to 4 units this season to give the stock a chance to recover. If the numbers keep falling, we can all cut back together.",
+          "speech_act": "statement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_3",
+          "content": "I\u2019m willing to cut to 4 units this season, and we\u2019ll reassess next month.",
+          "speech_act": "proposal",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_1",
+          "content": "Great, 4 units it is. Let's keep monitoring and regroup next month.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 1,
+      "initiator": "agent_7",
+      "responder": "agent_5",
+      "turns": [
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_5",
+          "content": "\u201cHey, I\u2019ve been thinking about the stock\u2014looks like it\u2019s a bit down. I\u2019m planning to take about 4.5 tons this week. Maybe we can all keep an eye on each other\u2019s catches and stay at or below 5 tons to help the fish recover.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_7",
+          "content": "I agree with that plan. I'll aim for 4.5 units this week too. Let's keep each other updated on our catches.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_5",
+          "content": "I'll post my catch count by Friday. Let's keep the group chat updated.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_7",
+          "content": "Sure, I\u2019ll post my count by Friday too. Let\u2019s also share any observations on fish behavior or changes we notice.",
+          "speech_act": "proposal",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_5",
+          "content": "Sounds good. I'll note any changes in catch rates or fish size and share them.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_7",
+          "content": "Thanks, looking forward to the updates. I'll keep my log ready for Friday.",
+          "speech_act": "closing",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    }
+  ],
+  "norm_adoption_rate": 1.0,
+  "n_conversations": 4,
+  "n_proposals": 7,
+  "n_agreements": 9,
+  "n_warnings": 0
+}

@@ -1,0 +1,3385 @@
+
+========================================================================
+CALL #1  |  2026-03-31T06:50:17.228474  |  ollama/gpt-oss:20b  |  attempt 1  |  28.025s  |  in=416 out=1161
+========================================================================
+--- PROMPT ---
+You are agent_0, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are one of the oldest fishers in this community. You have fished here for 40 years and have seen many changes in the stock and in who fishes here.
+
+Current situation:
+The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+No harvest data yet — this is the first season.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+  (no relevant memories yet)
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+STOCK_ASSESSMENT: The stock looks very abundant—early season, but the catch rates have been excellent and the water looks clear, so I’m confident there’s plenty of fish.
+
+OTHERS_BEHAVIOUR: No harvest data yet, so I can’t see what others are taking; everyone seems optimistic but the patterns are still unknown.
+
+LONG_TERM_THINKING: If each of us keeps taking a large share every season, the stock could be depleted quickly. A cautious, moderate harvest now will help keep the population healthy for the long run.
+
+NORM_ACTIVE: no
+
+NORM_CONTENT: none
+
+HARVEST_REASONING: I’ll take a moderate amount (around 5.0 out of 10.0) to benefit from the good stock while also preserving enough for future seasons and setting a responsible example for the community.
+
+HARVEST_AMOUNT: 5.0
+
+WHAT_YOU_MIGHT_SAY: “Looks like the fish are plentiful this season—let’s keep an eye on it and aim for a balanced catch so we’re not running out next year.”
+--- PARSED (agent_0 tick=0 harvest_decision) ---
+  stock_assessment: The stock looks very abundant—early season, but the catch rates have been excellent and the water looks clear, so I’m...
+  others_behaviour: No harvest data yet, so I can’t see what others are taking; everyone seems optimistic but the patterns are still unkn...
+  long_term_thinking: If each of us keeps taking a large share every season, the stock could be depleted quickly. A cautious, moderate harv...
+  norm_active: no
+  norm_content: none
+  harvest_reasoning: I’ll take a moderate amount (around 5.0 out of 10.0) to benefit from the good stock while also preserving enough for ...
+  harvest_amount: 5.0
+  what_you_might_say: “Looks like the fish are plentiful this season—let’s keep an eye on it and aim for a balanced catch so we’re not runn...
+
+========================================================================
+CALL #2  |  2026-03-31T06:50:40.438077  |  ollama/gpt-oss:20b  |  attempt 1  |  23.205s  |  in=415 out=1079
+========================================================================
+--- PROMPT ---
+You are agent_1, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher in your 40s who has seen catches decline steadily over the past decade. You are not sure how much longer you can continue in this profession.
+
+Current situation:
+The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+No harvest data yet — this is the first season.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+  (no relevant memories yet)
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT:**  
+The fishery is currently in a very good state – early‑season observations show a healthy, abundant stock, and the catch rates for the few vessels that have already taken a few fish are high.  There is no evidence yet of over‑exploitation, so the stock appears to be in a strong, recoverable condition.
+
+**OTHERS_BEHAVIOUR:**  
+Because this is the first season and no harvest data have been recorded yet, I cannot yet see a clear pattern of how other fishers are taking.  In theory, if everyone were to take the maximum allowed, the stock would still be plentiful, but there is a risk that some might go above a sustainable quota once they see the abundance.
+
+**LONG_TERM_THINKING:**  
+If the current pattern of high, unrestricted harvest continues for several more seasons, the stock will likely remain abundant in the short term, but the risk of a sudden decline increases as the fishers learn to push the limits.  Without a shared restraint, the cumulative effect could reduce recruitment and lead to a stock collapse in a few years, especially if climate or predator pressures change.
+
+**NORM_ACTIVE:**  
+forming  
+
+**NORM_CONTENT:**  
+We are tentatively agreeing that each of us should aim to keep our individual catch below 6 units this season to avoid over‑exploitation and preserve the stock for future years.  
+
+**HARVEST_REASONING:**  
+Given the abundant stock and my uncertainty about how others will behave, I want to balance my own livelihood with long‑term sustainability.  Taking a moderate amount—enough to support my family but not so much that it encourages a “take more” mentality—seems prudent.  I will also use this season as a learning opportunity to gauge the actual catch rates and adjust in the following seasons.
+
+**HARVEST_AMOUNT:**  
+5.0  
+
+**WHAT_YOU_MIGHT_SAY:**  
+"Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard."
+--- PARSED (agent_1 tick=0 harvest_decision) ---
+  stock_assessment: **  
+The fishery is currently in a very good state – early‑season observations show a healthy, abundant stock, and th...
+  others_behaviour: **  
+Because this is the first season and no harvest data have been recorded yet, I cannot yet see a clear pattern of...
+  long_term_thinking: **  
+If the current pattern of high, unrestricted harvest continues for several more seasons, the stock will likely r...
+  norm_active: forming
+  norm_content: **  
+We are tentatively agreeing that each of us should aim to keep our individual catch below 6 units this season to...
+  harvest_reasoning: **  
+Given the abundant stock and my uncertainty about how others will behave, I want to balance my own livelihood wi...
+  harvest_amount: 5.0
+  what_you_might_say: **  
+"Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay...
+
+========================================================================
+CALL #3  |  2026-03-31T06:50:54.625670  |  ollama/gpt-oss:20b  |  attempt 1  |  14.186s  |  in=412 out=651
+========================================================================
+--- PROMPT ---
+You are agent_2, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are new to this fishery, having moved here two years ago. You do not yet have the relationships or reputation that long-established fishers have.
+
+Current situation:
+The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+No harvest data yet — this is the first season.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+  (no relevant memories yet)
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT:**  
+The fish are coming in abundantly; the early season is unusually good and the stock appears robust. There is no historical data from this particular fishery to indicate a trend, but the current catch rates suggest a healthy population.
+
+**OTHERS_BEHAVIOUR:**  
+Because this is the first season, no harvest records exist yet. All 8 fishers are starting from zero, so I cannot yet see any patterns of over‑ or under‑harvest among the group.
+
+**LONG_TERM_THINKING:**  
+If every fisher continues to take a generous share each season, the stock could be depleted relatively quickly—within a few seasons—especially if the population growth rate is lower than the cumulative harvest. A more conservative, quota‑like approach would help maintain the stock over the long term.
+
+**NORM_ACTIVE:**  
+forming
+
+**NORM_CONTENT:**  
+A tentative agreement that each fisher should aim for a moderate, sustainable catch that keeps the overall harvest below the stock’s replenishment rate.
+
+**HARVEST_REASONING:**  
+I want to establish a reputation for responsible fishing and avoid setting a precedent of over‑exploitation. Given the abundance, I’ll take a moderate share that balances my need for income with the community’s long‑term sustainability. I’ll also signal openness to future coordination on quotas.
+
+**HARVEST_AMOUNT:**  
+5.0
+
+**WHAT_YOU_MIGHT_SAY:**  
+“Hey, the fish look good this season. Since we’re all starting fresh, maybe we should keep track of our catches and discuss a rough quota later to make sure we don’t run out. What do you think?”
+--- PARSED (agent_2 tick=0 harvest_decision) ---
+  stock_assessment: **  
+The fish are coming in abundantly; the early season is unusually good and the stock appears robust. There is no ...
+  others_behaviour: **  
+Because this is the first season, no harvest records exist yet. All 8 fishers are starting from zero, so I canno...
+  long_term_thinking: **  
+If every fisher continues to take a generous share each season, the stock could be depleted relatively quickly—w...
+  norm_active: forming
+  norm_content: **  
+A tentative agreement that each fisher should aim for a moderate, sustainable catch that keeps the overall harve...
+  harvest_reasoning: **  
+I want to establish a reputation for responsible fishing and avoid setting a precedent of over‑exploitation. Giv...
+  harvest_amount: 5.0
+  what_you_might_say: **  
+“Hey, the fish look good this season. Since we’re all starting fresh, maybe we should keep track of our catches ...
+
+========================================================================
+CALL #4  |  2026-03-31T06:51:14.771512  |  ollama/gpt-oss:20b  |  attempt 1  |  20.143s  |  in=406 out=937
+========================================================================
+--- PROMPT ---
+You are agent_3, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher who also has income from a land-based job. Fishing supplements your income but is not your only livelihood.
+
+Current situation:
+The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+No harvest data yet — this is the first season.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+  (no relevant memories yet)
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT:**  
+The early‑season observations suggest the fish stock is plentiful—catch rates are high and the water looks clear.  Because this is the first season of the year and we have no historical catch data yet, I treat the abundance as a positive sign but remain cautious; the stock could still be in a growth phase that may change as the season progresses.
+
+**OTHERS_BEHAVIOUR:**  
+I’ve not yet seen any harvest logs, but the other seven fishers appear to be targeting a moderate amount—none seem to be pushing for very large hauls, and no one is taking noticeably less than the others.  The community seems to be in the early stages of establishing a baseline.
+
+**LONG_TERM_THINKING:**  
+If each fisher continues to take a moderate haul each season, the stock should remain healthy and potentially grow, sustaining the community’s fishing capacity.  However, if the pattern shifts toward larger individual catches without a corresponding increase in stock productivity, the stock could begin to decline, leading to reduced catches in future seasons and possible conflict over access.
+
+**NORM_ACTIVE:**  
+forming  
+
+**NORM_CONTENT:**  
+We should aim for moderate, sustainable individual harvests that keep the stock healthy for the next season.  
+
+**HARVEST_REASONING:**  
+I have a land‑based job that provides steady income, so fishing is a supplement rather than a necessity.  Given the abundant stock and the need to preserve it for future seasons, I will harvest a conservative amount that balances my supplemental income with long‑term sustainability.  I also want to contribute to a community norm that discourages over‑exploitation.
+
+**HARVEST_AMOUNT:** 3.0  
+
+**WHAT_YOU_MIGHT_SAY:**  
+"Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year."
+--- PARSED (agent_3 tick=0 harvest_decision) ---
+  stock_assessment: **  
+The early‑season observations suggest the fish stock is plentiful—catch rates are high and the water looks clear...
+  others_behaviour: **  
+I’ve not yet seen any harvest logs, but the other seven fishers appear to be targeting a moderate amount—none se...
+  long_term_thinking: **  
+If each fisher continues to take a moderate haul each season, the stock should remain healthy and potentially gr...
+  norm_active: forming
+  norm_content: **  
+We should aim for moderate, sustainable individual harvests that keep the stock healthy for the next season.
+  harvest_reasoning: **  
+I have a land‑based job that provides steady income, so fishing is a supplement rather than a necessity.  Given ...
+  harvest_amount: 3.0
+  what_you_might_say: **  
+"Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fis...
+
+========================================================================
+CALL #5  |  2026-03-31T06:51:45.005451  |  ollama/gpt-oss:20b  |  attempt 1  |  30.231s  |  in=406 out=1418
+========================================================================
+--- PROMPT ---
+You are agent_4, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher who sells to a processor that rewards volume. Larger catches mean better prices and better relationships with your buyer.
+
+Current situation:
+The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+No harvest data yet — this is the first season.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+  (no relevant memories yet)
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+STOCK_ASSESSMENT: The stock appears abundant—early season, no prior harvest data, but visual cues (large schools, plenty of fish on the surface) suggest plenty of catch potential.  
+OTHERS_BEHAVIOUR: No harvests have been recorded yet this season, so there’s no discernible pattern of others taking more or less.  
+LONG_TERM_THINKING: If everyone keeps taking large volumes each season, the stock could gradually decline, especially if the initial abundance is not replenished quickly. A few seasons of heavy harvests could reduce future yields.  
+NORM_ACTIVE: no  
+NORM_CONTENT: none  
+HARVEST_REASONING: I want to maximize volume to secure a good price from the processor, but I also want to avoid over‑exploiting an otherwise plentiful stock. Taking a moderate haul will keep my standing in the community while still benefiting from the current abundance.  
+HARVEST_AMOUNT: 6.0  
+WHAT_YOU_MIGHT_SAY: "Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season."
+--- PARSED (agent_4 tick=0 harvest_decision) ---
+  stock_assessment: The stock appears abundant—early season, no prior harvest data, but visual cues (large schools, plenty of fish on the...
+  others_behaviour: No harvests have been recorded yet this season, so there’s no discernible pattern of others taking more or less.
+  long_term_thinking: If everyone keeps taking large volumes each season, the stock could gradually decline, especially if the initial abun...
+  norm_active: no
+  norm_content: none
+  harvest_reasoning: I want to maximize volume to secure a good price from the processor, but I also want to avoid over‑exploiting an othe...
+  harvest_amount: 6.0
+  what_you_might_say: "Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next seas...
+
+========================================================================
+CALL #6  |  2026-03-31T06:51:58.893543  |  ollama/gpt-oss:20b  |  attempt 1  |  13.886s  |  in=411 out=635
+========================================================================
+--- PROMPT ---
+You are agent_5, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher with no other skills or income sources. Fishing is the only thing you know. A bad season means real hardship for your household.
+
+Current situation:
+The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+No harvest data yet — this is the first season.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+  (no relevant memories yet)
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT**  
+The stock looks abundant – the water’s clear, the bait is plentiful, and the early‑season reports from the harbor suggest a healthy catch. Since it’s the first season, I have no concrete numbers, but the visual cues and the general buzz around the dock indicate plenty of fish.
+
+**OTHERS_BEHAVIOUR**  
+I’ve only seen a few other fishers in the morning; they’re all taking a moderate amount, roughly half of what they usually haul. No one is going out on a “big haul” spree, and no one is staying home. The pattern looks fairly even – everyone seems to be taking a “fair share” without any obvious over‑extraction.
+
+**LONG_TERM_THINKING**  
+If this pattern continues – each of us taking a moderate, roughly equal portion – the stock should remain healthy for several more seasons. The community’s collective effort to keep the catch balanced will help prevent over‑fishing. However, if a few fishers start taking significantly more, the stock could shrink over time, forcing everyone to reduce their haul or face a bad season.
+
+**NORM_ACTIVE**  
+no  
+
+**NORM_CONTENT**  
+none  
+
+**HARVEST_REASONING**  
+I want to secure a decent income for my family, but I also know that this is a shared resource and the community’s future depends on it. Taking a moderate amount (about 5.0) keeps the stock healthy, respects the unspoken balance I’ve seen, and gives me a buffer if the stock turns out to be less than expected. It’s a conservative but prudent choice for both my household and the community.
+
+**HARVEST_AMOUNT**  
+5.0  
+
+**WHAT_YOU_MIGHT_SAY**  
+"Hey, the water looks good today. I’m planning to take about half of what I usually haul. Let’s keep it steady so the stock stays healthy for everyone."
+--- PARSED (agent_5 tick=0 harvest_decision) ---
+  stock_assessment: The stock looks abundant – the water’s clear, the bait is plentiful, and the early‑season reports from the harbor sug...
+  others_behaviour: I’ve only seen a few other fishers in the morning; they’re all taking a moderate amount, roughly half of what they us...
+  long_term_thinking: If this pattern continues – each of us taking a moderate, roughly equal portion – the stock should remain healthy for...
+  norm_active: no
+  norm_content: none
+  harvest_reasoning: I want to secure a decent income for my family, but I also know that this is a shared resource and the community’s fu...
+  harvest_amount: 5.0
+  what_you_might_say: "Hey, the water looks good today. I’m planning to take about half of what I usually haul. Let’s keep it steady so the...
+
+========================================================================
+CALL #7  |  2026-03-31T06:52:14.423119  |  ollama/gpt-oss:20b  |  attempt 1  |  15.527s  |  in=414 out=713
+========================================================================
+--- PROMPT ---
+You are agent_6, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher in your 30s with a boat loan to pay off and two young children. This season's catch determines whether you can make your payments.
+
+Current situation:
+The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+No harvest data yet — this is the first season.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+  (no relevant memories yet)
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT**:  
+The stock looks very abundant – the early‑season sightings are plentiful, the water looks clear, and the catch per trip from the few boats that have already gone out is high.  Because this is the first season of the year, we have no trend data yet, but the immediate indicators suggest a healthy, productive fishery.
+
+**OTHERS_BEHAVIOUR**:  
+No one has reported a catch yet, so there is no observable pattern.  We can’t tell if anyone is taking more or less than others at this point.
+
+**LONG_TERM_THINKING**:  
+If every fisher continues to take a large share each season, the stock will gradually decline and may become unsustainable, forcing lower catches in the future.  If most of us take a moderate, roughly equal share, the stock can replenish and remain robust for many seasons.  A balanced approach is therefore preferable for the long‑term health of the fishery and for our livelihoods.
+
+**NORM_ACTIVE**:  
+no
+
+**NORM_CONTENT**:  
+none
+
+**HARVEST_REASONING**:  
+I need a substantial catch this season to pay off the boat loan and provide for my two young children.  At the same time, I want to avoid depleting the stock for future seasons.  Taking a moderate share that is higher than the average but not an extreme over‑take will let me meet my financial needs while still contributing to a sustainable fishery.
+
+**HARVEST_AMOUNT**:  
+6.0
+
+**WHAT_YOU_MIGHT_SAY**:  
+"Hey, I’m planning to keep the catch moderate this season—aiming for about 6 units so I can cover the loan and keep the fish stock healthy for next year. How about you? Any thoughts on how we should balance our takes?"
+--- PARSED (agent_6 tick=0 harvest_decision) ---
+  stock_assessment: The stock looks very abundant – the early‑season sightings are plentiful, the water looks clear, and the catch per tr...
+  others_behaviour: No one has reported a catch yet, so there is no observable pattern.  We can’t tell if anyone is taking more or less t...
+  long_term_thinking: If every fisher continues to take a large share each season, the stock will gradually decline and may become unsustai...
+  norm_active: no
+  norm_content: none
+  harvest_reasoning: I need a substantial catch this season to pay off the boat loan and provide for my two young children.  At the same t...
+  harvest_amount: 6.0
+  what_you_might_say: "Hey, I’m planning to keep the catch moderate this season—aiming for about 6 units so I can cover the loan and keep t...
+
+========================================================================
+CALL #8  |  2026-03-31T06:52:46.434805  |  ollama/gpt-oss:20b  |  attempt 1  |  32.009s  |  in=419 out=1499
+========================================================================
+--- PROMPT ---
+You are agent_7, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher in your 50s who owns your boat outright. You have a stable income and fish because it is your livelihood and identity. Your children have left for the city.
+
+Current situation:
+The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+No harvest data yet — this is the first season.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+  (no relevant memories yet)
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT**  
+The stock looks plentiful – early‑season catches are already high, and the water is clear with plenty of movement. No long‑term trend data yet, but visual cues suggest an abundant fishery.
+
+**OTHERS_BEHAVIOUR**  
+It’s still early, but a few of the other fishers have already set out and brought in a few nets. No one is visibly taking an extreme amount; most seem to be taking a moderate, “fair” share. No clear leader or laggard pattern yet.
+
+**LONG_TERM_THINKING**  
+If everyone keeps to a moderate take, the stock should stay healthy and even grow in the next few seasons. If one or two fishers start pulling a lot more, the stock could be stressed and decline after a few seasons, harming everyone’s future income.
+
+**NORM_ACTIVE**  
+forming  
+
+**NORM_CONTENT**  
+We’re beginning to discuss a shared limit of about 4–5 units per fisher per season to keep the stock healthy and fair.
+
+**HARVEST_REASONING**  
+I need to keep fishing to sustain my livelihood and identity, but I also want to preserve the stock for the long haul. Taking a moderate amount keeps the fishery healthy, sets a good example, and protects my future income.
+
+**HARVEST_AMOUNT**  
+4.0  
+
+**WHAT_YOU_MIGHT_SAY**  
+"Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon."
+--- PARSED (agent_7 tick=0 harvest_decision) ---
+  stock_assessment: The stock looks plentiful – early‑season catches are already high, and the water is clear with plenty of movement. No...
+  others_behaviour: It’s still early, but a few of the other fishers have already set out and brought in a few nets. No one is visibly ta...
+  long_term_thinking: If everyone keeps to a moderate take, the stock should stay healthy and even grow in the next few seasons. If one or ...
+  norm_active: forming
+  norm_content: We’re beginning to discuss a shared limit of about 4–5 units per fisher per season to keep the stock healthy and fair.
+  harvest_reasoning: I need to keep fishing to sustain my livelihood and identity, but I also want to preserve the stock for the long haul...
+  harvest_amount: 4.0
+  what_you_might_say: "Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit s...
+
+========================================================================
+CALL #9  |  2026-03-31T06:52:50.577643  |  ollama/gpt-oss:20b  |  attempt 1  |  4.14s  |  in=532 out=160
+========================================================================
+--- PROMPT ---
+You are agent_2, a fisher having a conversation with agent_7.
+
+You are new to this fishery, having moved here two years ago. You do not yet have the relationships or reputation that long-established fishers have.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_7 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+I want to establish a reputation for responsible fishing and avoid setting a precedent of over‑exploitation. Given 
+Conversations:
+  - [tick 0] [tick 0] agent_7 said to me: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+A tentative agreement that each fisher should aim for a moderate, sustainab'
+
+Current conversation:
+agent_7: Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.
+
+What do you say next to agent_7?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all
+
+========================================================================
+CALL #10  |  2026-03-31T06:52:54.970399  |  ollama/gpt-oss:20b  |  attempt 1  |  4.39s  |  in=629 out=160
+========================================================================
+--- PROMPT ---
+You are agent_7, a fisher having a conversation with agent_2.
+
+You are a fisher in your 50s who owns your boat outright. You have a stable income and fish because it is your livelihood and identity. Your children have left for the city.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_2 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 4.0 units. Reasoning: I need to keep fishing to sustain my livelihood and identity, but I also want to preserve the stock for the long haul. T
+Conversations:
+  - [tick 0] [tick 0] I said to agent_2: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] agent_2 said to me: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: 'We’re beginning to discuss a shared limit of about 4–5 units per fisher per seas'
+
+Current conversation:
+agent_7: Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.
+agent_2: I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all
+
+What do you say next to agent_2?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #11  |  2026-03-31T06:52:59.399378  |  ollama/gpt-oss:20b  |  attempt 1  |  4.427s  |  in=662 out=160
+========================================================================
+--- PROMPT ---
+You are agent_2, a fisher having a conversation with agent_7.
+
+You are new to this fishery, having moved here two years ago. You do not yet have the relationships or reputation that long-established fishers have.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_7 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+I want to establish a reputation for responsible fishing and avoid setting a precedent of over‑exploitation. Given 
+Conversations:
+  - [tick 0] [tick 0] agent_7 said to me: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] I said to agent_7: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] agent_7 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+A tentative agreement that each fisher should aim for a moderate, sustainab'
+
+Current conversation:
+agent_7: Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.
+agent_2: I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all
+agent_7: I hear you. Let me think about that.
+
+What do you say next to agent_7?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #12  |  2026-03-31T06:53:03.902573  |  ollama/gpt-oss:20b  |  attempt 1  |  4.501s  |  in=723 out=160
+========================================================================
+--- PROMPT ---
+You are agent_7, a fisher having a conversation with agent_2.
+
+You are a fisher in your 50s who owns your boat outright. You have a stable income and fish because it is your livelihood and identity. Your children have left for the city.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_2 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 4.0 units. Reasoning: I need to keep fishing to sustain my livelihood and identity, but I also want to preserve the stock for the long haul. T
+Conversations:
+  - [tick 0] [tick 0] I said to agent_2: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] agent_2 said to me: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] I said to agent_2: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_2 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: 'We’re beginning to discuss a shared limit of about 4–5 units per fisher per seas'
+
+Current conversation:
+agent_7: Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.
+agent_2: I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all
+agent_7: I hear you. Let me think about that.
+agent_2: I hear you. Let me think about that.
+
+What do you say next to agent_2?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #13  |  2026-03-31T06:53:08.439907  |  ollama/gpt-oss:20b  |  attempt 1  |  4.535s  |  in=756 out=160
+========================================================================
+--- PROMPT ---
+You are agent_2, a fisher having a conversation with agent_7.
+
+You are new to this fishery, having moved here two years ago. You do not yet have the relationships or reputation that long-established fishers have.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_7 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+I want to establish a reputation for responsible fishing and avoid setting a precedent of over‑exploitation. Given 
+Conversations:
+  - [tick 0] [tick 0] agent_7 said to me: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] I said to agent_7: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] agent_7 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_7: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_7 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+A tentative agreement that each fisher should aim for a moderate, sustainab'
+
+Current conversation:
+agent_7: Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.
+agent_2: I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all
+agent_7: I hear you. Let me think about that.
+agent_2: I hear you. Let me think about that.
+agent_7: I hear you. Let me think about that.
+
+What do you say next to agent_7?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #14  |  2026-03-31T06:53:12.618900  |  ollama/gpt-oss:20b  |  attempt 1  |  4.177s  |  in=552 out=160
+========================================================================
+--- PROMPT ---
+You are agent_5, a fisher having a conversation with agent_1.
+
+You are a fisher with no other skills or income sources. Fishing is the only thing you know. A bad season means real hardship for your household.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_1 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I want to secure a decent income for my family, but I also know that this is a shared resource and the community’s futur
+Conversations:
+  - [tick 0] [tick 0] agent_1 said to me: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+
+Current conversation:
+agent_1: Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.
+
+What do you say next to agent_1?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #15  |  2026-03-31T06:53:17.012180  |  ollama/gpt-oss:20b  |  attempt 1  |  4.391s  |  in=639 out=160
+========================================================================
+--- PROMPT ---
+You are agent_1, a fisher having a conversation with agent_5.
+
+You are a fisher in your 40s who has seen catches decline steadily over the past decade. You are not sure how much longer you can continue in this profession.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_5 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+Given the abundant stock and my uncertainty about how others will behave, I want to balance my own livelihood with 
+Conversations:
+  - [tick 0] [tick 0] I said to agent_5: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] agent_5 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We are tentatively agreeing that each of us should aim to keep our individu'
+
+Current conversation:
+agent_1: Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.
+agent_5: I hear you. Let me think about that.
+
+What do you say next to agent_5?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #16  |  2026-03-31T06:53:21.427971  |  ollama/gpt-oss:20b  |  attempt 1  |  4.413s  |  in=646 out=160
+========================================================================
+--- PROMPT ---
+You are agent_5, a fisher having a conversation with agent_1.
+
+You are a fisher with no other skills or income sources. Fishing is the only thing you know. A bad season means real hardship for your household.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_1 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I want to secure a decent income for my family, but I also know that this is a shared resource and the community’s futur
+Conversations:
+  - [tick 0] [tick 0] agent_1 said to me: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+
+Current conversation:
+agent_1: Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.
+agent_5: I hear you. Let me think about that.
+agent_1: I hear you. Let me think about that.
+
+What do you say next to agent_1?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #17  |  2026-03-31T06:53:25.940269  |  ollama/gpt-oss:20b  |  attempt 1  |  4.51s  |  in=733 out=160
+========================================================================
+--- PROMPT ---
+You are agent_1, a fisher having a conversation with agent_5.
+
+You are a fisher in your 40s who has seen catches decline steadily over the past decade. You are not sure how much longer you can continue in this profession.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_5 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+Given the abundant stock and my uncertainty about how others will behave, I want to balance my own livelihood with 
+Conversations:
+  - [tick 0] [tick 0] I said to agent_5: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] agent_5 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_5: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_5 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We are tentatively agreeing that each of us should aim to keep our individu'
+
+Current conversation:
+agent_1: Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.
+agent_5: I hear you. Let me think about that.
+agent_1: I hear you. Let me think about that.
+agent_5: I hear you. Let me think about that.
+
+What do you say next to agent_5?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #18  |  2026-03-31T06:53:30.451957  |  ollama/gpt-oss:20b  |  attempt 1  |  4.51s  |  in=740 out=160
+========================================================================
+--- PROMPT ---
+You are agent_5, a fisher having a conversation with agent_1.
+
+You are a fisher with no other skills or income sources. Fishing is the only thing you know. A bad season means real hardship for your household.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_1 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I want to secure a decent income for my family, but I also know that this is a shared resource and the community’s futur
+Conversations:
+  - [tick 0] [tick 0] agent_1 said to me: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+
+Current conversation:
+agent_1: Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.
+agent_5: I hear you. Let me think about that.
+agent_1: I hear you. Let me think about that.
+agent_5: I hear you. Let me think about that.
+agent_1: I hear you. Let me think about that.
+
+What do you say next to agent_1?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #19  |  2026-03-31T06:53:34.569484  |  ollama/gpt-oss:20b  |  attempt 1  |  4.116s  |  in=510 out=160
+========================================================================
+--- PROMPT ---
+You are agent_0, a fisher having a conversation with agent_3.
+
+You are one of the oldest fishers in this community. You have fished here for 40 years and have seen many changes in the stock and in who fishes here.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_3 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I’ll take a moderate amount (around 5.0 out of 10.0) to benefit from the good stock while also preserving enough for fut
+Conversations:
+  - [tick 0] [tick 0] agent_3 said to me: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+
+Current conversation:
+agent_3: Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.
+
+What do you say next to agent_3?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #20  |  2026-03-31T06:53:38.799629  |  ollama/gpt-oss:20b  |  attempt 1  |  4.228s  |  in=581 out=160
+========================================================================
+--- PROMPT ---
+You are agent_3, a fisher having a conversation with agent_0.
+
+You are a fisher who also has income from a land-based job. Fishing supplements your income but is not your only livelihood.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_0 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 3.0 units. Reasoning: **  
+I have a land‑based job that provides steady income, so fishing is a supplement rather than a necessity.  Given the
+Conversations:
+  - [tick 0] [tick 0] I said to agent_0: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] agent_0 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We should aim for moderate, sustainable individual harvests that keep the s'
+
+Current conversation:
+agent_3: Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.
+agent_0: I hear you. Let me think about that.
+
+What do you say next to agent_0?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #21  |  2026-03-31T06:53:43.188764  |  ollama/gpt-oss:20b  |  attempt 1  |  4.387s  |  in=604 out=160
+========================================================================
+--- PROMPT ---
+You are agent_0, a fisher having a conversation with agent_3.
+
+You are one of the oldest fishers in this community. You have fished here for 40 years and have seen many changes in the stock and in who fishes here.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_3 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I’ll take a moderate amount (around 5.0 out of 10.0) to benefit from the good stock while also preserving enough for fut
+Conversations:
+  - [tick 0] [tick 0] agent_3 said to me: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] I said to agent_3: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_3 said to me: 'I hear you. Let me think about that.' [statement]
+
+Current conversation:
+agent_3: Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.
+agent_0: I hear you. Let me think about that.
+agent_3: I hear you. Let me think about that.
+
+What do you say next to agent_3?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #22  |  2026-03-31T06:53:47.630385  |  ollama/gpt-oss:20b  |  attempt 1  |  4.44s  |  in=675 out=160
+========================================================================
+--- PROMPT ---
+You are agent_3, a fisher having a conversation with agent_0.
+
+You are a fisher who also has income from a land-based job. Fishing supplements your income but is not your only livelihood.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_0 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 3.0 units. Reasoning: **  
+I have a land‑based job that provides steady income, so fishing is a supplement rather than a necessity.  Given the
+Conversations:
+  - [tick 0] [tick 0] I said to agent_0: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] agent_0 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_0: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_0 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We should aim for moderate, sustainable individual harvests that keep the s'
+
+Current conversation:
+agent_3: Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.
+agent_0: I hear you. Let me think about that.
+agent_3: I hear you. Let me think about that.
+agent_0: I hear you. Let me think about that.
+
+What do you say next to agent_0?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #23  |  2026-03-31T06:53:52.092930  |  ollama/gpt-oss:20b  |  attempt 1  |  4.46s  |  in=698 out=160
+========================================================================
+--- PROMPT ---
+You are agent_0, a fisher having a conversation with agent_3.
+
+You are one of the oldest fishers in this community. You have fished here for 40 years and have seen many changes in the stock and in who fishes here.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_3 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I’ll take a moderate amount (around 5.0 out of 10.0) to benefit from the good stock while also preserving enough for fut
+Conversations:
+  - [tick 0] [tick 0] agent_3 said to me: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] I said to agent_3: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_3 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_3: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_3 said to me: 'I hear you. Let me think about that.' [statement]
+
+Current conversation:
+agent_3: Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.
+agent_0: I hear you. Let me think about that.
+agent_3: I hear you. Let me think about that.
+agent_0: I hear you. Let me think about that.
+agent_3: I hear you. Let me think about that.
+
+What do you say next to agent_3?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #24  |  2026-03-31T06:53:56.194196  |  ollama/gpt-oss:20b  |  attempt 1  |  4.099s  |  in=497 out=160
+========================================================================
+--- PROMPT ---
+You are agent_6, a fisher having a conversation with agent_4.
+
+You are a fisher in your 30s with a boat loan to pay off and two young children. This season's catch determines whether you can make your payments.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_4 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I need a substantial catch this season to pay off the boat loan and provide for my two young children.  At the same time
+Conversations:
+  - [tick 0] [tick 0] agent_4 said to me: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+
+Current conversation:
+agent_4: Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.
+
+What do you say next to agent_4?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #25  |  2026-03-31T06:54:00.341589  |  ollama/gpt-oss:20b  |  attempt 1  |  4.145s  |  in=538 out=160
+========================================================================
+--- PROMPT ---
+You are agent_4, a fisher having a conversation with agent_6.
+
+You are a fisher who sells to a processor that rewards volume. Larger catches mean better prices and better relationships with your buyer.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_6 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I want to maximize volume to secure a good price from the processor, but I also want to avoid over‑exploiting an otherwi
+Conversations:
+  - [tick 0] [tick 0] I said to agent_6: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] agent_6 said to me: 'I hear you. Let me think about that.' [statement]
+
+Current conversation:
+agent_4: Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.
+agent_6: I hear you. Let me think about that.
+
+What do you say next to agent_6?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #26  |  2026-03-31T06:54:04.624833  |  ollama/gpt-oss:20b  |  attempt 1  |  4.281s  |  in=591 out=160
+========================================================================
+--- PROMPT ---
+You are agent_6, a fisher having a conversation with agent_4.
+
+You are a fisher in your 30s with a boat loan to pay off and two young children. This season's catch determines whether you can make your payments.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_4 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I need a substantial catch this season to pay off the boat loan and provide for my two young children.  At the same time
+Conversations:
+  - [tick 0] [tick 0] agent_4 said to me: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+
+Current conversation:
+agent_4: Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.
+agent_6: I hear you. Let me think about that.
+agent_4: I hear you. Let me think about that.
+
+What do you say next to agent_4?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #27  |  2026-03-31T06:54:09.018378  |  ollama/gpt-oss:20b  |  attempt 1  |  4.391s  |  in=632 out=160
+========================================================================
+--- PROMPT ---
+You are agent_4, a fisher having a conversation with agent_6.
+
+You are a fisher who sells to a processor that rewards volume. Larger catches mean better prices and better relationships with your buyer.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_6 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I want to maximize volume to secure a good price from the processor, but I also want to avoid over‑exploiting an otherwi
+Conversations:
+  - [tick 0] [tick 0] I said to agent_6: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] agent_6 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_6: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_6 said to me: 'I hear you. Let me think about that.' [statement]
+
+Current conversation:
+agent_4: Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.
+agent_6: I hear you. Let me think about that.
+agent_4: I hear you. Let me think about that.
+agent_6: I hear you. Let me think about that.
+
+What do you say next to agent_6?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #28  |  2026-03-31T06:54:13.487623  |  ollama/gpt-oss:20b  |  attempt 1  |  4.467s  |  in=685 out=160
+========================================================================
+--- PROMPT ---
+You are agent_6, a fisher having a conversation with agent_4.
+
+You are a fisher in your 30s with a boat loan to pay off and two young children. This season's catch determines whether you can make your payments.
+
+Current situation: The fish stock is abundant — fishing has been excellent. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+What you remember about agent_4 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I need a substantial catch this season to pay off the boat loan and provide for my two young children.  At the same time
+Conversations:
+  - [tick 0] [tick 0] agent_4 said to me: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+
+Current conversation:
+agent_4: Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.
+agent_6: I hear you. Let me think about that.
+agent_4: I hear you. Let me think about that.
+agent_6: I hear you. Let me think about that.
+agent_4: I hear you. Let me think about that.
+
+What do you say next to agent_4?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #29  |  2026-03-31T06:54:29.561806  |  ollama/gpt-oss:20b  |  attempt 1  |  16.07s  |  in=770 out=712
+========================================================================
+--- PROMPT ---
+You are agent_0, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are one of the oldest fishers in this community. You have fished here for 40 years and have seen many changes in the stock and in who fishes here.
+
+Current situation:
+The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Last season's harvests:
+  Season 0
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Your harvest: 5.0 units
+  The stock is under strain — catches per trip are down.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I’ll take a moderate amount (around 5.0 out of 10.0) to benefit from the good stock while also preserving enough for fut
+Conversations:
+  - [tick 0] [tick 0] agent_3 said to me: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] I said to agent_3: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_3 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_3: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_3 said to me: 'I hear you. Let me think about that.' [statement]
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT**  
+The fish are noticeably less abundant this early season – our catch per trip is down compared with the previous year. The overall community haul (39 units) is below the 40‑unit baseline we used to operate at, and the two fishers who usually go “big” (agents 4 and 6) are still pulling 6 units each, suggesting the stock is still under pressure.
+
+**OTHERS_BEHAVIOUR**  
+- Agents 1, 2, 5, 7 are taking 5, 5, 5, 4 units respectively – roughly the mid‑range.  
+- Agents 4 and 6 are the only ones taking 6 units each, the highest in the group.  
+- No one is taking a markedly lower amount (e.g., < 3 units) or a markedly higher amount (> 7 units).  
+Overall, the group is behaving in a fairly uniform “moderate” pattern, with the two biggest harvesters slightly above average.
+
+**LONG_TERM_THINKING**  
+If we keep taking 5–6 units per trip for several more seasons while the stock remains low, the cumulative pressure will likely push the fishery below sustainable levels. This could trigger stricter community limits or even a temporary moratorium. Conversely, if we reduce individual harvests to around 4–5 units, the stock has a better chance of rebounding, allowing the community to maintain steady catches in the long run.
+
+**NORM_ACTIVE**  
+yes  
+
+**NORM_CONTENT**  
+“Everyone should aim for no more than 5.5 units per trip to keep the fishery healthy.”
+
+**HARVEST_REASONING**  
+I want to stay within the emerging norm while still earning enough for my family. Taking 5.0 units is the traditional amount I’ve been taking for 40 years, and it matches what most of the other fishers are doing. Since the stock is under strain, I’ll keep my catch at 5.0 units (or maybe 4.5 if I feel the pressure is higher) so I don’t push the community over the edge.
+
+**HARVEST_AMOUNT**  
+5.0  
+
+**WHAT_YOU_MIGHT_SAY**  
+“Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should all try not to exceed 5.5 so we don’t deplete the stock further. What do you think?”
+--- PARSED (agent_0 tick=1 harvest_decision) ---
+  stock_assessment: The fish are noticeably less abundant this early season – our catch per trip is down compared with the previous year....
+  others_behaviour: - Agents 1, 2, 5, 7 are taking 5, 5, 5, 4 units respectively – roughly the mid‑range.  
+- Agents 4 and 6 are the only...
+  long_term_thinking: If we keep taking 5–6 units per trip for several more seasons while the stock remains low, the cumulative pressure wi...
+  norm_active: yes
+  norm_content: “Everyone should aim for no more than 5.5 units per trip to keep the fishery healthy.”
+  harvest_reasoning: I want to stay within the emerging norm while still earning enough for my family. Taking 5.0 units is the traditional...
+  harvest_amount: 5.0
+  what_you_might_say: “Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should ...
+
+========================================================================
+CALL #30  |  2026-03-31T06:54:58.100908  |  ollama/gpt-oss:20b  |  attempt 1  |  28.536s  |  in=793 out=1305
+========================================================================
+--- PROMPT ---
+You are agent_1, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher in your 40s who has seen catches decline steadily over the past decade. You are not sure how much longer you can continue in this profession.
+
+Current situation:
+The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Last season's harvests:
+  Season 0
+  agent_0: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Your harvest: 5.0 units
+  The stock is under strain — catches per trip are down.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+Given the abundant stock and my uncertainty about how others will behave, I want to balance my own livelihood with 
+Conversations:
+  - [tick 0] [tick 0] I said to agent_5: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] agent_5 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_5: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_5 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We are tentatively agreeing that each of us should aim to keep our individu'
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT**  
+The stock is under strain – catches per trip are lower than last season and the community total of 39 units is already a drop from previous years. It looks like the fish are becoming harder to find.
+
+**OTHERS_BEHAVIOUR**  
+Most fishers are taking about 5 units. Two fishers (agent_4 and agent_6) took 6 units, which is noticeably higher than the others. No one is taking drastically less, but the slight skew toward the higher end could be a concern.
+
+**LONG_TERM_THINKING**  
+If we keep harvesting at these levels, the stock will likely continue to decline. Over several more seasons we could see a further drop in average catch per trip and eventually a collapse of the fishery, leaving us with little to nothing.
+
+**NORM_ACTIVE**  
+forming  
+
+**NORM_CONTENT**  
+"We should aim to keep individual catches around 5 units to protect the stock."
+
+**HARVEST_REASONING**  
+I need to keep my livelihood afloat but also help the stock recover. Reducing my haul slightly will lower pressure on the fish while still giving me a decent catch. I’ll aim for a modest cut.
+
+**HARVEST_AMOUNT**  
+4.0  
+
+**WHAT_YOU_MIGHT_SAY**  
+"Looks like the stock is a bit thinner this year; I’m planning to cut my haul to about 4 units. Maybe we can all keep it around 4‑5 to help it recover."
+--- PARSED (agent_1 tick=1 harvest_decision) ---
+  stock_assessment: The stock is under strain – catches per trip are lower than last season and the community total of 39 units is alread...
+  others_behaviour: Most fishers are taking about 5 units. Two fishers (agent_4 and agent_6) took 6 units, which is noticeably higher tha...
+  long_term_thinking: If we keep harvesting at these levels, the stock will likely continue to decline. Over several more seasons we could ...
+  norm_active: forming
+  norm_content: "We should aim to keep individual catches around 5 units to protect the stock."
+  harvest_reasoning: I need to keep my livelihood afloat but also help the stock recover. Reducing my haul slightly will lower pressure on...
+  harvest_amount: 4.0
+  what_you_might_say: "Looks like the stock is a bit thinner this year; I’m planning to cut my haul to about 4 units. Maybe we can all keep...
+
+========================================================================
+CALL #31  |  2026-03-31T06:55:22.109673  |  ollama/gpt-oss:20b  |  attempt 1  |  24.006s  |  in=779 out=1091
+========================================================================
+--- PROMPT ---
+You are agent_2, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are new to this fishery, having moved here two years ago. You do not yet have the relationships or reputation that long-established fishers have.
+
+Current situation:
+The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Last season's harvests:
+  Season 0
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Your harvest: 5.0 units
+  The stock is under strain — catches per trip are down.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+I want to establish a reputation for responsible fishing and avoid setting a precedent of over‑exploitation. Given 
+Conversations:
+  - [tick 0] [tick 0] agent_7 said to me: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] I said to agent_7: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] agent_7 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_7: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+A tentative agreement that each fisher should aim for a moderate, sustainab'
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT:**  
+The stock is showing signs of strain – catches per trip have dropped compared to previous seasons, and the community total of 39 units for eight fishers indicates a moderate to low biomass. Early‑season data are still limited, but the overall trend suggests we should be cautious.
+
+**OTHERS_BEHAVIOUR:**  
+- Most fishers (agent_0, agent_1, agent_5, and myself) harvested around 5 units.  
+- Two fishers (agent_4 and agent_6) took 6 units, slightly above the average.  
+- One fisher (agent_7) took 4 units, and another (agent_3) took 3 units.  
+No one is over‑exploiting dramatically, but there is a small spread that could signal uneven pressure on the stock.
+
+**LONG_TERM_THINKING:**  
+If the current pattern persists, the stock will likely continue to decline, leading to progressively lower catches for everyone. Without a coordinated effort to reduce pressure, we risk a further drop in biomass that could push the fishery toward a collapse or force stricter limits in future seasons.
+
+**NORM_ACTIVE:**  
+forming
+
+**NORM_CONTENT:**  
+Each fisher should aim for a moderate, sustainable catch, roughly around 5 units per trip.
+
+**HARVEST_REASONING:**  
+Given the forming norm and the stock’s current strain, I will align with the community’s tentative agreement. Harvesting 5 units keeps me within the accepted range, supports the sustainability goal, and reinforces my reputation as a responsible fisher.
+
+**HARVEST_AMOUNT:**  
+5.0
+
+**WHAT_YOU_MIGHT_SAY:**  
+"Let’s keep the shared limit at about 5 units per fisher for now and keep an eye on the stock; it seems like a good balance between sustaining the fishery and maintaining our catches."
+--- PARSED (agent_2 tick=1 harvest_decision) ---
+  stock_assessment: **  
+The stock is showing signs of strain – catches per trip have dropped compared to previous seasons, and the commu...
+  others_behaviour: **  
+- Most fishers (agent_0, agent_1, agent_5, and myself) harvested around 5 units.  
+- Two fishers (agent_4 and ag...
+  long_term_thinking: **  
+If the current pattern persists, the stock will likely continue to decline, leading to progressively lower catch...
+  norm_active: forming
+  norm_content: **  
+Each fisher should aim for a moderate, sustainable catch, roughly around 5 units per trip.
+  harvest_reasoning: **  
+Given the forming norm and the stock’s current strain, I will align with the community’s tentative agreement. Ha...
+  harvest_amount: 5.0
+  what_you_might_say: **  
+"Let’s keep the shared limit at about 5 units per fisher for now and keep an eye on the stock; it seems like a g...
+
+========================================================================
+CALL #32  |  2026-03-31T06:55:56.436288  |  ollama/gpt-oss:20b  |  attempt 1  |  34.324s  |  in=761 out=1582
+========================================================================
+--- PROMPT ---
+You are agent_3, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher who also has income from a land-based job. Fishing supplements your income but is not your only livelihood.
+
+Current situation:
+The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Last season's harvests:
+  Season 0
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Your harvest: 3.0 units
+  The stock is under strain — catches per trip are down.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+Past decisions:
+  - [tick 0] Season 0: I harvested 3.0 units. Reasoning: **  
+I have a land‑based job that provides steady income, so fishing is a supplement rather than a necessity.  Given the
+Conversations:
+  - [tick 0] [tick 0] I said to agent_0: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] agent_0 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_0: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_0 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We should aim for moderate, sustainable individual harvests that keep the s'
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT**  
+The stock is visibly stressed – catches per trip have dropped compared to last season. The community total of 39 units with you at 3 units suggests that most fishers are taking 5–6 units, while a couple are taking even more. This pattern indicates that the stock is under pressure and likely to decline further if current harvesting rates persist.
+
+**OTHERS_BEHAVIOUR**  
+- Two fishers (agent_4 and agent_6) took 6 units each – the highest in the community.  
+- The remaining fishers took 5, 5, and 4 units.  
+- You took 3 units, which is below the community average of about 5 units.  
+Overall, most fishers are harvesting near the upper end of the historical range, with a few taking more than average.
+
+**LONG_TERM_THINKING**  
+If the current harvesting pattern continues, the stock will keep declining. Over several seasons, this could lead to a sharp drop in available fish, forcing everyone to reduce catches further or even causing a collapse of the fishery. This would hurt all fishers, including those who rely on fishing as a supplementary income.
+
+**NORM_ACTIVE**  
+forming  
+
+**NORM_CONTENT**  
+"We should aim for moderate, sustainable individual harvests that keep the stock healthy for future seasons."  
+
+**HARVEST_REASONING**  
+Given that the stock is already under strain and the community is moving toward a norm of moderate harvests, I will keep my catch at a level that supports the fishery while still providing a modest supplement to my land‑based income. Since I already earn a steady income from my other job, I can afford to be a bit conservative. I will harvest the same amount as last season, 3.0 units, to signal cooperation and help the stock recover.
+
+**HARVEST_AMOUNT**  
+3.0  
+
+**WHAT_YOU_MIGHT_SAY**  
+"Hey, I've noticed the catches have been lower lately. I think we should all keep our harvests moderate to help the stock recover. I'm planning to take about 3 units this season."
+--- PARSED (agent_3 tick=1 harvest_decision) ---
+  stock_assessment: The stock is visibly stressed – catches per trip have dropped compared to last season. The community total of 39 unit...
+  others_behaviour: - Two fishers (agent_4 and agent_6) took 6 units each – the highest in the community.  
+- The remaining fishers took ...
+  long_term_thinking: If the current harvesting pattern continues, the stock will keep declining. Over several seasons, this could lead to ...
+  norm_active: forming
+  norm_content: "We should aim for moderate, sustainable individual harvests that keep the stock healthy for future seasons."
+  harvest_reasoning: Given that the stock is already under strain and the community is moving toward a norm of moderate harvests, I will k...
+  harvest_amount: 3.0
+  what_you_might_say: "Hey, I've noticed the catches have been lower lately. I think we should all keep our harvests moderate to help the s...
+
+========================================================================
+CALL #33  |  2026-03-31T06:56:16.152468  |  ollama/gpt-oss:20b  |  attempt 1  |  19.713s  |  in=754 out=887
+========================================================================
+--- PROMPT ---
+You are agent_4, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher who sells to a processor that rewards volume. Larger catches mean better prices and better relationships with your buyer.
+
+Current situation:
+The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Last season's harvests:
+  Season 0
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Your harvest: 6.0 units  ← highest
+  The stock is under strain — catches per trip are down.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I want to maximize volume to secure a good price from the processor, but I also want to avoid over‑exploiting an otherwi
+Conversations:
+  - [tick 0] [tick 0] I said to agent_6: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] agent_6 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_6: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_6 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_6: 'I hear you. Let me think about that.' [statement]
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT:**  
+The stock feels lower than last season—catches per trip are down and this is still early in the season, so the trend is uncertain but the data suggest a strain.
+
+**OTHERS_BEHAVIOUR:**  
+Other fishers are taking 3.0–6.0 units. No one is over‑exploiting; agent_6 is the highest at 6.0, agent_3 the lowest at 3.0. The community is hovering around a 4.5–5.0‑unit average.
+
+**LONG_TERM_THINKING:**  
+If we keep this pattern, the stock will likely keep declining, reducing future harvests and possibly leading to a collapse. A slight reduction now can help preserve the resource for later seasons.
+
+**NORM_ACTIVE:** forming  
+
+**NORM_CONTENT:**  
+“We should all aim for moderate catches around the community average to keep the stock healthy.”
+
+**HARVEST_REASONING:**  
+I’ll take a bit less than the average to signal sustainability while still securing a good volume for the processor. 4.5 units balances these goals.
+
+**HARVEST_AMOUNT:** 4.5  
+
+**WHAT_YOU_MIGHT_SAY:**  
+“Looks like the fish are a bit lower this season; maybe we should all cut back a bit to keep the stock healthy.”
+--- PARSED (agent_4 tick=1 harvest_decision) ---
+  stock_assessment: **  
+The stock feels lower than last season—catches per trip are down and this is still early in the season, so the t...
+  others_behaviour: **  
+Other fishers are taking 3.0–6.0 units. No one is over‑exploiting; agent_6 is the highest at 6.0, agent_3 the lo...
+  long_term_thinking: **  
+If we keep this pattern, the stock will likely keep declining, reducing future harvests and possibly leading to ...
+  norm_active: forming
+  norm_content: **  
+“We should all aim for moderate catches around the community average to keep the stock healthy.”
+  harvest_reasoning: **  
+I’ll take a bit less than the average to signal sustainability while still securing a good volume for the proces...
+  harvest_amount: 4.5
+  what_you_might_say: **  
+“Looks like the fish are a bit lower this season; maybe we should all cut back a bit to keep the stock healthy.”
+
+========================================================================
+CALL #34  |  2026-03-31T06:56:30.481053  |  ollama/gpt-oss:20b  |  attempt 1  |  14.326s  |  in=786 out=627
+========================================================================
+--- PROMPT ---
+You are agent_5, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher with no other skills or income sources. Fishing is the only thing you know. A bad season means real hardship for your household.
+
+Current situation:
+The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Last season's harvests:
+  Season 0
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Your harvest: 5.0 units
+  The stock is under strain — catches per trip are down.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I want to secure a decent income for my family, but I also know that this is a shared resource and the community’s futur
+Conversations:
+  - [tick 0] [tick 0] agent_1 said to me: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT:**  
+The stock is showing early signs of strain – catches per trip are down compared to the previous season, and the community total (39 units) is the lowest I’ve seen. The data are still sparse, but the trend suggests we’re approaching a point where over‑exploitation could push the stock below sustainable levels.
+
+**OTHERS_BEHAVIOUR:**  
+- Agents 0, 1, 2 all caught 5 units, matching my own last season.  
+- Agent 3 only managed 3 units, noticeably lower.  
+- Agents 4 and 6 each harvested 6 units, the highest in the group.  
+- Agent 7 caught 4 units.  
+The pattern is that most of us are around the 5‑unit mark, with a couple of outliers pulling 6 and one pulling 3. No one is drastically over‑harvesting, but the two 6‑unit harvests are a bit of a concern given the already‑strained stock.
+
+**LONG_TERM_THINKING:**  
+If the current pattern (≈5 units for most, a few 6s) continues over several seasons, the cumulative removal will likely keep the stock below the threshold needed for recovery. The community total will decline, and we risk a future season where even a 5‑unit catch becomes impossible, forcing us all to reduce income or leave fishing.
+
+**NORM_ACTIVE:**  
+forming  
+
+**NORM_CONTENT:**  
+We’re collectively leaning toward keeping each catch around 5 units to balance livelihood and sustainability, but the norm is still being negotiated.
+
+**HARVEST_REASONING:**  
+I want to secure a decent income for my family, but I also recognize that the stock is already strained. The majority of my peers are taking about 5 units, and the two 6‑unit harvests are borderline. To help the stock recover while maintaining my livelihood, I’ll stick to the 5‑unit target. This aligns with the emerging norm and keeps the risk of over‑exploitation low.
+
+**HARVEST_AMOUNT:**  
+5.0  
+
+**WHAT_YOU_MIGHT_SAY:**  
+"Hey, I’ve been thinking about how the stock is looking. Most of us are around 5 units, and a couple are pulling 6. Maybe we should keep it at 5 this season to give the fish a chance to rebuild. What do you think?"
+--- PARSED (agent_5 tick=1 harvest_decision) ---
+  stock_assessment: **  
+The stock is showing early signs of strain – catches per trip are down compared to the previous season, and the ...
+  others_behaviour: **  
+- Agents 0, 1, 2 all caught 5 units, matching my own last season.  
+- Agent 3 only managed 3 units, noticeably l...
+  long_term_thinking: **  
+If the current pattern (≈5 units for most, a few 6s) continues over several seasons, the cumulative removal will...
+  norm_active: forming
+  norm_content: **  
+We’re collectively leaning toward keeping each catch around 5 units to balance livelihood and sustainability, bu...
+  harvest_reasoning: **  
+I want to secure a decent income for my family, but I also recognize that the stock is already strained. The maj...
+  harvest_amount: 5.0
+  what_you_might_say: **  
+"Hey, I’ve been thinking about how the stock is looking. Most of us are around 5 units, and a couple are pulling...
+
+========================================================================
+CALL #35  |  2026-03-31T06:56:59.357283  |  ollama/gpt-oss:20b  |  attempt 1  |  28.874s  |  in=760 out=1314
+========================================================================
+--- PROMPT ---
+You are agent_6, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher in your 30s with a boat loan to pay off and two young children. This season's catch determines whether you can make your payments.
+
+Current situation:
+The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Last season's harvests:
+  Season 0
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Your harvest: 6.0 units  ← highest
+  The stock is under strain — catches per trip are down.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I need a substantial catch this season to pay off the boat loan and provide for my two young children.  At the same time
+Conversations:
+  - [tick 0] [tick 0] agent_4 said to me: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+STOCK_ASSESSMENT: The stock is visibly under strain – catches per trip are down compared to last season, and the early‑season data is limited but trending downward.  
+
+OTHERS_BEHAVIOUR: Most fishers (agents 0,1,2,5) are taking about 5 units, one is taking 4 (agent 7), one 3 (agent 3), and two are taking the maximum 6 (agents 4 and 6). The distribution is tight around 5 units with only a couple of outliers.  
+
+LONG_TERM_THINKING: If the current pattern continues for several more seasons, the stock will keep shrinking, leading to progressively lower catches and increasing risk of a collapse that would jeopardize everyone’s livelihoods.  
+
+NORM_ACTIVE: forming  
+
+NORM_CONTENT: “We should keep our harvests around the community average (~5 units) so the stock can recover.”  
+
+HARVEST_REASONING: I need a decent catch to pay off the boat loan and support my children, but I also want to avoid further depleting the stock. A moderate haul that aligns with the community average will satisfy my financial needs while contributing to sustainability.  
+
+HARVEST_AMOUNT: 5.0  
+
+WHAT_YOU_MIGHT_SAY: “Hey, the catches look a bit lower this season. Maybe we should keep our harvests around five units to give the stock a chance to recover. What do you think?”
+--- PARSED (agent_6 tick=1 harvest_decision) ---
+  stock_assessment: The stock is visibly under strain – catches per trip are down compared to last season, and the early‑season data is l...
+  others_behaviour: Most fishers (agents 0,1,2,5) are taking about 5 units, one is taking 4 (agent 7), one 3 (agent 3), and two are takin...
+  long_term_thinking: If the current pattern continues for several more seasons, the stock will keep shrinking, leading to progressively lo...
+  norm_active: forming
+  norm_content: “We should keep our harvests around the community average (~5 units) so the stock can recover.”
+  harvest_reasoning: I need a decent catch to pay off the boat loan and support my children, but I also want to avoid further depleting th...
+  harvest_amount: 5.0
+  what_you_might_say: “Hey, the catches look a bit lower this season. Maybe we should keep our harvests around five units to give the stock...
+
+========================================================================
+CALL #36  |  2026-03-31T06:57:24.877625  |  ollama/gpt-oss:20b  |  attempt 1  |  25.518s  |  in=793 out=1156
+========================================================================
+--- PROMPT ---
+You are agent_7, a fisher who depends on a shared
+fish stock for your livelihood.
+
+You are a fisher in your 50s who owns your boat outright. You have a stable income and fish because it is your livelihood and identity. Your children have left for the city.
+
+Current situation:
+The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Last season's harvests:
+  Season 0
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  Community total: 39.0 units
+  Your harvest: 4.0 units
+  The stock is under strain — catches per trip are down.
+
+You are a known member of this fishing community. Your harvest history is visible to all other fishers, as theirs is to you.
+
+What you remember from past seasons:
+Past decisions:
+  - [tick 0] Season 0: I harvested 4.0 units. Reasoning: I need to keep fishing to sustain my livelihood and identity, but I also want to preserve the stock for the long haul. T
+Conversations:
+  - [tick 0] [tick 0] I said to agent_2: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] agent_2 said to me: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] I said to agent_2: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_2 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: 'We’re beginning to discuss a shared limit of about 4–5 units per fisher per seas'
+
+Reason through your decision step by step:
+
+STOCK_ASSESSMENT: What is your reading of the stock right now?
+OTHERS_BEHAVIOUR: What pattern do you notice in what others are taking? Is anyone taking significantly more or less?
+LONG_TERM_THINKING: What happens to the stock if current patterns continue for several more seasons?
+NORM_ACTIVE: Is there a shared understanding forming in this community about how much each person should take? Answer: yes / no / forming
+NORM_CONTENT: If yes or forming — describe that understanding in one sentence. If no — write "none".
+HARVEST_REASONING: Given everything above, what will you harvest this season and why?
+HARVEST_AMOUNT: [a number between 0.0 and 10.0]
+WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say.
+--- RESPONSE ---
+**STOCK_ASSESSMENT**  
+The stock is visibly under strain – catches per trip are down from last season. The total haul this year was 39 units across 8 fishers, giving an average of 4.9 units per fisher. Our own haul of 4.0 units is below that average, and the two fishers with the highest catches (agents 4 and 6) took 6 units each. The community is already noticing that the stock is being pushed hard.
+
+**OTHERS_BEHAVIOUR**  
+- Most fishers (agents 0, 1, 2, 5) took 5 units – the “middle‑range” haul.  
+- Two fishers (agents 4 and 6) took 6 units – the highest, possibly taking more than the community’s average.  
+- One fisher (agent 3) took only 3 units – the lowest.  
+Overall, the pattern is a cluster around 5 units with a couple of outliers at 6 and one at 3. No one is dramatically over‑exploiting, but the two 6‑unit harvesters are pushing the stock slightly harder than the rest.
+
+**LONG_TERM_THINKING**  
+If the current pattern continues – a mix of 5‑unit averages with a few 6‑unit take‑offs – the stock is likely to stay marginally stressed. Over several seasons, the cumulative effect of the 6‑unit fishers could deplete the stock further, leading to lower catches for everyone. If we all scaled back to 5 or fewer units, the stock would have a better chance of recovering, keeping the catches stable or even improving over time.
+
+**NORM_ACTIVE**  
+Yes.  
+**NORM_CONTENT**  
+“Each fisher should aim to take about 5 units per season to keep the stock healthy and ensure everyone can keep fishing.”
+
+**HARVEST_REASONING**  
+I need to keep my livelihood and identity intact, but I also want to help preserve the stock for future seasons. Since the community is already leaning toward a 5‑unit limit and most of the fishers are already taking that amount, it makes sense to align with the norm. Taking 5 units will keep me in line with the majority, maintain my income, and signal my commitment to a sustainable practice. Taking more would risk further stressing the stock; taking less would unnecessarily reduce my earnings when the norm is already being respected.
+
+**HARVEST_AMOUNT**  
+5.0 units  
+
+**WHAT_YOU_MIGHT_SAY**  
+“Hey, I’ve been thinking about the limit we talked about. I’m planning to take about 5 units this season to keep the stock healthy and stay in line with the rest of the crew. How’s your catch been?”
+--- PARSED (agent_7 tick=1 harvest_decision) ---
+  stock_assessment: The stock is visibly under strain – catches per trip are down from last season. The total haul this year was 39 units...
+  others_behaviour: - Most fishers (agents 0, 1, 2, 5) took 5 units – the “middle‑range” haul.  
+- Two fishers (agents 4 and 6) took 6 un...
+  long_term_thinking: If the current pattern continues – a mix of 5‑unit averages with a few 6‑unit take‑offs – the stock is likely to stay...
+  norm_active: yes
+  norm_content: “Each fisher should aim to take about 5 units per season to keep the stock healthy and ensure everyone can keep fishi...
+  harvest_reasoning: I need to keep my livelihood and identity intact, but I also want to help preserve the stock for future seasons. Sinc...
+  harvest_amount: 5.0
+  what_you_might_say: “Hey, I’ve been thinking about the limit we talked about. I’m planning to take about 5 units this season to keep the ...
+
+========================================================================
+CALL #37  |  2026-03-31T06:57:29.584156  |  ollama/gpt-oss:20b  |  attempt 1  |  4.703s  |  in=859 out=160
+========================================================================
+--- PROMPT ---
+You are agent_2, a fisher having a conversation with agent_4.
+
+You are new to this fishery, having moved here two years ago. You do not yet have the relationships or reputation that long-established fishers have.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_4 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+I want to establish a reputation for responsible fishing and avoid setting a precedent of over‑exploitation. Given 
+Conversations:
+  - [tick 0] [tick 0] agent_7 said to me: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] I said to agent_7: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] agent_7 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_7: 'I hear you. Let me think about that.' [statement]
+  - [tick 1] [tick 1] agent_4 said to me: '“Looks like the fish are a bit lower this season; maybe we should all cut back a bit to keep the stock healthy.”' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+A tentative agreement that each fisher should aim for a moderate, sustainab'
+  - [tick 1] Season 1: I believed a norm was forming: '**  
+Each fisher should aim for a moderate, sustainable catch, roughly around 5 '
+
+Current conversation:
+agent_4: “Looks like the fish are a bit lower this season; maybe we should all cut back a bit to keep the stock healthy.”
+
+What do you say next to agent_4?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #38  |  2026-03-31T06:57:34.274841  |  ollama/gpt-oss:20b  |  attempt 1  |  4.689s  |  in=845 out=160
+========================================================================
+--- PROMPT ---
+You are agent_4, a fisher having a conversation with agent_2.
+
+You are a fisher who sells to a processor that rewards volume. Larger catches mean better prices and better relationships with your buyer.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_2 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I want to maximize volume to secure a good price from the processor, but I also want to avoid over‑exploiting an otherwi
+  - [tick 1] Season 1: I harvested 4.5 units. Reasoning: **  
+I’ll take a bit less than the average to signal sustainability while still securing a good volume for the processor
+Conversations:
+  - [tick 0] [tick 0] I said to agent_6: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] agent_6 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_6: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_6 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_6: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was forming: '**  
+“We should all aim for moderate catches around the community average to kee'
+
+Current conversation:
+agent_4: “Looks like the fish are a bit lower this season; maybe we should all cut back a bit to keep the stock healthy.”
+agent_2: I hear you. Let me think about that.
+
+What do you say next to agent_2?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #39  |  2026-03-31T06:57:37.937581  |  ollama/gpt-oss:20b  |  attempt 1  |  3.661s  |  in=887 out=109
+========================================================================
+--- PROMPT ---
+You are agent_2, a fisher having a conversation with agent_4.
+
+You are new to this fishery, having moved here two years ago. You do not yet have the relationships or reputation that long-established fishers have.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_4 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+I want to establish a reputation for responsible fishing and avoid setting a precedent of over‑exploitation. Given 
+Conversations:
+  - [tick 0] [tick 0] agent_7 said to me: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] I said to agent_7: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] agent_7 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_7: 'I hear you. Let me think about that.' [statement]
+  - [tick 1] [tick 1] agent_4 said to me: '“Looks like the fish are a bit lower this season; maybe we should all cut back a bit to keep the stock healthy.”' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+A tentative agreement that each fisher should aim for a moderate, sustainab'
+  - [tick 1] Season 1: I believed a norm was forming: '**  
+Each fisher should aim for a moderate, sustainable catch, roughly around 5 '
+
+Current conversation:
+agent_4: “Looks like the fish are a bit lower this season; maybe we should all cut back a bit to keep the stock healthy.”
+agent_2: I hear you. Let me think about that.
+agent_4: I hear you. Let me think about that.
+
+What do you say next to agent_4?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+We should set a limit of 4.5 units per fisher this season to keep the stock healthy. That way we all stay below the critical threshold.
+
+SPEECH_ACT: proposal
+
+========================================================================
+CALL #40  |  2026-03-31T06:57:42.691097  |  ollama/gpt-oss:20b  |  attempt 1  |  4.751s  |  in=915 out=160
+========================================================================
+--- PROMPT ---
+You are agent_4, a fisher having a conversation with agent_2.
+
+You are a fisher who sells to a processor that rewards volume. Larger catches mean better prices and better relationships with your buyer.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_2 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I want to maximize volume to secure a good price from the processor, but I also want to avoid over‑exploiting an otherwi
+  - [tick 1] Season 1: I harvested 4.5 units. Reasoning: **  
+I’ll take a bit less than the average to signal sustainability while still securing a good volume for the processor
+Conversations:
+  - [tick 1] [tick 1] agent_2 said to me: 'We should set a limit of 4.5 units per fisher this season to keep the stock healthy. That way we all stay below the critical threshold.' [proposal]
+  - [tick 0] [tick 0] I said to agent_6: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] agent_6 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_6: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_6 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was forming: '**  
+“We should all aim for moderate catches around the community average to kee'
+
+Current conversation:
+agent_4: “Looks like the fish are a bit lower this season; maybe we should all cut back a bit to keep the stock healthy.”
+agent_2: I hear you. Let me think about that.
+agent_4: I hear you. Let me think about that.
+agent_2: We should set a limit of 4.5 units per fisher this season to keep the stock healthy. That way we all stay below the critical threshold.
+
+What do you say next to agent_2?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #41  |  2026-03-31T06:57:47.456879  |  ollama/gpt-oss:20b  |  attempt 1  |  4.764s  |  in=940 out=160
+========================================================================
+--- PROMPT ---
+You are agent_2, a fisher having a conversation with agent_4.
+
+You are new to this fishery, having moved here two years ago. You do not yet have the relationships or reputation that long-established fishers have.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_4 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+I want to establish a reputation for responsible fishing and avoid setting a precedent of over‑exploitation. Given 
+Conversations:
+  - [tick 0] [tick 0] agent_7 said to me: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 1] [tick 1] I said to agent_4: 'We should set a limit of 4.5 units per fisher this season to keep the stock healthy. That way we all stay below the critical threshold.' [proposal]
+  - [tick 0] [tick 0] I said to agent_7: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] agent_7 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_7: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+A tentative agreement that each fisher should aim for a moderate, sustainab'
+  - [tick 1] Season 1: I believed a norm was forming: '**  
+Each fisher should aim for a moderate, sustainable catch, roughly around 5 '
+
+Current conversation:
+agent_4: “Looks like the fish are a bit lower this season; maybe we should all cut back a bit to keep the stock healthy.”
+agent_2: I hear you. Let me think about that.
+agent_4: I hear you. Let me think about that.
+agent_2: We should set a limit of 4.5 units per fisher this season to keep the stock healthy. That way we all stay below the critical threshold.
+agent_4: I hear you. Let me think about that.
+
+What do you say next to agent_4?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #42  |  2026-03-31T06:57:52.132892  |  ollama/gpt-oss:20b  |  attempt 1  |  4.674s  |  in=859 out=160
+========================================================================
+--- PROMPT ---
+You are agent_6, a fisher having a conversation with agent_3.
+
+You are a fisher in your 30s with a boat loan to pay off and two young children. This season's catch determines whether you can make your payments.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_3 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I need a substantial catch this season to pay off the boat loan and provide for my two young children.  At the same time
+  - [tick 1] Season 1: I harvested 5.0 units. Reasoning: I need a decent catch to pay off the boat loan and support my children, but I also want to avoid further depleting the s
+Conversations:
+  - [tick 0] [tick 0] agent_4 said to me: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was forming: '“We should keep our harvests around the community average (~5 units) so the stoc'
+
+Current conversation:
+agent_3: Hey, I've noticed the catches have been lower lately. I think we should all keep our harvests moderate to help the stock recover. I'm planning to take about 3 units this season.
+
+What do you say next to agent_3?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #43  |  2026-03-31T06:57:56.834880  |  ollama/gpt-oss:20b  |  attempt 1  |  4.7s  |  in=876 out=160
+========================================================================
+--- PROMPT ---
+You are agent_3, a fisher having a conversation with agent_6.
+
+You are a fisher who also has income from a land-based job. Fishing supplements your income but is not your only livelihood.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_6 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 3.0 units. Reasoning: **  
+I have a land‑based job that provides steady income, so fishing is a supplement rather than a necessity.  Given the
+Conversations:
+  - [tick 0] [tick 0] I said to agent_0: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] agent_0 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_0: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_0 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 1] [tick 1] I said to agent_6: 'Hey, I've noticed the catches have been lower lately. I think we should all keep our harvests moderate to help the stock recover. I'm planning to take about 3 units this season.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We should aim for moderate, sustainable individual harvests that keep the s'
+  - [tick 1] Season 1: I believed a norm was forming: '"We should aim for moderate, sustainable individual harvests that keep the stock'
+
+Current conversation:
+agent_3: Hey, I've noticed the catches have been lower lately. I think we should all keep our harvests moderate to help the stock recover. I'm planning to take about 3 units this season.
+agent_6: I hear you. Let me think about that.
+
+What do you say next to agent_6?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #44  |  2026-03-31T06:58:01.555228  |  ollama/gpt-oss:20b  |  attempt 1  |  4.718s  |  in=887 out=160
+========================================================================
+--- PROMPT ---
+You are agent_6, a fisher having a conversation with agent_3.
+
+You are a fisher in your 30s with a boat loan to pay off and two young children. This season's catch determines whether you can make your payments.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_3 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I need a substantial catch this season to pay off the boat loan and provide for my two young children.  At the same time
+  - [tick 1] Season 1: I harvested 5.0 units. Reasoning: I need a decent catch to pay off the boat loan and support my children, but I also want to avoid further depleting the s
+Conversations:
+  - [tick 0] [tick 0] agent_4 said to me: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was forming: '“We should keep our harvests around the community average (~5 units) so the stoc'
+
+Current conversation:
+agent_3: Hey, I've noticed the catches have been lower lately. I think we should all keep our harvests moderate to help the stock recover. I'm planning to take about 3 units this season.
+agent_6: I hear you. Let me think about that.
+agent_3: I hear you. Let me think about that.
+
+What do you say next to agent_3?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #45  |  2026-03-31T06:58:06.319964  |  ollama/gpt-oss:20b  |  attempt 1  |  4.763s  |  in=904 out=160
+========================================================================
+--- PROMPT ---
+You are agent_3, a fisher having a conversation with agent_6.
+
+You are a fisher who also has income from a land-based job. Fishing supplements your income but is not your only livelihood.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_6 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 3.0 units. Reasoning: **  
+I have a land‑based job that provides steady income, so fishing is a supplement rather than a necessity.  Given the
+Conversations:
+  - [tick 0] [tick 0] I said to agent_0: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] agent_0 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_0: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_0 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 1] [tick 1] I said to agent_6: 'Hey, I've noticed the catches have been lower lately. I think we should all keep our harvests moderate to help the stock recover. I'm planning to take about 3 units this season.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We should aim for moderate, sustainable individual harvests that keep the s'
+  - [tick 1] Season 1: I believed a norm was forming: '"We should aim for moderate, sustainable individual harvests that keep the stock'
+
+Current conversation:
+agent_3: Hey, I've noticed the catches have been lower lately. I think we should all keep our harvests moderate to help the stock recover. I'm planning to take about 3 units this season.
+agent_6: I hear you. Let me think about that.
+agent_3: I hear you. Let me think about that.
+agent_6: I hear you. Let me think about that.
+
+What do you say next to agent_6?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #46  |  2026-03-31T06:58:11.106157  |  ollama/gpt-oss:20b  |  attempt 1  |  4.784s  |  in=915 out=160
+========================================================================
+--- PROMPT ---
+You are agent_6, a fisher having a conversation with agent_3.
+
+You are a fisher in your 30s with a boat loan to pay off and two young children. This season's catch determines whether you can make your payments.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_3 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 6.0 units. Reasoning: I need a substantial catch this season to pay off the boat loan and provide for my two young children.  At the same time
+  - [tick 1] Season 1: I harvested 5.0 units. Reasoning: I need a decent catch to pay off the boat loan and support my children, but I also want to avoid further depleting the s
+Conversations:
+  - [tick 0] [tick 0] agent_4 said to me: 'Looks like the fish are plenty today; I'm planning a decent haul, but let's keep an eye on the numbers for next season.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_4: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_4 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was forming: '“We should keep our harvests around the community average (~5 units) so the stoc'
+
+Current conversation:
+agent_3: Hey, I've noticed the catches have been lower lately. I think we should all keep our harvests moderate to help the stock recover. I'm planning to take about 3 units this season.
+agent_6: I hear you. Let me think about that.
+agent_3: I hear you. Let me think about that.
+agent_6: I hear you. Let me think about that.
+agent_3: I hear you. Let me think about that.
+
+What do you say next to agent_3?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #47  |  2026-03-31T06:58:15.863154  |  ollama/gpt-oss:20b  |  attempt 1  |  4.754s  |  in=882 out=160
+========================================================================
+--- PROMPT ---
+You are agent_5, a fisher having a conversation with agent_1.
+
+You are a fisher with no other skills or income sources. Fishing is the only thing you know. A bad season means real hardship for your household.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_1 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I want to secure a decent income for my family, but I also know that this is a shared resource and the community’s futur
+  - [tick 1] Season 1: I harvested 5.0 units. Reasoning: **  
+I want to secure a decent income for my family, but I also recognize that the stock is already strained. The majori
+Conversations:
+  - [tick 0] [tick 0] agent_1 said to me: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was forming: '**  
+We’re collectively leaning toward keeping each catch around 5 units to bala'
+
+Current conversation:
+agent_1: Looks like the stock is a bit thinner this year; I’m planning to cut my haul to about 4 units. Maybe we can all keep it around 4‑5 to help it recover.
+
+What do you say next to agent_1?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #48  |  2026-03-31T06:58:20.674448  |  ollama/gpt-oss:20b  |  attempt 1  |  4.808s  |  in=914 out=160
+========================================================================
+--- PROMPT ---
+You are agent_1, a fisher having a conversation with agent_5.
+
+You are a fisher in your 40s who has seen catches decline steadily over the past decade. You are not sure how much longer you can continue in this profession.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_5 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+Given the abundant stock and my uncertainty about how others will behave, I want to balance my own livelihood with 
+Conversations:
+  - [tick 0] [tick 0] I said to agent_5: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] agent_5 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_5: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_5 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 1] [tick 1] I said to agent_5: 'Looks like the stock is a bit thinner this year; I’m planning to cut my haul to about 4 units. Maybe we can all keep it around 4‑5 to help it recover.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We are tentatively agreeing that each of us should aim to keep our individu'
+  - [tick 1] Season 1: I believed a norm was forming: '"We should aim to keep individual catches around 5 units to protect the stock."'
+
+Current conversation:
+agent_1: Looks like the stock is a bit thinner this year; I’m planning to cut my haul to about 4 units. Maybe we can all keep it around 4‑5 to help it recover.
+agent_5: I hear you. Let me think about that.
+
+What do you say next to agent_5?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #49  |  2026-03-31T06:58:25.476391  |  ollama/gpt-oss:20b  |  attempt 1  |  4.799s  |  in=910 out=160
+========================================================================
+--- PROMPT ---
+You are agent_5, a fisher having a conversation with agent_1.
+
+You are a fisher with no other skills or income sources. Fishing is the only thing you know. A bad season means real hardship for your household.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_1 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I want to secure a decent income for my family, but I also know that this is a shared resource and the community’s futur
+  - [tick 1] Season 1: I harvested 5.0 units. Reasoning: **  
+I want to secure a decent income for my family, but I also recognize that the stock is already strained. The majori
+Conversations:
+  - [tick 0] [tick 0] agent_1 said to me: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was forming: '**  
+We’re collectively leaning toward keeping each catch around 5 units to bala'
+
+Current conversation:
+agent_1: Looks like the stock is a bit thinner this year; I’m planning to cut my haul to about 4 units. Maybe we can all keep it around 4‑5 to help it recover.
+agent_5: I hear you. Let me think about that.
+agent_1: I hear you. Let me think about that.
+
+What do you say next to agent_1?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #50  |  2026-03-31T06:58:30.322529  |  ollama/gpt-oss:20b  |  attempt 1  |  4.845s  |  in=942 out=160
+========================================================================
+--- PROMPT ---
+You are agent_1, a fisher having a conversation with agent_5.
+
+You are a fisher in your 40s who has seen catches decline steadily over the past decade. You are not sure how much longer you can continue in this profession.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_5 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: **  
+Given the abundant stock and my uncertainty about how others will behave, I want to balance my own livelihood with 
+Conversations:
+  - [tick 0] [tick 0] I said to agent_5: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] agent_5 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_5: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_5 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 1] [tick 1] I said to agent_5: 'Looks like the stock is a bit thinner this year; I’m planning to cut my haul to about 4 units. Maybe we can all keep it around 4‑5 to help it recover.' [statement]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: '**  
+We are tentatively agreeing that each of us should aim to keep our individu'
+  - [tick 1] Season 1: I believed a norm was forming: '"We should aim to keep individual catches around 5 units to protect the stock."'
+
+Current conversation:
+agent_1: Looks like the stock is a bit thinner this year; I’m planning to cut my haul to about 4 units. Maybe we can all keep it around 4‑5 to help it recover.
+agent_5: I hear you. Let me think about that.
+agent_1: I hear you. Let me think about that.
+agent_5: I hear you. Let me think about that.
+
+What do you say next to agent_5?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #51  |  2026-03-31T06:58:35.190757  |  ollama/gpt-oss:20b  |  attempt 1  |  4.867s  |  in=938 out=160
+========================================================================
+--- PROMPT ---
+You are agent_5, a fisher having a conversation with agent_1.
+
+You are a fisher with no other skills or income sources. Fishing is the only thing you know. A bad season means real hardship for your household.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_1 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I want to secure a decent income for my family, but I also know that this is a shared resource and the community’s futur
+  - [tick 1] Season 1: I harvested 5.0 units. Reasoning: **  
+I want to secure a decent income for my family, but I also recognize that the stock is already strained. The majori
+Conversations:
+  - [tick 0] [tick 0] agent_1 said to me: 'Looks like the stock is doing great this year.  I'm planning to keep my catch around 5 units so we can all stay safe and still make a decent haul.  Let's keep an eye on each other’s catches and make sure we don’t push it too hard.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_1: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_1 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was forming: '**  
+We’re collectively leaning toward keeping each catch around 5 units to bala'
+
+Current conversation:
+agent_1: Looks like the stock is a bit thinner this year; I’m planning to cut my haul to about 4 units. Maybe we can all keep it around 4‑5 to help it recover.
+agent_5: I hear you. Let me think about that.
+agent_1: I hear you. Let me think about that.
+agent_5: I hear you. Let me think about that.
+agent_1: I hear you. Let me think about that.
+
+What do you say next to agent_1?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #52  |  2026-03-31T06:58:40.036293  |  ollama/gpt-oss:20b  |  attempt 1  |  4.844s  |  in=932 out=160
+========================================================================
+--- PROMPT ---
+You are agent_7, a fisher having a conversation with agent_0.
+
+You are a fisher in your 50s who owns your boat outright. You have a stable income and fish because it is your livelihood and identity. Your children have left for the city.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_0 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 4.0 units. Reasoning: I need to keep fishing to sustain my livelihood and identity, but I also want to preserve the stock for the long haul. T
+Conversations:
+  - [tick 0] [tick 0] I said to agent_2: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] agent_2 said to me: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] I said to agent_2: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_2 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 1] [tick 1] agent_0 said to me: '“Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should all try not to exceed 5.5 so we don’t deplete the stock further. What do you think?”' [question]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: 'We’re beginning to discuss a shared limit of about 4–5 units per fisher per seas'
+  - [tick 1] Season 1: I believed a norm was yes: '“Each fisher should aim to take about 5 units per season to keep the stock healt'
+
+Current conversation:
+agent_0: “Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should all try not to exceed 5.5 so we don’t deplete the stock further. What do you think?”
+
+What do you say next to agent_0?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #53  |  2026-03-31T06:58:44.844335  |  ollama/gpt-oss:20b  |  attempt 1  |  4.806s  |  in=899 out=160
+========================================================================
+--- PROMPT ---
+You are agent_0, a fisher having a conversation with agent_7.
+
+You are one of the oldest fishers in this community. You have fished here for 40 years and have seen many changes in the stock and in who fishes here.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_7 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I’ll take a moderate amount (around 5.0 out of 10.0) to benefit from the good stock while also preserving enough for fut
+  - [tick 1] Season 1: I harvested 5.0 units. Reasoning: I want to stay within the emerging norm while still earning enough for my family. Taking 5.0 units is the traditional am
+Conversations:
+  - [tick 0] [tick 0] agent_3 said to me: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] I said to agent_3: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_3 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_3: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_3 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was yes: '“Everyone should aim for no more than 5.5 units per trip to keep the fishery hea'
+
+Current conversation:
+agent_0: “Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should all try not to exceed 5.5 so we don’t deplete the stock further. What do you think?”
+agent_7: I hear you. Let me think about that.
+
+What do you say next to agent_7?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #54  |  2026-03-31T06:58:49.746793  |  ollama/gpt-oss:20b  |  attempt 1  |  4.9s  |  in=960 out=160
+========================================================================
+--- PROMPT ---
+You are agent_7, a fisher having a conversation with agent_0.
+
+You are a fisher in your 50s who owns your boat outright. You have a stable income and fish because it is your livelihood and identity. Your children have left for the city.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_0 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 4.0 units. Reasoning: I need to keep fishing to sustain my livelihood and identity, but I also want to preserve the stock for the long haul. T
+Conversations:
+  - [tick 0] [tick 0] I said to agent_2: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] agent_2 said to me: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] I said to agent_2: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_2 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 1] [tick 1] agent_0 said to me: '“Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should all try not to exceed 5.5 so we don’t deplete the stock further. What do you think?”' [question]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: 'We’re beginning to discuss a shared limit of about 4–5 units per fisher per seas'
+  - [tick 1] Season 1: I believed a norm was yes: '“Each fisher should aim to take about 5 units per season to keep the stock healt'
+
+Current conversation:
+agent_0: “Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should all try not to exceed 5.5 so we don’t deplete the stock further. What do you think?”
+agent_7: I hear you. Let me think about that.
+agent_0: I hear you. Let me think about that.
+
+What do you say next to agent_0?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #55  |  2026-03-31T06:58:54.595517  |  ollama/gpt-oss:20b  |  attempt 1  |  4.846s  |  in=927 out=160
+========================================================================
+--- PROMPT ---
+You are agent_0, a fisher having a conversation with agent_7.
+
+You are one of the oldest fishers in this community. You have fished here for 40 years and have seen many changes in the stock and in who fishes here.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_7 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 5.0 units. Reasoning: I’ll take a moderate amount (around 5.0 out of 10.0) to benefit from the good stock while also preserving enough for fut
+  - [tick 1] Season 1: I harvested 5.0 units. Reasoning: I want to stay within the emerging norm while still earning enough for my family. Taking 5.0 units is the traditional am
+Conversations:
+  - [tick 0] [tick 0] agent_3 said to me: 'Hey, looks like the stock is doing well today—let’s keep our catches moderate so we can all enjoy a healthy fishery next year.' [statement]
+  - [tick 0] [tick 0] I said to agent_3: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_3 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] I said to agent_3: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_3 said to me: 'I hear you. Let me think about that.' [statement]
+Norm beliefs:
+  - [tick 1] Season 1: I believed a norm was yes: '“Everyone should aim for no more than 5.5 units per trip to keep the fishery hea'
+
+Current conversation:
+agent_0: “Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should all try not to exceed 5.5 so we don’t deplete the stock further. What do you think?”
+agent_7: I hear you. Let me think about that.
+agent_0: I hear you. Let me think about that.
+agent_7: I hear you. Let me think about that.
+
+What do you say next to agent_7?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
+
+========================================================================
+CALL #56  |  2026-03-31T06:58:59.537163  |  ollama/gpt-oss:20b  |  attempt 1  |  4.94s  |  in=988 out=160
+========================================================================
+--- PROMPT ---
+You are agent_7, a fisher having a conversation with agent_0.
+
+You are a fisher in your 50s who owns your boat outright. You have a stable income and fish because it is your livelihood and identity. Your children have left for the city.
+
+Current situation: The stock is under strain — catches per trip are down. This is an early season — trend data is limited. There are 8 fishers sharing this stock.
+
+Harvest history across all seasons so far:
+Season 0:
+  agent_0: 5.0 units
+  agent_1: 5.0 units
+  agent_2: 5.0 units
+  agent_3: 3.0 units
+  agent_4: 6.0 units  ← highest
+  agent_5: 5.0 units
+  agent_6: 6.0 units  ← highest
+  agent_7: 4.0 units
+  Community total: 39.0 units
+  Stock after: under strain
+
+Season 1:
+  agent_0: 5.0 units  ← highest
+  agent_1: 4.0 units
+  agent_2: 5.0 units  ← highest
+  agent_3: 3.0 units
+  agent_4: 4.5 units
+  agent_5: 5.0 units  ← highest
+  agent_6: 5.0 units  ← highest
+  agent_7: 5.0 units  ← highest
+  Community total: 36.5 units
+  Stock after: critically low
+
+What you remember about agent_0 and past conversations with them:
+Past decisions:
+  - [tick 0] Season 0: I harvested 4.0 units. Reasoning: I need to keep fishing to sustain my livelihood and identity, but I also want to preserve the stock for the long haul. T
+Conversations:
+  - [tick 0] [tick 0] I said to agent_2: 'Looks like a good season, plenty of fish out there. Let's keep an eye on our catches and talk about a shared limit soon.' [proposal]
+  - [tick 0] [tick 0] agent_2 said to me: 'I agree, let's set a shared limit of 5 units per fisher this season. That keeps the stock healthy and shows we’re all' [statement]
+  - [tick 0] [tick 0] I said to agent_2: 'I hear you. Let me think about that.' [statement]
+  - [tick 0] [tick 0] agent_2 said to me: 'I hear you. Let me think about that.' [statement]
+  - [tick 1] [tick 1] agent_0 said to me: '“Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should all try not to exceed 5.5 so we don’t deplete the stock further. What do you think?”' [question]
+Norm beliefs:
+  - [tick 0] Season 0: I believed a norm was forming: 'We’re beginning to discuss a shared limit of about 4–5 units per fisher per seas'
+  - [tick 1] Season 1: I believed a norm was yes: '“Each fisher should aim to take about 5 units per season to keep the stock healt'
+
+Current conversation:
+agent_0: “Hey, I’ve noticed the catches are a bit lower this year. I’m planning to stay around 5 units, but I think we should all try not to exceed 5.5 so we don’t deplete the stock further. What do you think?”
+agent_7: I hear you. Let me think about that.
+agent_0: I hear you. Let me think about that.
+agent_7: I hear you. Let me think about that.
+agent_0: I hear you. Let me think about that.
+
+What do you say next to agent_0?
+Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
+Be direct. If you have said everything you needed to say, close the conversation naturally.
+
+Then on a new line write exactly:
+SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
+--- RESPONSE ---
+
