@@ -3,15 +3,17 @@ Orchestrates the full simulation using a LangGraph state machine.
 
 Block structure (configurable via seasons_per_reflection):
   Repeat N times:
-    Phase A — all agents harvest simultaneously
+    Phase A — all agents harvest simultaneously (or skip if fishery closed)
     Phase B — apply harvests, update environment
-    Phase C — communication window (condition-dependent)
-    Phase E — log tick
+    Phase C — communication window (condition-dependent; skip if closed)
+    Phase E — log tick, advance counters
   Then once:
-    Phase D — every agent reflects (one reflection each)
-  Then: END
+    Phase D — every agent reflects (one call each)
+  → END
 
-The simulation stops after this single reflection round.
+There is no early termination on stock collapse. A collapse triggers a
+2-season closed period recorded in history; then stock resets and
+fishing resumes. The simulation always completes its full block.
 """
 import os
 import random
@@ -39,7 +41,7 @@ def pair_communicators(
     """
     Returns (initiator, responder) pairs for this tick.
     Each agent appears at most once. At most N//2 pairs.
-    Weighted by inverse prior-interaction count (prefer fresh pairings).
+    Weighted by inverse prior-interaction count.
     """
     would_say = [
         aid for aid, cot in decisions.items()
@@ -49,7 +51,6 @@ def pair_communicators(
     random.shuffle(would_say)
 
     used, pairs = set(), []
-
     for initiator_id in would_say:
         if initiator_id in used:
             continue
@@ -59,7 +60,6 @@ def pair_communicators(
         ]
         if not candidates:
             break
-
         weights = [
             1.0 / (1 + interaction_counts.get(initiator_id, {}).get(c, 0))
             for c in candidates
@@ -105,15 +105,15 @@ def identify_conversation_type(turns: list) -> str:
 
 class SimState(TypedDict):
     # ── Configuration (set once) ──────────────────────────────────
-    seasons_per_reflection: int   # how many season+discuss cycles per block
+    seasons_per_reflection: int
     condition: str
     enable_communication: bool
 
     # ── Counters ──────────────────────────────────────────────────
     tick: int              # absolute season number (ever-incrementing)
-    season_in_block: int   # resets to 0 after each reflection
+    season_in_block: int   # how many seasons completed in current block
 
-    # ── Mutable simulation objects (Python reference semantics) ───
+    # ── Mutable simulation objects ────────────────────────────────
     agents: Any            # dict[str, FisheryAgent]
     env: Any               # FisheryEnvironment
     dialogue_engine: Any   # DialogueEngine
@@ -121,12 +121,12 @@ class SimState(TypedDict):
 
     # ── Per-season data ───────────────────────────────────────────
     world_nl: str
-    decisions: dict        # agent_id -> cot output dict
-    actual_yields: dict    # agent_id -> float
-    last_harvests: dict    # agent_id -> float (previous season's amounts)
-    interaction_counts: dict  # agent_id -> {other_id: int}
+    decisions: dict
+    actual_yields: dict
+    last_harvests: dict
+    last_season_label: str
+    interaction_counts: dict
     dialogue_records: list
-    collapsed: bool
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -134,17 +134,29 @@ class SimState(TypedDict):
 # ─────────────────────────────────────────────────────────────────
 
 def phase_a_harvest(state: SimState) -> dict:
-    """Phase A: All agents decide simultaneously. No results visible yet."""
-    env          = state["env"]
-    agents       = state["agents"]
-    tick         = state["tick"]
+    """
+    Phase A: All agents decide simultaneously.
+
+    If the fishery is in a closed season (recovering from collapse),
+    agents still observe the situation but submit 0.0 harvests — their
+    CoT reasoning will reflect on the collapse and the closed fishery.
+    The environment's apply_harvests() handles 0-yield correctly.
+    """
+    env           = state["env"]
+    agents        = state["agents"]
+    tick          = state["tick"]
     last_harvests = state["last_harvests"]
 
-    world_nl  = env.natural_language_state()
-    decisions = {}
+    world_nl           = env.natural_language_state()
+    harvest_history_nl = env.format_harvest_history(last_n=5)
+    decisions          = {}
+
+    last_season_label = state.get("last_season_label", "")
 
     for agent_id, agent in agents.items():
         obs = env.get_observation_for(agent_id, last_harvests)
+        obs["harvest_history_nl"]  = harvest_history_nl   # injected here
+        obs["last_season_label"]   = last_season_label
         cot = agent.decide(obs, world_nl)
         decisions[agent_id] = cot
 
@@ -156,37 +168,64 @@ def phase_b_apply(state: SimState) -> dict:
     env       = state["env"]
     decisions = state["decisions"]
 
-    harvests     = {aid: cot["harvest_amount"] for aid, cot in decisions.items()}
+    harvests      = {aid: cot["harvest_amount"] for aid, cot in decisions.items()}
     actual_yields = env.apply_harvests(harvests)
 
+    # Derive label from the last actual (non-closed) history entry so that
+    # after a mid-year collapse the label matches the data (not tick-1).
+    history     = env.state.harvest_history
+    last_actual = next(
+        (h for h in reversed(history) if not h.get("closed_season", False)),
+        None,
+    )
+    if last_actual is not None:
+        last_season_label = FisheryEnvironment.season_label(last_actual["tick"])
+        # Use actual yields from that entry so amounts match the label
+        last_harvests = {
+            aid: last_actual["actual"].get(aid, 0.0) for aid in harvests
+        }
+    else:
+        last_season_label = ""
+        last_harvests = harvests
+
     return {
-        "actual_yields":  actual_yields,
-        "last_harvests":  harvests,
-        "collapsed":      env.state.collapsed,
+        "actual_yields":    actual_yields,
+        "last_harvests":    last_harvests,
+        "last_season_label": last_season_label,
     }
 
 
 def phase_c_communicate(state: SimState) -> dict:
-    """Phase C: Communication window (only for eligible conditions)."""
-    if not state["enable_communication"]:
+    """
+    Phase C: Communication window.
+    Skipped during closed seasons — no communal fishing activity.
+    """
+    env = state["env"]
+
+    # Skip if fishery was collapsed BEFORE this phase-b applied
+    # (env.state.collapsed reflects post-harvest state of NEXT tick now,
+    #  so check via last_harvests being all-zero as proxy)
+    last = state.get("last_harvests", {})
+    fishery_was_closed = all(v == 0.0 for v in last.values()) if last else False
+
+    if not state["enable_communication"] or fishery_was_closed:
         return {"dialogue_records": []}
 
-    agents            = state["agents"]
-    dialogue_engine   = state["dialogue_engine"]
-    decisions         = state["decisions"]
+    agents             = state["agents"]
+    dialogue_engine    = state["dialogue_engine"]
+    decisions          = state["decisions"]
     interaction_counts = state["interaction_counts"]
-    world_nl          = state["world_nl"]
-    tick              = state["tick"]
-    env               = state["env"]
+    world_nl           = state["world_nl"]
+    tick               = state["tick"]
 
-    # Build harvest history string for injection into dialogue prompts
     harvest_history_nl = env.format_harvest_history(last_n=8)
-
-    pairs = pair_communicators(decisions, interaction_counts, list(agents.keys()))
-    dialogue_records = []
+    pairs              = pair_communicators(decisions, interaction_counts, list(agents.keys()))
+    dialogue_records   = []
 
     for initiator_id, responder_id in pairs:
         opening = decisions[initiator_id]["what_you_might_say"]
+        if not opening or opening.strip().lower() in {"nothing", "none"}:
+            continue
 
         turns = dialogue_engine.run(
             initiator_id=initiator_id,
@@ -225,16 +264,15 @@ def phase_c_communicate(state: SimState) -> dict:
         interaction_counts[initiator_id][responder_id] = prev + 1
 
     return {
-        "dialogue_records":    dialogue_records,
-        "interaction_counts":  interaction_counts,
+        "dialogue_records":   dialogue_records,
+        "interaction_counts": interaction_counts,
     }
 
 
 def phase_d_reflect(state: SimState) -> dict:
     """
     Phase D: One reflection call for every agent.
-    Fired once per block (after seasons_per_reflection seasons).
-    Not threshold-driven — every agent reflects unconditionally.
+    Always fires exactly once at end of the block.
     """
     tick = state["tick"]
     for agent in state["agents"].values():
@@ -256,11 +294,8 @@ def phase_e_log(state: SimState) -> dict:
         dialogue_records=state["dialogue_records"],
     )
 
-    if state["collapsed"]:
-        logger.log_collapse(tick)
-
     return {
-        "tick":           tick + 1,
+        "tick":            tick + 1,
         "season_in_block": state["season_in_block"] + 1,
     }
 
@@ -268,25 +303,22 @@ def phase_e_log(state: SimState) -> dict:
 def _after_season(state: SimState) -> str:
     """
     Route after logging a season.
-      "reflect" — block complete, run one reflection then stop
+      "reflect" — block complete → run reflection then END
       "more"    — continue to next season in this block
-      "end"     — stock collapsed, stop immediately
+    No early-termination on collapse; the environment handles recovery.
     """
-    if state["collapsed"]:
-        return "end"
     if state["season_in_block"] >= state["seasons_per_reflection"]:
         return "reflect"
     return "more"
 
 
 # ─────────────────────────────────────────────────────────────────
-# Build the LangGraph simulation graph
-# ─────────────────────────────────────────────────────────────────
+# Build the LangGraph graph
 #
 #   START → phase_a → phase_b → phase_c → phase_e → _after_season?
-#                                                         "more"    → phase_a
-#                                                         "reflect" → phase_d → END
-#                                                         "end"              → END
+#                                                       "more"    → phase_a
+#                                                       "reflect" → phase_d → END
+# ─────────────────────────────────────────────────────────────────
 
 def _build_graph():
     g = StateGraph(SimState)
@@ -300,13 +332,13 @@ def _build_graph():
     g.add_edge(START,     "phase_a")
     g.add_edge("phase_a", "phase_b")
     g.add_edge("phase_b", "phase_c")
-    g.add_edge("phase_c", "phase_e")    # reflection removed from per-season loop
+    g.add_edge("phase_c", "phase_e")
     g.add_conditional_edges(
         "phase_e",
         _after_season,
-        {"more": "phase_a", "reflect": "phase_d", "end": END},
+        {"more": "phase_a", "reflect": "phase_d"},
     )
-    g.add_edge("phase_d", END)          # stop after one reflection round
+    g.add_edge("phase_d", END)
 
     return g.compile()
 
@@ -320,7 +352,7 @@ class SimulationRunner:
         self,
         condition: str,
         n_agents: int = 8,
-        seasons_per_reflection: int = 5,   # seasons per block before reflection
+        seasons_per_reflection: int = 5,
         n_replications: int = 1,
         llm_provider: str = "ollama",
         llm_model: str = None,
@@ -337,19 +369,16 @@ class SimulationRunner:
         self.output_dir = output_dir
 
     def run_all(self) -> list:
-        """Run all replications. Return list of summary dicts."""
         results = []
         for rep in range(self.n_replications):
             print(
-                f"  [{self.condition}] replication {rep + 1}/{self.n_replications} "
+                f"  [{self.condition}] rep {rep + 1}/{self.n_replications} "
                 f"({self.seasons_per_reflection} seasons → reflect → stop)"
             )
-            result = self.run_replication(rep)
-            results.append(result)
+            results.append(self.run_replication(rep))
         return results
 
     def run_replication(self, rep_id: int) -> dict:
-        """Full single replication: N seasons + 1 reflection round."""
         llm             = LLMAdapter(
             provider=self.llm_provider,
             model=self.llm_model,
@@ -389,9 +418,9 @@ class SimulationRunner:
             "decisions":              {},
             "actual_yields":          {},
             "last_harvests":          {},
+            "last_season_label":      "",
             "interaction_counts":     {},
             "dialogue_records":       [],
-            "collapsed":              False,
         }
 
         sim_graph.invoke(initial_state)
@@ -409,5 +438,4 @@ class SimulationRunner:
             f"tokens: {usage['total_input_tokens']}in "
             f"{usage['total_output_tokens']}out"
         )
-
         return logger.summarise()

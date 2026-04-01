@@ -10,6 +10,8 @@ import re
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
+from core.environment import FisheryEnvironment as _FE
+
 if TYPE_CHECKING:
     from core.memory import MemoryStream
     from core.llm import LLMAdapter
@@ -32,18 +34,10 @@ IMPORTANCE_BY_ACT = {
 # Minimum meaningful utterance length (chars)
 _MIN_UTTERANCE_LEN = 8
 
-# Markdown / stray-quote cleanup
-_MD_CLEANUP = re.compile(
-    r"^\s*\*{1,2}\s*|\s*\*{1,2}\s*$"
-    r'|^[\s"\']+|[\s"\']+$',
-    re.MULTILINE,
-)
-
 
 def _clean(text: str) -> str:
-    """Strip markdown emphasis and stray quotes from an utterance."""
-    text = _MD_CLEANUP.sub("", text.strip())
-    text = re.sub(r"\n{2,}", "\n", text)
+    """Strip leading/trailing whitespace and blank lines."""
+    text = re.sub(r"\n{2,}", "\n", text.strip())
     return text.strip()
 
 
@@ -73,7 +67,7 @@ class DialogueEngine:
         world_nl: str,
         tick: int,
         max_turns: int = 6,
-        harvest_history_nl: str = "",   # <-- passed in from environment
+        harvest_history_nl: str = "",
     ) -> list:
         """
         Full conversation loop.
@@ -96,7 +90,7 @@ class DialogueEngine:
         )
         history.append(turn0)
         self._store_turn(turn0, initiator_memory, "sent")
-        self._store_turn(turn0, responder_memory, "received", tick=tick)
+        self._store_turn(turn0, responder_memory, "received")
 
         # Alternating turns
         for turn_num in range(1, max_turns):
@@ -136,7 +130,7 @@ class DialogueEngine:
 
             # Store in both memories immediately
             self._store_turn(turn, speaker_memory, "sent")
-            self._store_turn(turn, listener_memory, "received", tick=tick)
+            self._store_turn(turn, listener_memory, "received")
 
             if speech_act == "closing":
                 break
@@ -152,8 +146,8 @@ class DialogueEngine:
         tick: int,
     ) -> str:
         """
-        Past conversations with this specific partner (top 5 by recency/
-        importance) plus recent norm beliefs, reflections, decisions (top 3).
+        Past conversations with this specific partner (top 5) plus
+        recent norm beliefs, reflections, decisions (top 3).
         """
         past_dialogue = speaker_memory.retrieve(
             query=listener_id,
@@ -188,78 +182,91 @@ class DialogueEngine:
         harvest_history_nl: str = "",
     ) -> tuple:
         """One LLM call — generates next utterance."""
-        memory_text  = self._retrieve_context_for(speaker_memory, listener_id, tick)
+        memory_text = self._retrieve_context_for(speaker_memory, listener_id, tick)
 
-        # Skip empty turns so the LLM doesn't see broken blank lines
+        # Skip empty-content turns so the LLM doesn't see blank speaker lines
         history_lines = [
             f"{t.speaker_id}: {t.content}"
             for t in history
             if t.content.strip()
         ]
-        history_text = "\n".join(history_lines) if history_lines else "(conversation just started)"
+        history_text = (
+            "\n".join(history_lines)
+            if history_lines
+            else "(conversation just started)"
+        )
 
         harvest_section = (
-            f"\nHarvest history across all seasons so far:\n{harvest_history_nl}\n"
+            f"\nHarvest history:\n{harvest_history_nl}\n"
             if harvest_history_nl else ""
         )
 
-        prompt = f"""You are {speaker_id}, a fisher having a conversation with {listener_id}.
+        prompt = (
+            f"You are {speaker_id}, a fisher in conversation with {listener_id}.\n\n"
+            f"{speaker_persona}\n\n"
+            f"Situation: {world_nl}"
+            f"{harvest_section}\n"
+            f"What you remember about {listener_id} and past conversations:\n"
+            f"{memory_text}\n\n"
+            f"Conversation so far:\n"
+            f"{history_text}\n\n"
+            f"Respond as {speaker_id} in 1 to 3 plain sentences. "
+            f"No markdown. No quotation marks wrapping your reply. "
+            f"Be direct. If the conversation is naturally finished, wrap it up.\n\n"
+            f"After your reply, on a new line write:\n"
+            f"SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]"
+        )
 
-{speaker_persona}
-
-Current situation: {world_nl}
-{harvest_section}
-What you remember about {listener_id} and past conversations with them:
-{memory_text}
-
-Current conversation:
-{history_text}
-
-What do you say next to {listener_id}?
-Write 1 to 3 plain sentences. No markdown, no quotes around your reply.
-Be direct. If you have said everything you needed to say, close the conversation naturally.
-
-Then on a new line write exactly:
-SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]"""
-
-        raw = self.llm.complete(prompt, max_tokens=160)
+        raw = self.llm.complete(
+            prompt, max_tokens=2000,
+            label=f"dialogue {speaker_id}→{listener_id} tick={tick}",
+        )
         utterance, speech_act = self._parse_turn(raw)
         return utterance, speech_act
 
     def _parse_turn(self, raw: str) -> tuple:
         """
         Extract (utterance, speech_act) from raw LLM output.
-        Handles missing/misplaced SPEECH_ACT label and markdown noise.
+        Handles missing / misplaced SPEECH_ACT label and markdown noise.
         """
-        speech_act = "statement"
-        utterance  = raw.strip()
+        if not raw or not raw.strip():
+            return "", ""
 
-        if "SPEECH_ACT:" in raw:
-            parts     = raw.split("SPEECH_ACT:", 1)
-            pre       = _clean(parts[0])
-            act_raw   = parts[1].strip().lower()
+        speech_act = "statement"
+        raw_stripped = raw.strip()
+
+        if "SPEECH_ACT:" in raw_stripped:
+            parts      = raw_stripped.split("SPEECH_ACT:", 1)
+            pre        = parts[0].strip()
+            act_raw    = parts[1].strip().lower()
             first_word = re.sub(r"[^a-z]", "", act_raw.split()[0]) if act_raw.split() else ""
             if first_word in SPEECH_ACTS:
                 speech_act = first_word
 
             if pre:
-                utterance = pre
+                utterance = _clean(pre)
             else:
-                remainder = re.sub(
-                    rf"^{re.escape(first_word)}\s*", "", parts[1].strip(),
-                    flags=re.IGNORECASE,
-                ).strip()
-                utterance = _clean(remainder) if remainder else _clean(raw)
+                # SPEECH_ACT appeared first — rest of string after the act word is the utterance
+                rest = re.sub(rf"^{re.escape(first_word)}", "", parts[1].strip(),
+                              count=1, flags=re.IGNORECASE).strip()
+                utterance = _clean(rest) if rest else _clean(raw_stripped)
         else:
-            utterance = _clean(raw)
+            utterance = _clean(raw_stripped)
 
-        utterance = _clean(utterance)
+        # Strip wrapping quotes and markdown bold/italic only if they wrap the whole string
+        utterance = re.sub(r'^[\*_]{1,2}|[\*_]{1,2}$', '', utterance).strip()
+        utterance = re.sub(r'^["\']|["\']$', '', utterance).strip()
 
+        # Fallback if still too short
         if len(utterance) < _MIN_UTTERANCE_LEN:
-            fallback = _clean(re.sub(r"SPEECH_ACT:.*$", "", raw, flags=re.DOTALL))
-            utterance = fallback if len(fallback) >= _MIN_UTTERANCE_LEN else raw.strip()
+            # Take everything before SPEECH_ACT line, cleaned
+            candidate = _clean(re.sub(r"SPEECH_ACT:.*$", "", raw_stripped, flags=re.DOTALL))
+            utterance = candidate if len(candidate) >= _MIN_UTTERANCE_LEN else raw_stripped
 
-        if not utterance:
+        # Strip any leftover SPEECH_ACT line that ended up in the utterance
+        utterance = re.sub(r"SPEECH_ACT:\s*\w+", "", utterance).strip()
+
+        if not utterance or len(utterance) < _MIN_UTTERANCE_LEN:
             utterance = ""
 
         return utterance, speech_act
@@ -282,25 +289,29 @@ SPEECH_ACT: [proposal/warning/agreement/disagreement/question/statement/closing]
             return "closing"
         return "statement"
 
-    def _store_turn(self, turn: "DialogueTurn", memory, role: str, tick: int = None):
-        """Store a dialogue turn in memory with appropriate importance."""
-        importance = IMPORTANCE_BY_ACT.get(turn.speech_act, 4)
-        t = tick if tick is not None else turn.tick
+    def _store_turn(self, turn: "DialogueTurn", memory, role: str):
+        """
+        Store a dialogue turn in memory.
+        Content uses Year/Season label — NOT a raw tick prefix, because
+        format_for_prompt() already prepends [tick N] from the MemoryObject.
+        """
+        importance   = IMPORTANCE_BY_ACT.get(turn.speech_act, 4)
+        season_label = _FE.season_label(turn.tick)
 
         if role == "sent":
             content = (
-                f"[tick {turn.tick}] I said to {turn.listener_id}: "
-                f"'{turn.content}' [{turn.speech_act}]"
+                f"{season_label}: I said to {turn.listener_id}: "
+                f"{turn.content!r} [{turn.speech_act}]"
             )
         else:
             content = (
-                f"[tick {turn.tick}] {turn.speaker_id} said to me: "
-                f"'{turn.content}' [{turn.speech_act}]"
+                f"{season_label}: {turn.speaker_id} said to me: "
+                f"{turn.content!r} [{turn.speech_act}]"
             )
 
         memory.add(
             content=content,
             importance=importance,
             memory_type="dialogue",
-            tick=t,
+            tick=turn.tick,
         )

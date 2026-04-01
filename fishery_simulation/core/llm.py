@@ -82,14 +82,16 @@ class LLMAdapter:
 
     # ── Public API ───────────────────────────────────────────────────
 
-    def complete(self, prompt: str, max_tokens: int = 600) -> str:
+    def complete(self, prompt: str, max_tokens: int = 600, label: str = "") -> str:
         """
         Single completion with 3-retry exponential backoff.
         Logs every prompt + response to both JSONL and plain-text files.
+        label: optional tag shown in the txt log header (e.g. "dialogue", "harvest").
         """
         last_exc = None
         t_start  = time.time()
         client   = self._make_client(max_tokens)
+        tag      = f"  [{label}]" if label else ""
 
         for attempt in range(3):
             try:
@@ -131,7 +133,7 @@ class LLMAdapter:
                 sep = "=" * 72
                 self._txt_file.write(
                     f"\n{sep}\n"
-                    f"CALL #{self.total_calls}  |  {datetime.datetime.utcnow().isoformat()}  "
+                    f"CALL #{self.total_calls}{tag}  |  {datetime.datetime.utcnow().isoformat()}  "
                     f"|  {self.provider}/{self.model_name}  |  "
                     f"attempt {attempt+1}  |  {elapsed}s  |  "
                     f"in={in_tok} out={out_tok}\n"
@@ -160,7 +162,7 @@ class LLMAdapter:
                     }) + "\n")
                     self._txt_file.write(
                         f"\n{'='*72}\n"
-                        f"CALL (failed)  |  {datetime.datetime.utcnow().isoformat()}  "
+                        f"CALL (failed){tag}  |  {datetime.datetime.utcnow().isoformat()}  "
                         f"|  {self.provider}/{self.model_name}\n"
                         f"{'='*72}\n"
                         f"--- PROMPT ---\n{prompt}\n"

@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 run.py --condition baseline --dry-run)"
+      "Bash(python3 run.py --condition baseline --dry-run)",
+      "Bash(python3 -c \":*)",
+      "Bash(python3 -:*)"
     ]
   }
 }

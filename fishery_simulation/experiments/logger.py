@@ -38,6 +38,12 @@ class ExperimentLogger:
             else 0.0
         )
 
+        # Year / season labels from environment tick (the tick BEFORE increment)
+        from core.environment import FisheryEnvironment as _FE
+        year, season_in_year = _FE.tick_to_year_season(tick)
+        season_label         = _FE.season_label(tick)
+        closed_season        = env_state.collapsed
+
         # norm_adoption_rate: fraction where norm_active != "no"
         norm_count = sum(
             1 for cot in decisions.values()
@@ -67,12 +73,16 @@ class ExperimentLogger:
         )
 
         record = {
-            "tick": tick,
-            "condition": self.condition,
-            "replication": self.rep_id,
-            "stock_after": env_state.stock,
-            "stock_pct": stock_pct,
-            "collapsed": env_state.collapsed,
+            "tick":           tick,
+            "year":           year,
+            "season_in_year": season_in_year,
+            "season_label":   season_label,
+            "closed_season":  closed_season,
+            "condition":      self.condition,
+            "replication":    self.rep_id,
+            "stock_after":    env_state.stock,
+            "stock_pct":      stock_pct,
+            "collapsed":      env_state.collapsed,
             "harvests": harvests,
             "actual_yields": actual_yields,
             "total_harvest": total_harvest,

@@ -12,7 +12,7 @@ PERSONAS = [
     # Economically comfortable, established
     "You are a fisher in your 50s who owns your boat outright. "
     "You have a stable income and fish because it is your livelihood "
-    "and identity. Your children have left for the city.",
+    "and identity.",
 
     # Economically pressured, short horizon
     "You are a fisher in your 30s with a boat loan to pay off "
@@ -89,15 +89,23 @@ class FisheryAgent:
         # Condition insert
         condition_insert = CONDITION_PROMPTS.get(self.condition, "")
 
+        # Harvest history from environment (last 5 normal seasons + collapse context)
+        harvest_history_text = observation.get("harvest_history_nl", "")
+
         prompt = f"""You are {self.agent_id}, a fisher who depends on a shared
 fish stock for your livelihood.
 
 {self.persona}
 
+The fishing year has 4 seasons. The stock can collapse if overfished, after which
+the fishery closes for the rest of that year and reopens the following year with
+a recovered stock.
+
 Current situation:
 {world_nl}
 
-{others_harvests_text}
+Recent harvest history (last 5 seasons):
+{harvest_history_text}
 
 {condition_insert}
 
@@ -115,7 +123,10 @@ HARVEST_REASONING: Given everything above, what will you harvest this season and
 HARVEST_AMOUNT: [a number between 0.0 and 10.0]
 WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would you say — about the stock, catches, any concern or proposal? Write "nothing" if you have nothing to say."""
 
-        raw = self.llm.complete(prompt, max_tokens=2000)
+        raw = self.llm.complete(
+            prompt, max_tokens=2000,
+            label=f"harvest {self.agent_id} tick={tick}",
+        )
         parsed = self._parse_cot(raw, tick)
 
         # Log parsed fields to txt (raw already logged inside llm.complete)
@@ -136,10 +147,16 @@ WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would
         if not others_harvests and my_last_harvest is None:
             return "No harvest data yet — this is the first season."
 
-        prev_tick = tick - 1  # the season whose harvests we are reporting
-        season_label = f"Season {prev_tick}" if prev_tick >= 0 else "Last season"
+        # Use the label passed in via observation (computed from actual history),
+        # falling back to tick arithmetic only if not provided.
+        if observation and observation.get("last_season_label"):
+            season_label = observation["last_season_label"]
+        else:
+            from core.environment import FisheryEnvironment as _FE
+            prev_tick    = tick - 1
+            season_label = _FE.season_label(prev_tick) if prev_tick >= 0 else "Last season"
 
-        lines = [f"Last season's harvests:", f"  {season_label}"]
+        lines = ["Last season's harvests:", f"  {season_label}"]
 
         if others_harvests:
             # Include own harvest in max calculation so ← highest is fair
@@ -161,13 +178,21 @@ WHAT_YOU_MIGHT_SAY: If you ran into another fisher at the dock today, what would
             marker = "  \u2190 highest" if my_last_harvest == max_val and max_val > 0 else ""
             lines.append(f"  Your harvest: {my_last_harvest:.1f} units{marker}")
 
-        # Stock status line
+        # Stock status line with actual numbers
         if observation:
-            desc  = observation.get("stock_description", "")
-            trend = observation.get("stock_trend", "")
+            desc      = observation.get("stock_description", "")
+            trend     = observation.get("stock_trend", "")
+            stock     = observation.get("stock")
+            max_stock = observation.get("max_stock")
             if desc:
                 trend_tag = f" ({trend})" if trend and trend != "unknown" else ""
-                lines.append(f"  {desc}{trend_tag}")
+                if stock is not None and max_stock:
+                    lines.append(
+                        f"  Current stock: {stock:.1f} / {max_stock:.1f} units — "
+                        f"{desc}{trend_tag}"
+                    )
+                else:
+                    lines.append(f"  {desc}{trend_tag}")
 
         return "\n".join(lines)
 
@@ -296,7 +321,10 @@ Based only on these experiences, what are your 3 most important insights about:
 Format each insight as:
 INSIGHT: [your insight] (supported by: [brief reference to memories])"""
 
-        raw = self.llm.complete(prompt, max_tokens=2000)
+        raw = self.llm.complete(
+            prompt, max_tokens=2000,
+            label=f"reflection {self.agent_id} tick={current_tick}",
+        )
 
         # Parse INSIGHT lines
         insights = re.findall(
