@@ -162,8 +162,12 @@ class DialogueEngine:
             type_filter=["norm_belief", "reflection", "harvest_decision"],
         )
 
+        # Sort dialogue turns chronologically (oldest first) so the
+        # conversation reads top-to-bottom in the order it happened.
+        past_dialogue_sorted = sorted(past_dialogue, key=lambda m: m.created_tick)
+
         seen, combined = set(), []
-        for m in past_dialogue + general:
+        for m in past_dialogue_sorted + general:
             if id(m) not in seen:
                 seen.add(id(m))
                 combined.append(m)

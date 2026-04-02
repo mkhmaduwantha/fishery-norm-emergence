@@ -1,0 +1,2403 @@
+{
+  "tick": 0,
+  "year": 1,
+  "season_in_year": 1,
+  "season_label": "Year 1, Season 1",
+  "closed_season": false,
+  "condition": "full_social",
+  "replication": 0,
+  "stock_after": 45.60325,
+  "stock_pct": 0.4560325,
+  "collapsed": false,
+  "harvests": {
+    "agent_0": 5.0,
+    "agent_1": 5.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 5.0,
+    "agent_5": 5.0,
+    "agent_6": 6.5,
+    "agent_7": 5.0
+  },
+  "actual_yields": {
+    "agent_0": 5.0,
+    "agent_1": 5.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 5.0,
+    "agent_5": 5.0,
+    "agent_6": 6.5,
+    "agent_7": 5.0
+  },
+  "total_harvest": 41.5,
+  "mean_harvest": 5.1875,
+  "harvest_variance": 0.28125,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "**  \nThe stock is currently abundant \u2013 80\u202funits out of a 100\u2011unit carrying capacity. Early\u2011season data are limited, but the high availability suggests a healthy stock.",
+      "others_behaviour": "**  \nNo harvest history exists yet for anyone, including myself. With 8 fishers sharing the stock, I anticipate that most will take a moderate share (roughly 5\u201310\u202funits) rather than an extreme \u201call\u2011in\u201d approach, but there is no observable pattern to date.",
+      "long_term_thinking": "**  \nIf every fisher were to take the maximum of 10\u202funits each season, the stock would be depleted in a single season (8\u202f\u00d7\u202f10\u202f=\u202f80). Conversely, if each takes about 5\u202funits, the stock would be reduced to ~40\u202funits, leaving a buffer for recovery. Sustaining the stock over multiple seasons requires keeping the average harvest per fisher well below the maximum sustainable yield.",
+      "norm_active": "forming",
+      "norm_content": "**  \n\u201cEach fisher should aim to take around 5\u20136\u202funits per season to keep the stock healthy.\u201d",
+      "harvest_reasoning": "**  \nGiven the high current stock, the lack of established patterns, and the risk of overfishing, I\u2019ll adopt a cautious approach. Taking 5\u202funits balances earning a decent catch with preserving the stock for future seasons and aligning with the emerging community norm.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\u201cHey, the stock looks great today. I\u2019m planning to take about 5 units; how about you? I think keeping it around that level will help us avoid a collapse.\u201d"
+    },
+    "agent_1": {
+      "stock_assessment": "The stock is at 80\u202f/\u202f100 units \u2013 an early\u2011season, abundant condition with good potential for high catches.",
+      "others_behaviour": "No harvest data yet, so I have no basis to see a pattern; I\u2019ll assume others are likely to take a similar moderate amount.",
+      "long_term_thinking": "If each of the 8 fishers takes roughly 10 units each season, the stock would fall below safe levels within 2\u20133 seasons, risking a collapse. If we all take about 5 units, the stock could sustain a few more seasons, but cumulative harvest still needs monitoring.",
+      "norm_active": "no",
+      "norm_content": "none",
+      "harvest_reasoning": "I want to secure a steady income and identity as a fisher, but I also recognize the risk of a stock collapse if we overfish. Taking a moderate share keeps the fishery healthy while still providing a decent haul.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\"Hey, the stock looks great this season. I\u2019m planning to take about 5 units. Maybe we should keep an eye on total catches so we don\u2019t overfish.\""
+    },
+    "agent_2": {
+      "stock_assessment": "The stock is at 80/100 units \u2013 quite abundant for an early season.  The visual and acoustic cues (plenty of fish in the nets, clear water, steady drift) suggest the population is healthy, but I know from the past decade that the trend has been downward.  I\u2019m not yet sure if this season will be a \u201cgood one\u201d or if the decline will be visible now.",
+      "others_behaviour": "Since this is the first season of the year, there is no harvest history yet.  I can only observe the others at the dock \u2013 most of them are loading their boats with a modest haul, likely in the 4\u20136 unit range.  No one is taking an obvious \u201cmega\u2011haul\u201d; everyone looks cautious, probably because we\u2019re all aware of the long\u2011term decline.",
+      "long_term_thinking": "If every fisher keeps taking roughly 5 units each season, the total catch will be about 40 units (8 fishers \u00d7 5).  That leaves 40 units in the stock after this season, which is a 50\u202f% reduction.  Over several seasons, if we continue to harvest at that level, the stock will decline linearly and could hit the collapse threshold (when the stock falls below a critical level, say <20 units).  To avoid that, we need to keep the average harvest per season below 3\u20134 units, or implement a seasonal quota that allows the stock to rebound.",
+      "norm_active": "forming",
+      "norm_content": "\u201cEach fisher should aim to take no more than 5 units per season to keep the stock healthy for the next year.\u201d",
+      "harvest_reasoning": "I want to balance my livelihood with the long\u2011term health of the fishery.  Taking 5 units gives me a decent catch for the season, yet keeps the total removal at a level that is likely sustainable given the current abundance.  It also signals to the community that I\u2019m not over\u2011exploiting, which may encourage others to do the same.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\u201cHey, the catch looks good this season. I\u2019m planning to keep my haul around five units to make sure we don\u2019t push the stock too low. What about you \u2013 are you thinking the same?\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "**  \nThe stock is in very good shape \u2013 80 out of 100 units are available at the start of the season.  It looks abundant, but we\u2019re only at the first season, so we don\u2019t yet know the long\u2011term trend.",
+      "others_behaviour": "**  \nNo one has harvested yet, so there\u2019s no concrete pattern to observe.  I can only anticipate that some fishers will try to take a full \u201c10\u2011unit\u201d quota, while others may be more conservative.  The lack of data means I have to make a decision based on risk\u2011management rather than peer pressure.",
+      "long_term_thinking": "**  \nIf every fisher goes for the full 10 units, the 80\u2011unit stock will be exhausted in one season, triggering a collapse and a shut\u2011down for the rest of the year.  A moderate take (\u22485 units per fisher) would leave a reserve, allowing the stock to recover over the next seasons and keeping the fishery open.  Over\u2011exploitation in a few seasons could still cause collapse, but a cautious start gives the community a chance to establish a sustainable norm.",
+      "norm_active": "forming",
+      "norm_content": "**  \n\u201cWe should each keep our catch around 5 units so the stock stays healthy for everyone.\u201d",
+      "harvest_reasoning": "**  \nI need enough volume to earn a good price and maintain a good relationship with the processor, but I also want to avoid triggering a collapse that would shut the fishery for the rest of the year.  Taking 5 units strikes a balance: it\u2019s a respectable haul, it signals responsible fishing, and it preserves the stock for future seasons.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\u201cHey, I\u2019m thinking we should keep our catches around five units.  That way we still get a decent haul and the stock stays healthy for everyone.\u201d"
+    },
+    "agent_4": {
+      "stock_assessment": "**  \nThe stock is at 80\u202funits out of a 100\u2011unit capacity\u2014quite abundant.  It\u2019s the first season of the year, so we have limited trend data, but the initial assessment is that the stock is healthy and can support moderate harvests.",
+      "others_behaviour": "**  \nNo harvest history is available yet, so I can\u2019t see a clear pattern in others\u2019 taking.  I expect most fishers will aim for a similar share, but it\u2019s too early to tell if anyone is taking significantly more or less.",
+      "long_term_thinking": "**  \nIf each of the 8 fishers were to take 10\u202funits (the maximum possible per season), the stock would be depleted in a single season, leading to a collapse and a year\u2011long closure.  If we all limit ourselves to around 5\u202funits, the stock would remain well above zero, giving it time to recover and supporting sustainable fishing over multiple seasons.",
+      "norm_active": "no",
+      "norm_content": "**  \nnone",
+      "harvest_reasoning": "**  \nI will harvest 5\u202funits this season.  This amount is low enough to avoid triggering a collapse, yet sufficient to maintain my livelihood and respect the long\u2011term health of the stock.  As a 40\u2011year veteran, I know the importance of keeping the stock above the collapse threshold and preserving the fishery for future generations.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\"Hey, the stock looks good right now, but let\u2019s keep our catch to about five units each so we don\u2019t risk a collapse.  We\u2019ve got a long haul ahead of us.\""
+    },
+    "agent_5": {
+      "stock_assessment": "**  \nThe stock is at 80/100 units \u2013 an abundant, healthy level. There is plenty of fish available, but the community is still in the early part of the year, so we have limited trend data.",
+      "others_behaviour": "**  \nNo harvest history exists yet, so I can\u2019t see any patterns in what others are taking. I\u2019ll assume they will take a moderate share, but I\u2019m not aware of any extreme over\u2011 or under\u2011harvesters.",
+      "long_term_thinking": "**  \nIf every fisher takes roughly the same moderate amount each season, the stock will decline but likely remain above collapse thresholds for a few seasons, allowing it to recover in the off\u2011season. However, if several fishers take large shares (e.g., >6 units), the cumulative harvest could push the stock below its safe threshold, leading to a collapse and a year\u2011long closure.",
+      "norm_active": "forming",
+      "norm_content": "**  \n\u201cEveryone should take a reasonable share, staying within a moderate limit so the stock stays healthy for all of us.\u201d",
+      "harvest_reasoning": "**  \nI want to avoid contributing to a potential collapse while still earning a livelihood. Taking a moderate amount (around 5 units) keeps the stock healthy, aligns with the emerging community norm, and reduces risk for the group.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\u201cHey, the stock looks good today. I\u2019m planning to take about five units \u2013 I think that\u2019s a fair share to keep things sustainable for everyone.\u201d"
+    },
+    "agent_6": {
+      "stock_assessment": "**  \nThe stock is at 80\u202f/\u202f100 units \u2013 about 80\u202f% of the total carrying capacity. It looks healthy and plentiful, but it\u2019s only the first season, so we have limited data on how quickly it will replenish.",
+      "others_behaviour": "**  \nNo harvest history yet, so I can\u2019t see any pattern. All 8 fishers are starting from the same baseline.",
+      "long_term_thinking": "**  \nIf everyone takes the maximum (\u224810\u202funits), the entire 80\u2011unit stock would be removed in Season\u202f1, forcing a closure for the remaining three seasons and wiping out our income for the year.  \nIf we each take a moderate share (\u22486\u202funits), the stock will be reduced to ~32\u202funits after Season\u202f1, leaving enough left to sustain the fishery through the rest of the year and allowing it to recover before the next year\u2019s opening.",
+      "norm_active": "forming",
+      "norm_content": "**  \n\"We should aim for a moderate harvest\u2014around 6\u20117 units each\u2014so the stock stays healthy for the rest of the year.\"",
+      "harvest_reasoning": "**  \nI need to pay off my boat loan and support my two kids, but I also want to avoid a collapse that would shut us out for the rest of the season. Taking a moderate amount protects the stock for future seasons while still giving me a decent catch.",
+      "harvest_amount": 6.5,
+      "what_you_might_say": "**  \n\"Hey, the stock looks pretty good today. I\u2019m thinking about taking about 6.5 units so we keep it healthy for the rest of the year. What do you think?\""
+    },
+    "agent_7": {
+      "stock_assessment": "The stock is abundant at 80.0/100.0 units, suggesting plenty of fish are available; this is an early season with limited trend data, so the stock appears healthy but we have no long\u2011term signals yet.",
+      "others_behaviour": "No harvest history yet, so I have no information on how others are fishing. Everyone is just about to start the season.",
+      "long_term_thinking": "If we all continue to take large shares, the stock could decline toward collapse; if we keep harvests moderate, the stock should recover and remain sustainable over several seasons.",
+      "norm_active": "forming",
+      "norm_content": "Each fisher should aim to take no more than about 10 units per season to keep the stock healthy.",
+      "harvest_reasoning": "I rely on a land\u2011based job for most of my income, so I only need a modest supplement from fishing. The stock looks healthy, but I want to avoid contributing to overfishing. A moderate catch of 5 units will give me what I need while leaving enough fish for the community.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\"The stock looks good; I'm planning a moderate catch\u2014about 5 units\u2014to keep it healthy. Maybe we all keep it under 10 units this season to avoid overfishing.\""
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 0,
+      "initiator": "agent_2",
+      "responder": "agent_4",
+      "turns": [
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_4",
+          "content": "\u201cHey, the catch looks good this season. I\u2019m planning to keep my haul around five units to make sure we don\u2019t push the stock too low. What about you \u2013 are you thinking the same?\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_2",
+          "content": "I agree, I will keep my haul to five units.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_4",
+          "content": "Great, keeping it at five units should help preserve the stock for next season.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_2",
+          "content": "Sounds good, let's keep it at five units for now. We'll monitor how the stock holds for next season.",
+          "speech_act": "closing",
+          "turn_number": 3
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 4
+    },
+    {
+      "tick": 0,
+      "initiator": "agent_0",
+      "responder": "agent_3",
+      "turns": [
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_3",
+          "content": "**  \n\u201cHey, the stock looks great today. I\u2019m planning to take about 5 units; how about you? I think keeping it around that level will help us avoid a collapse.\u201d",
+          "speech_act": "proposal",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_0",
+          "content": "I\u2019ll take 7 units this season to boost my revenue while still keeping the stock healthy.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_3",
+          "content": "I think 5 is safer for the stock. Let\u2019s stick to 5 units.",
+          "speech_act": "proposal",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_0",
+          "content": "I can take 6 units this season.",
+          "speech_act": "proposal",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_3",
+          "content": "I\u2019ll take 5 units. If you\u2019re comfortable with 6, we can proceed.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_0",
+          "content": "6 units works for me, let's proceed.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 0,
+      "initiator": "agent_1",
+      "responder": "agent_6",
+      "turns": [
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_6",
+          "content": "\"Hey, the stock looks great this season. I\u2019m planning to take about 5 units. Maybe we should keep an eye on total catches so we don\u2019t overfish.\"",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_1",
+          "content": "I plan to take 6.5 units to cover my loan and support my kids, but let's keep an eye on the total catches so we don't overfish.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_6",
+          "content": "I\u2019m good with 5 units. With you at 6.5, we\u2019re under 12 total. Let\u2019s keep an eye on the stock.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_1",
+          "content": "Got it, I'll stick with 6.5 units and keep an eye on the stock. We'll stay within safe limits.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_6",
+          "content": "Sounds good. Let's monitor the stock after each season.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_1",
+          "content": "Got it, I'll keep monitoring the stock and adjust if needed.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 0,
+      "initiator": "agent_7",
+      "responder": "agent_5",
+      "turns": [
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_5",
+          "content": "\"The stock looks good; I'm planning a moderate catch\u2014about 5 units\u2014to keep it healthy. Maybe we all keep it under 10 units this season to avoid overfishing.\"",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_7",
+          "content": "I'll take about 5 units, just like you. Keeping it under 10 units this season is a good plan.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_5",
+          "content": "Sounds good, let's stick to that plan.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_7",
+          "content": "Alright, let's keep it at 5 units each this season.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_5",
+          "content": "Great, let's do it.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_7",
+          "content": "Thanks, see you on the boat.",
+          "speech_act": "closing",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 6
+    }
+  ],
+  "norm_adoption_rate": 0.75,
+  "n_conversations": 4,
+  "n_proposals": 5,
+  "n_agreements": 12,
+  "n_warnings": 0
+}
+{
+  "tick": 1,
+  "year": 1,
+  "season_in_year": 2,
+  "season_label": "Year 1, Season 2",
+  "closed_season": false,
+  "condition": "full_social",
+  "replication": 0,
+  "stock_after": 80.0,
+  "stock_pct": 0.8,
+  "collapsed": false,
+  "harvests": {
+    "agent_0": 4.5,
+    "agent_1": 3.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 4.0,
+    "agent_5": 4.0,
+    "agent_6": 4.0,
+    "agent_7": 5.0
+  },
+  "actual_yields": {
+    "agent_0": 4.5,
+    "agent_1": 3.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 4.0,
+    "agent_5": 4.0,
+    "agent_6": 4.0,
+    "agent_7": 5.0
+  },
+  "total_harvest": 34.5,
+  "mean_harvest": 4.3125,
+  "harvest_variance": 0.4955357142857143,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "**  \nThe stock is visibly low \u2013 only 45.6\u202f/\u202f100.0 units remain after last season\u2019s 41.5\u2011unit harvest. It\u2019s below the healthy baseline (\u224880\u202funits at the start of the year) and has already dropped to the \u201cunder strain\u201d zone. If we keep harvesting at the current levels, the stock will deplete quickly and could trigger a collapse that would close the fishery for the rest of the year.",
+      "others_behaviour": "**  \nIn Season\u202f1, every fisher took 5.0 units except agent\u202f6, who took 6.5. No one took less than 5, and there was no evidence of a coordinated reduction. The pattern is a flat 5\u2011unit \u201cstandard\u201d with a single higher\u2011harvest exception.",
+      "long_term_thinking": "**  \nIf the current pattern continues (\u22485 units per fisher, 6.5 for one), the annual total harvest will be \u224841.5 units. Starting from 45.6, the stock would fall to \u22484.1 after the next season \u2013 effectively a collapse. Even if a few fishers reduce slightly, the stock will still decline sharply unless a broader, sustained reduction occurs.",
+      "norm_active": "yes",
+      "norm_content": "**  \n\u201cEach fisher should aim to take around 5\u20136\u202funits per season to keep the stock healthy.\u201d",
+      "harvest_reasoning": "**  \nI want to demonstrate cooperative intent and protect the stock, so I will harvest slightly below the norm. Taking 4.5 units keeps me within the 5\u20136\u202funit range while contributing to a modest reduction in total harvest. This helps avoid collapse and builds goodwill with the community, which is important for a newcomer like me.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "**  \n\u201cHey, the stock\u2019s at 45.6, so maybe we should all cut back a bit\u2014aiming for 4\u20135 units this season\u2014to keep it from collapsing.\u201d"
+    },
+    "agent_1": {
+      "stock_assessment": "**  \nThe stock is at 45.6\u202f/\u202f100.0 units \u2013 less than half of its full capacity. Catches per trip have already dropped, and this is only the second season of the year, so we have limited trend data. The stock is visibly under strain and could collapse if we keep taking the same amounts as last season.",
+      "others_behaviour": "**  \nAll other fishers took roughly 5\u202funits last season, with only agent_6 taking 6.5\u202funits. No one is taking significantly less, and the pattern is fairly uniform. There is no visible effort to reduce individual catches.",
+      "long_term_thinking": "**  \nIf we continue with ~5\u202funits each (total \u224840\u202funits), the stock after Season\u202f2 would drop to about 5.6\u202funits \u2013 essentially depleted. Even a few fishers taking 6.5\u202funits would push us over the collapse threshold sooner. Over the next few seasons, the stock would be exhausted and the fishery would close for the remainder of the year, forcing us all to rely on the next year\u2019s recovery.",
+      "norm_active": "forming",
+      "norm_content": "**  \n\u201cWe should keep individual catches low enough that the total harvest stays well below the stock\u2019s current level, aiming for about 3\u20134\u202funits each to avoid collapse.\u201d",
+      "harvest_reasoning": "**  \nTo protect the stock and our long\u2011term livelihood, I will reduce my catch to a level that keeps the total harvest below the stock\u2019s current capacity. A 3\u202funit haul will leave a healthy buffer and signal to others that we\u2019re taking the situation seriously.",
+      "harvest_amount": 3.0,
+      "what_you_might_say": "**  \n\u201cHey, the stock is only at 45.6 right now. If we all keep taking 5 units, we\u2019ll probably collapse the fishery. I\u2019m planning to take about 3 units this season \u2013 let\u2019s all cut back a bit to keep the fish alive.\u201d"
+    },
+    "agent_2": {
+      "stock_assessment": "The stock is at 45.6/100.0 units \u2013 less than half of its full capacity and already under strain.",
+      "others_behaviour": "Most fishers (agents 0\u20135, 7) are taking 5.0 units; agent\u202f6 took 6.5 units, slightly above the norm.",
+      "long_term_thinking": "If we continue harvesting 5 units per fisher for several more seasons, the stock will drop below 10 units and risk collapse, forcing a closure for the rest of the year.",
+      "norm_active": "yes",
+      "norm_content": "\u201cEach fisher should aim to take no more than 5 units per season to keep the stock healthy.\u201d",
+      "harvest_reasoning": "I want to stay within the community\u2019s agreed limit while protecting the stock from further decline. Taking 5 units keeps me viable for this season and aligns with the norm, but I\u2019ll monitor the stock closely to adjust next season if necessary.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\u201cI think we should keep it at 5 units this season, but the stock is only 45.6 \u2013 we need to watch it and maybe cut back next season if it doesn\u2019t recover.\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "**  \nThe stock is low at 45.6\u202f/\u202f100.0 units and is already \u201cunder strain.\u201d Catches per trip are down, so the community is already feeling the pressure.",
+      "others_behaviour": "**  \nIn Season\u202f1 most fishers took about 5 units; only agent_6 took 6.5 units. The pattern suggests a de facto target of roughly 5\u202funits per fisher, with a few willing to push a bit higher.",
+      "long_term_thinking": "**  \nIf everyone continues around 5\u202funits, the total harvest for the season will be ~40 units, leaving only ~5.6 units at the end of Season\u202f2. That is dangerously close to collapse; any slight increase by a few fishers will push the stock below zero and shut the fishery for the rest of the year. Therefore the stock is likely to collapse within the next one or two seasons if the current pattern persists.",
+      "norm_active": "yes",
+      "norm_content": "**  \n\u201cEveryone should take about 5 units so the stock stays healthy.\u201d",
+      "harvest_reasoning": "**  \nI want to earn a decent price, but I also need to avoid a collapse that would cost me all remaining seasons. Taking 5 units keeps me in line with the emerging norm, preserves enough stock for the next season, and still gives me a solid volume for the processor.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\u201cHey, the stock\u2019s a bit tight this season. I\u2019m planning to take about 5 units to keep it healthy. How about you?\u201d"
+    },
+    "agent_4": {
+      "stock_assessment": "**  \nThe stock is at 45.6\u202funits out of a 100\u2011unit capacity \u2013 less than half the baseline and noticeably lower than the 80\u202funits we started with last season. The decline is rapid, and the stock is already under strain. Any further over\u2011harvest risks triggering a collapse, which would shut the fishery for the remainder of the year.",
+      "others_behaviour": "**  \nLast season the pattern was clear: every fisher except agent_6 took 5.0 units, while agent_6 took 6.5 units. No one took less than 5.0 units, and there was no visible discussion about reducing the quota. The community is following a de\u2011facto 5\u2011unit norm.",
+      "long_term_thinking": "**  \nIf the 5\u2011unit pattern continues, the community will remove roughly 40 units per season. Even with natural growth, the stock will keep shrinking, moving toward a collapse threshold. Over several seasons the stock could fall below 20 units, forcing a closure and a year\u2011long loss of income for all of us.",
+      "norm_active": "yes",
+      "norm_content": "**  \nThe community has settled on an informal rule that each fisher should take about five units per season to keep the stock from collapsing.",
+      "harvest_reasoning": "**  \nGiven the current low stock, the risk of collapse, and the fact that the community is already at the 5\u2011unit limit, I will reduce my haul to stay on the safe side. Taking 4 units will still provide a decent catch for my livelihood while contributing to the stock\u2019s recovery. This aligns with the long\u2011term goal of keeping the fishery open for future seasons.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "**  \n\"Hey, I've noticed the stock's been lower this year. Maybe we should all take a bit less to avoid a collapse\u2014how about we each take four units this season?\""
+    },
+    "agent_5": {
+      "stock_assessment": "**  \nThe stock is at 45.6 out of a 100\u2011unit capacity \u2013 well below the 50\u2011unit threshold that usually signals a healthy reserve. The decline from 80 to 45.6 in one season shows the stock is under strain and likely to collapse if we keep harvesting at current levels.",
+      "others_behaviour": "**  \nAll other fishers took 5.0 units in Season\u202f1, except agent_6 who took 6.5. No one is taking a drastically higher or lower share; the pattern is a uniform 5\u2011unit catch with one slightly larger haul.",
+      "long_term_thinking": "**  \nIf we all continue to take ~5 units each season, the net loss per season will be roughly 34\u201335 units (stock drop minus natural growth). With a stock already at 45.6, that would push the reserve toward zero in only a few more seasons, triggering a closure for the rest of the year. A lower catch each season would slow the decline and allow the stock to recover.",
+      "norm_active": "yes",
+      "norm_content": "**  \n\u201cWe should all take around 5 units to keep the stock healthy for everyone.\u201d",
+      "harvest_reasoning": "**  \nGiven the low stock and the risk of collapse, I will reduce my catch to 4 units. This keeps my livelihood while contributing to a more sustainable harvest pattern. The 4\u2011unit catch is still a decent income for me but lowers the pressure on the stock enough to give it a chance to rebound.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "**  \n\u201cHey, the stock\u2019s at 45.6 right now. I\u2019m planning to take 4 units to keep it from collapsing. How about you? Maybe we can all stay under 5 to help it recover.\u201d"
+    },
+    "agent_6": {
+      "stock_assessment": "The stock is 45.6\u202f/\u202f100\u202funits \u2013 roughly 46\u202f% of its full capacity. It\u2019s already fallen below the 50\u202f% mark that seemed safe in Season\u202f1, so the fishery is in a fragile state.",
+      "others_behaviour": "Last season every fisher took 5.0 units except me (6.5). That pattern is likely to repeat \u2013 most will stick to ~5 units. No one has shown a trend of taking dramatically more or less.",
+      "long_term_thinking": "If we keep taking ~5\u20136 units per fisher for the remaining three seasons, the cumulative catch will exceed the current stock, triggering an over\u2011fishing collapse. The fishery would then close for the rest of the year, wiping out all future earnings.",
+      "norm_active": "forming",
+      "norm_content": "\u201cWe should aim for a moderate harvest\u2014around 6\u20117 units each\u2014so the stock stays healthy for the rest of the year.\u201d",
+      "harvest_reasoning": "I need enough to cover the loan and my kids, but I also have to keep the fishery open. Taking 4.0 units is a compromise: it\u2019s lower than the 5\u20116\u202funit norm, reduces the risk of collapse, and still gives me a modest catch. It also signals to others that I\u2019m willing to pull back a bit, hopefully encouraging a community shift toward a safer total harvest.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "\u201cHey, I\u2019ve been looking at the stock \u2013 it\u2019s down to 45.6. If we all take around 4 units this season, we can keep the fishery open. What do you think?\u201d"
+    },
+    "agent_7": {
+      "stock_assessment": "The stock is at 45.6\u202f/\u202f100.0 units \u2013 roughly 46\u202f% of its maximum. The drop from 80.0 at the start of Season\u202f1 to 45.6 shows the stock is under strain; catches per trip have already fallen and the community\u2019s collective harvest last season was 41.5 units, which is a large fraction of the remaining biomass.",
+      "others_behaviour": "All other fishers harvested exactly 5.0 units except agent\u202f6, who took 6.5 units. No one is taking a markedly higher or lower share. The pattern is uniform: ~5 units per fisher, with one slight deviation.",
+      "long_term_thinking": "If the pattern of ~5 units per fisher continues for the next two seasons (total harvest \u2248\u202f40\u202funits per season), the stock will keep declining rapidly. Even with a modest recovery in the off\u2011season, the cumulative depletion could push the stock below the threshold that triggers a fishery closure. The community would risk a collapse that would shut the fishery for the remainder of the year, causing a loss of supplemental income for everyone.",
+      "norm_active": "yes",
+      "norm_content": "Each fisher should aim to take no more than about 10\u202funits per season to keep the stock healthy.",
+      "harvest_reasoning": "I rely primarily on a land\u2011based job, so a modest supplement is sufficient. The norm allows up to 10 units, but the current stock is already weak. Since everyone else is taking 5 units, taking the same amount maintains fairness and avoids drawing extra attention. Taking more would risk over\u2011exploiting an already stressed stock; taking less would unnecessarily reduce my income. Therefore, I will harvest 5.0 units, matching the community\u2019s current practice while staying well below the norm\u2019s upper bound.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\"Hey, looks like the stock\u2019s still under pressure. I\u2019m planning to take about five units this season, just like most of us. Let\u2019s keep it steady so we don\u2019t push it over the edge.\""
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 1,
+      "initiator": "agent_3",
+      "responder": "agent_7",
+      "turns": [
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_7",
+          "content": "**  \n\u201cHey, the stock\u2019s a bit tight this season. I\u2019m planning to take about 5 units to keep it healthy. How about you?\u201d",
+          "speech_act": "proposal",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_3",
+          "content": "I'll take 5 units as well.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_7",
+          "content": "Got it, 5 units each.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_3",
+          "content": "See you on the water.",
+          "speech_act": "closing",
+          "turn_number": 3
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 4
+    },
+    {
+      "tick": 1,
+      "initiator": "agent_5",
+      "responder": "agent_2",
+      "turns": [
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_2",
+          "content": "**  \n\u201cHey, the stock\u2019s at 45.6 right now. I\u2019m planning to take 4 units to keep it from collapsing. How about you? Maybe we can all stay under 5 to help it recover.\u201d",
+          "speech_act": "proposal",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_5",
+          "content": "I think 4 units is reasonable. I'll stick with 4 this season.",
+          "speech_act": "statement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_2",
+          "content": "Great, 4 units each. Let's keep it that way.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_5",
+          "content": "Alright, 4 units it is.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_2",
+          "content": "Thanks, looking forward to a better season. Let's keep it that way.",
+          "speech_act": "closing",
+          "turn_number": 4
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 5
+    },
+    {
+      "tick": 1,
+      "initiator": "agent_4",
+      "responder": "agent_0",
+      "turns": [
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_0",
+          "content": "**  \n\"Hey, I've noticed the stock's been lower this year. Maybe we should all take a bit less to avoid a collapse\u2014how about we each take four units this season?\"",
+          "speech_act": "proposal",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_4",
+          "content": "I think 4.5 units would work for me. That keeps us below the norm but still lets me get some revenue.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_0",
+          "content": "4.5 units per person works for me as well.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_4",
+          "content": "Sounds good, 4.5 units each. Let's keep it that way.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_0",
+          "content": "Got it, 4.5 units each it is.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_4",
+          "content": "Great, let's go ahead with 4.5 units each. Thanks.",
+          "speech_act": "closing",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 1,
+      "initiator": "agent_6",
+      "responder": "agent_1",
+      "turns": [
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_1",
+          "content": "\u201cHey, I\u2019ve been looking at the stock \u2013 it\u2019s down to 45.6. If we all take around 4 units this season, we can keep the fishery open. What do you think?\u201d",
+          "speech_act": "question",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_6",
+          "content": "I think 4 units is reasonable; I'll stick to that.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_1",
+          "content": "Great, let's all take 4 units and keep the fishery open.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_6",
+          "content": "Agreed, let's keep the catch at 4 units.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_1",
+          "content": "Alright, let's stick to 4 units. Good luck to everyone.",
+          "speech_act": "closing",
+          "turn_number": 4
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 5
+    }
+  ],
+  "norm_adoption_rate": 1.0,
+  "n_conversations": 4,
+  "n_proposals": 4,
+  "n_agreements": 10,
+  "n_warnings": 0
+}
+{
+  "tick": 2,
+  "year": 1,
+  "season_in_year": 3,
+  "season_label": "Year 1, Season 3",
+  "closed_season": false,
+  "condition": "full_social",
+  "replication": 0,
+  "stock_after": 47.72925,
+  "stock_pct": 0.4772925,
+  "collapsed": false,
+  "harvests": {
+    "agent_0": 5.5,
+    "agent_1": 5.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 5.0,
+    "agent_5": 4.0,
+    "agent_6": 5.0,
+    "agent_7": 5.0
+  },
+  "actual_yields": {
+    "agent_0": 5.5,
+    "agent_1": 5.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 5.0,
+    "agent_5": 4.0,
+    "agent_6": 5.0,
+    "agent_7": 5.0
+  },
+  "total_harvest": 39.5,
+  "mean_harvest": 4.9375,
+  "harvest_variance": 0.17410714285714285,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "The stock is currently at 80.0\u202f/\u202f100.0 units \u2013 an abundant early\u2011season stock. The fishery has not yet collapsed this year, and the stock is well above the collapse threshold.",
+      "others_behaviour": "In Year\u202f1 Season\u202f1 every fisher took roughly 5\u20136 units. In Season\u202f2 the community total fell to 34.5 units with a spread of 3.0\u20135.0 units, but no one was taking an extreme amount. There is no evidence that anyone is planning to take significantly more or less than the 5\u20136\u2011unit range. The community seems to be converging on that range.",
+      "long_term_thinking": "If the community continues to take ~5\u20136 units each season, the stock should remain healthy and the fishery will avoid collapse. Over\u2011taking the 5\u20136 unit norm would risk a future collapse, as seen in Season\u202f2 of Year\u202f1. Maintaining the 5\u20136 range provides a sustainable trajectory.",
+      "norm_active": "yes",
+      "norm_content": "\u201cEach fisher should aim to take around 5\u20136\u202funits per season to keep the stock healthy.\u201d",
+      "harvest_reasoning": "Given the abundant stock, the established community norm, and the risk of collapse if we exceed the norm, I will aim to harvest an amount that aligns with the norm while giving me a decent catch. A 5.5\u2011unit harvest sits comfortably within the 5\u20136 range and shows I respect the collective rule.",
+      "harvest_amount": 5.5,
+      "what_you_might_say": "\"Hey, the stock looks good this season. I\u2019m planning to take about 5.5 units. How about you? Let\u2019s keep it around 5\u20136 to keep the fish healthy.\""
+    },
+    "agent_1": {
+      "stock_assessment": "The stock is currently 80.0\u202f/\u202f100.0 units \u2013 visibly abundant.  However, the collapse that occurred after last year\u2019s Season\u202f2 (when the community harvested 34.5\u202funits from a stock of 45.6) shows that a harvest approaching 30\u201335\u202funits can push the stock below the 20\u2011unit threshold that triggers a closure.  The early\u2011season trend data are limited, but the stock is in a \u201chigh\u2011growth\u201d window, so there is room to harvest safely if we keep total harvest below roughly 35\u202funits.",
+      "others_behaviour": "From the last five seasons\u2019 logs:  \n- Season\u202f1: most fishers took 5.0 units (agent_6 took 6.5).  \n- Season\u202f2: harvests ranged from 3.0 to 5.0 units; the highest were 5.0 (agents\u202f2,\u202f3,\u202f7).  \nNo one has taken more than 6.5 units, and the pattern is fairly tight around 4\u20135 units.  There is no outlier taking an unusually large share.",
+      "long_term_thinking": "If every fisher continues to take ~5 units (total \u2248\u202f40 units per season), the stock would decline from 80 to about 40 after Season\u202f1 and then to below 20 after Season\u202f2, triggering a closure.  To avoid collapse, the community should keep the total harvest in the 30\u201335 unit range, which translates to roughly 4\u20134.5 units per fisher per season.  Over several seasons, staying in that window will allow the stock to recover and maintain a sustainable fishery.",
+      "norm_active": "yes",
+      "norm_content": "The shared understanding is that each fisher should take about 4\u20135 units per season, keeping the total harvest below ~35 units to avoid stock collapse.",
+      "harvest_reasoning": "I will harvest 5.0 units.  This matches the norm and my stable income needs, while still being close to the upper safe limit.  I will monitor the catch and the stock level after this season; if the stock shows signs of decline (e.g., lower catch rates or fewer fish on board), I will reduce my haul in the next season.  The goal is to stay within the community\u2019s agreed\u2011upon safe window and to signal a willingness to adjust if needed.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\u201cHey, the stock looks good today. I\u2019m planning to take 5 units. Let\u2019s keep an eye on the catch and adjust if the numbers start to drop.\u201d"
+    },
+    "agent_2": {
+      "stock_assessment": "The stock is currently at 80\u202f/\u202f100\u202funits \u2013 an abundant, healthy level after the previous collapse. There is still plenty of room to fish without risking a new collapse, but the community has already experienced the consequences of over\u2011harvesting.",
+      "others_behaviour": "- In Season\u202f1, most fishers (agents\u202f0\u20115,\u202f7) took 5\u202funits; agent\u202f6 took 6.5\u202funits.  \n- In Season\u202f2, the majority again took 5\u202funits (agents\u202f2,\u202f3,\u202f7), with a few taking 4\u202funits (agents\u202f0,\u202f1,\u202f5,\u202f6).  \n- No one has taken less than 4 or more than 6.5 units in the last two seasons.  \nThe pattern suggests that while the norm of \u201c\u2264\u202f5\u202funits\u201d is being followed by many, a few fishers occasionally exceed it.",
+      "long_term_thinking": "If the current pattern (\u2248\u202f5\u202funits per fisher) continues, the stock will stay well above the collapse threshold (20\u202funits) for several seasons. If a few fishers repeatedly take more than 5 units, the cumulative harvest could approach or exceed the stock\u2019s capacity, potentially triggering another collapse. Maintaining the 5\u2011unit limit keeps the stock healthy and secures future income.",
+      "norm_active": "yes",
+      "norm_content": "\u201cEach fisher should aim to take no more than 5 units per season to keep the stock healthy for the next year.\u201d",
+      "harvest_reasoning": "I will harvest **5.0 units**. This matches the community\u2019s emerging norm, preserves the stock, and protects my livelihood. Taking more could risk a collapse; taking less would unnecessarily reduce my earnings.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\u201cHey, the stock looks good today. Let\u2019s keep our hauls around five units like we\u2019ve been doing \u2013 that\u2019s what we agreed on to keep the fishery healthy for everyone.\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "The stock is currently at 80.0 units out of a 100\u2011unit capacity \u2013 roughly 80\u202f% of maximum. It looks abundant, but we have limited trend data beyond the last closed season, so caution is warranted.",
+      "others_behaviour": "Other fishers have been taking between 4 and 5 units each (with one 3\u2011unit catch and one 6.5\u2011unit catch in Season\u202f1). The typical pattern is about 5 units per fisher.",
+      "long_term_thinking": "If we continue to take ~5 units each, the community total will be around 40 units per season. Historically, a total of 34.5 units after a 45.6\u2011unit stock led to collapse. Repeated high totals risk another collapse, especially if stock levels dip or if some fishers take more than 5.",
+      "norm_active": "forming",
+      "norm_content": "\u201cWe should each keep our catch around 5 units so the stock stays healthy for everyone.\u201d",
+      "harvest_reasoning": "To stay within the emerging norm and avoid pushing the stock toward collapse, I\u2019ll stick with 5 units. This gives a good volume for the processor while keeping the community total at a historically safe level.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\u201cHey, the stock looks good today; I\u2019m planning to take about 5 units. Let\u2019s keep it around that level so we don\u2019t risk another collapse.\u201d"
+    },
+    "agent_4": {
+      "stock_assessment": "The stock is currently healthy at 80.0 out of 100.0 units, indicating plenty of biomass, but we have seen a collapse in the past when the community harvested too much.",
+      "others_behaviour": "In the last full season (Year\u202f1, Season\u202f1) every fisher took about 5\u202funits, with only agent_6 taking 6.5\u202funits. The pattern is a near\u2011uniform 5\u2011unit haul.",
+      "long_term_thinking": "If we all keep to ~5\u202funits, the community will harvest roughly 40\u202funits per season, leaving a sustainable reserve. If a few fishers continue to exceed 5\u202funits, the cumulative catch could push the stock below the safe threshold, risking another collapse.",
+      "norm_active": "yes",
+      "norm_content": "Each fisher should take about five units per season to keep the stock from collapsing.",
+      "harvest_reasoning": "I will harvest 5.0\u202funits to honor the established norm, maintain the stock\u2019s health, and avoid repeating the collapse we experienced last year.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\"Let's stick to the five\u2011unit rule to keep the stock healthy.\""
+    },
+    "agent_5": {
+      "stock_assessment": "The stock is abundant at 80.0/100.0 units, but past collapse shows that taking more than about half of the stock in a season can trigger a collapse.",
+      "others_behaviour": "Other fishers have historically taken around 5 units each (with one taking 6.5 in Season\u202f1). No one is consistently taking significantly less.",
+      "long_term_thinking": "If the pattern of ~5 units per fisher continues, the community will take roughly 40\u201345 units from an 80\u2011unit stock, about 50\u201356\u202f% of the stock, which risks collapse similar to Season\u202f2.",
+      "norm_active": "yes",
+      "norm_content": "Each fisher should take about 5 units or less to keep the stock healthy.",
+      "harvest_reasoning": "To avoid risking a collapse and to stay within the community\u2019s informal norm, I will harvest slightly less than the typical 5 units\u20144 units\u2014to reduce the total taken to ~32 units (40\u202f% of the stock).",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "\"I think we should keep it around 4\u20115 units each so we don\u2019t risk a collapse.\""
+    },
+    "agent_6": {
+      "stock_assessment": "**  \nThe stock is at 80.0/100.0 units\u2014well above the 20\u2011unit collapse threshold and the 45\u2011unit \u201cunder strain\u201d level we saw last year. It\u2019s an early season, so the trend is still unknown, but the current numbers indicate a healthy, abundant stock.",
+      "others_behaviour": "**  \nLast year\u2019s Season\u202f1 everyone took 5 units (except me at 6.5). In Season\u202f2, after the collapse, the community cut back to 4\u20135 units, with me taking 4.0. No one is taking drastically more or less than that range. The pattern is a steady, moderate harvest.",
+      "long_term_thinking": "**  \nIf we keep harvesting around 5 units per fisher, the stock will decline by roughly 40 units in a season, leaving about 40 units left\u2014still far above the collapse threshold. However, if we push above 6\u20137 units, we risk pushing the stock below 20 again, which would close the fishery for the rest of the year. Thus a cautious, moderate harvest is safest for long\u2011term viability and for our own financial security.",
+      "norm_active": "yes",
+      "norm_content": "**  \n\u201cWe should keep each catch around 4\u20135 units to keep the fishery open and avoid collapse.\u201d",
+      "harvest_reasoning": "**  \nI\u2019ll harvest 5.0 units this season. This matches the community\u2019s recent norm, keeps the stock well above the collapse threshold, and still provides enough catch to cover my boat loan and support my family. Taking more would risk another collapse; taking less would under\u2011utilize the abundant stock and hurt my earnings.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\u201cHey, looks like the stock\u2019s still good. I\u2019m planning to take about 5 units. Let\u2019s keep it at that level so we can all stay in business.\u201d"
+    },
+    "agent_7": {
+      "stock_assessment": "**  \nThe stock is currently at 80\u202f/\u202f100 units \u2013 clearly abundant after the recovery period. It\u2019s an early season, so we have limited trend data, but the high starting level suggests the fishery is in a healthy state.",
+      "others_behaviour": "**  \nFrom the last recorded season, most fishers took roughly 4\u20135 units. The highest catch was 6.5 units (agent_6) and the lowest 3.0 units (agent_1). No one is consistently exceeding the 10\u2011unit informal cap that was discussed. The pattern indicates a community tendency to keep individual harvests near 5 units.",
+      "long_term_thinking": "**  \nIf we continue harvesting around 5 units each, the total removal would be ~40 units per season. Starting from 80 units, that would leave about 40 units, well above the collapse threshold (<20 units). Thus the stock should remain sustainable if the pattern holds. However, a few fishers taking >6 units could push the stock closer to danger, so maintaining the 5\u2011unit norm is prudent.",
+      "norm_active": "yes",
+      "norm_content": "**  \n\u201cWe each take about 5 units to keep the stock healthy and avoid collapse.\u201d",
+      "harvest_reasoning": "**  \nI want to stay within the community norm, keep the fishery safe, and still earn a decent supplemental income. Harvesting 5 units aligns with the informal agreement, matches past practice, and preserves the stock for future seasons.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\"Hey, the stock\u2019s at 80 now. Let\u2019s keep it under 10 each\u2014I'm planning to take 5 units this season.\""
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 2,
+      "initiator": "agent_2",
+      "responder": "agent_0",
+      "turns": [
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_0",
+          "content": "\u201cHey, the stock looks good today. Let\u2019s keep our hauls around five units like we\u2019ve been doing \u2013 that\u2019s what we agreed on to keep the fishery healthy for everyone.\u201d",
+          "speech_act": "agreement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_2",
+          "content": "5.5 units works for me. I'll keep it at that.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_0",
+          "content": "I\u2019m not comfortable increasing beyond five units; that could strain the stock again. Let\u2019s stick to five to keep the fishery healthy.",
+          "speech_act": "disagreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_2",
+          "content": "I get the concern, but I need a bit more for my family. I can drop to 5.3 units if that works.",
+          "speech_act": "proposal",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_0",
+          "content": "I can\u2019t agree to 5.3; we need to keep it at 5 to protect the stock.",
+          "speech_act": "disagreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_2",
+          "content": "I understand, I'll take 5 units.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 2,
+      "initiator": "agent_4",
+      "responder": "agent_1",
+      "turns": [
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_1",
+          "content": "\"Let's stick to the five\u2011unit rule to keep the stock healthy.\"",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_4",
+          "content": "I agree with the five\u2011unit rule. I'll stick to 5.0 units this season.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_1",
+          "content": "All right, let's keep the 5\u2011unit rule.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_4",
+          "content": "Thanks for confirming. I'll keep my catch at 5.0 units.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_1",
+          "content": "Thanks, let's all keep to 5.0 units this season.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_4",
+          "content": "I'll keep my catch at 5.0 units this season and monitor the stock closely. Thanks for coordinating.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 6
+    },
+    {
+      "tick": 2,
+      "initiator": "agent_6",
+      "responder": "agent_7",
+      "turns": [
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_7",
+          "content": "**  \n\u201cHey, looks like the stock\u2019s still good. I\u2019m planning to take about 5 units. Let\u2019s keep it at that level so we can all stay in business.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_6",
+          "content": "I agree, I'll take 5 units as well.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_7",
+          "content": "Great, 5 units each.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_6",
+          "content": "Sure, 5 units each.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_7",
+          "content": "Sounds good, let's get started.",
+          "speech_act": "statement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_6",
+          "content": "Sure, let's get started.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 6
+    },
+    {
+      "tick": 2,
+      "initiator": "agent_3",
+      "responder": "agent_5",
+      "turns": [
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_5",
+          "content": "\u201cHey, the stock looks good today; I\u2019m planning to take about 5 units. Let\u2019s keep it around that level so we don\u2019t risk another collapse.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_3",
+          "content": "I\u2019ll stick to 4 units this season; that should keep the stock healthy.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_5",
+          "content": "Got it, 5 units.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_3",
+          "content": "Okay, that works.",
+          "speech_act": "closing",
+          "turn_number": 3
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 4
+    }
+  ],
+  "norm_adoption_rate": 1.0,
+  "n_conversations": 4,
+  "n_proposals": 2,
+  "n_agreements": 13,
+  "n_warnings": 0
+}
+{
+  "tick": 3,
+  "year": 1,
+  "season_in_year": 4,
+  "season_label": "Year 1, Season 4",
+  "closed_season": false,
+  "condition": "full_social",
+  "replication": 0,
+  "stock_after": 80.0,
+  "stock_pct": 0.8,
+  "collapsed": false,
+  "harvests": {
+    "agent_0": 5.0,
+    "agent_1": 3.0,
+    "agent_2": 5.0,
+    "agent_3": 3.0,
+    "agent_4": 5.0,
+    "agent_5": 5.0,
+    "agent_6": 3.0,
+    "agent_7": 3.0
+  },
+  "actual_yields": {
+    "agent_0": 5.0,
+    "agent_1": 3.0,
+    "agent_2": 5.0,
+    "agent_3": 3.0,
+    "agent_4": 5.0,
+    "agent_5": 5.0,
+    "agent_6": 3.0,
+    "agent_7": 3.0
+  },
+  "total_harvest": 32.0,
+  "mean_harvest": 4.0,
+  "harvest_variance": 1.1428571428571428,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "**  \nThe stock is at 47.7\u202f/\u202f100.0 units \u2013 clearly under strain. It\u2019s below the 80\u2011unit recovery baseline but",
+      "others_behaviour": "",
+      "long_term_thinking": "",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_1": {
+      "stock_assessment": "The stock is at 47.7\u202f/\u202f100.0 units \u2013 clearly under strain, just above the collapse threshold. A high harvest this season would push it below 20\u202f/\u202f100 and trigger a closure for the rest of the year.",
+      "others_behaviour": "Most fishers have been taking 4\u20135.5 units this season (agent_0 5.5, agent_2 5, agent_3 5, agent_4 5, agent_6 5, agent_7 5, agent_5 4). No one is taking a noticeably larger share; the pattern is fairly uniform.",
+      "long_term_thinking": "If we all continue to harvest ~5 units, the total catch will be ~40 units, leaving only ~7.7 units of stock \u2013 below the collapse threshold. The fishery would close for Seasons\u202f3 and\u202f4, cutting off income for all of us.",
+      "norm_active": "forming",
+      "norm_content": "\u201cWe should all cut our catch to about 3 units this season so the stock stays above 20\u202f/\u202f100 and the fishery stays open.\u201d",
+      "harvest_reasoning": "To protect the stock and preserve the community\u2019s livelihood, I will reduce my catch to a sustainable level. A 3\u2011unit haul keeps the total harvest around 24 units, leaving roughly 23.7 units of stock \u2013 safely above the collapse threshold \u2013 while still allowing me to earn income.",
+      "harvest_amount": 3.0,
+      "what_you_might_say": "\u201cHey, the stock is at 47.7, so we\u2019re under strain. If we all limit ourselves to about 3 units this season, we can keep the fishery open for the rest of the year. Let\u2019s coordinate.\u201d"
+    },
+    "agent_2": {
+      "stock_assessment": "**  \nThe stock is at 47.7\u202f/\u202f100.0 units \u2013 below the healthy 80\u2011unit level and already under strain. A few more seasons of the current average catch (~5\u202funits per fisher) would likely drive it below the collapse threshold (\u224820\u202funits).",
+      "others_behaviour": "**  \nMost fishers are taking around 5\u202funits. Agent\u202f5 took 4\u202funits, agent\u202f0 took 5.5\u202funits, and the rest are at 5.0. No one is taking an extreme amount, but the collective haul is still high enough to push the stock lower.",
+      "long_term_thinking": "**  \nIf we continue at ~5\u202funits per fisher, the stock will decline each season and could collapse in a couple of years, forcing a closure that would cut our income for that year. A modest reduction would slow the decline and give the stock time to recover.",
+      "norm_active": "yes",
+      "norm_content": "**  \n\u201cWe aim to keep our hauls around five units to sustain the stock.\u201d",
+      "harvest_reasoning": "**  \nI will harvest 5.0\u202funits this season. This matches the community norm, keeps the stock from falling further, and preserves my livelihood for the future.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\u201cHey, I\u2019m planning to keep my haul at five units again. The stock is still low, so let\u2019s stay cautious and avoid pushing it over the edge.\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "**  \nThe stock is at 47.7\u202f/\u202f100.0 units \u2013 clearly under strain. In the last season (Year\u202f1\u202fSeason\u202f2) a stock of 45.6 collapsed after a community total catch of 34.5, leaving the fishery closed for the rest of the year. The current stock is still well below the 80\u2011unit \u201chealthy\u201d level and close to the 20\u2011unit collapse threshold.",
+      "others_behaviour": "**  \nAll eight fishers have been taking roughly 5\u202funits each (the highest being 5.5 for agent\u202f0 in Year\u202f2\u202fSeason\u202f1). No one is taking significantly more or less; the pattern is a flat 4\u20135\u202funit catch per fisher.",
+      "long_term_thinking": "**  \nIf the current pattern continues (\u22485\u202funits per fisher \u00d7\u202f8 =\u202f40\u202funits total), the stock would fall from 47.7 to about 7.7\u202funits \u2013 below the 20\u2011unit collapse threshold \u2013 and the fishery would shut down again. Reducing the catch to ~3\u202funits per fisher would leave ~23.7\u202funits after the season, still low but above the collapse threshold and giving the stock a chance to recover.",
+      "norm_active": "forming",
+      "norm_content": "**  \n\u201cWe should each keep our catch around 5 units so the stock stays healthy for everyone.\u201d",
+      "harvest_reasoning": "**  \nGiven the low stock and the risk of collapse if we all continue at 5\u202funits, I will take a smaller haul to preserve the resource. A 3\u2011unit catch balances the need for some revenue (the processor rewards volume) with the community\u2019s long\u2011term sustainability and the emerging norm that encourages moderate, consistent catches.",
+      "harvest_amount": 3.0,
+      "what_you_might_say": "**  \n\u201cHey, the stock\u2019s only at 47.7 right now \u2013 we\u2019re under strain. I\u2019m planning to take about 3\u202funits. Maybe we should all keep it low this season to avoid another collapse.\u201d"
+    },
+    "agent_4": {
+      "stock_assessment": "The stock is at 47.7\u202f/\u202f100.0 units\u2014under strain and only a few seasons away from the collapse threshold (20\u202funits). It\u2019s been recovering slowly but remains vulnerable.",
+      "others_behaviour": "Most fishers have been taking 4\u20135 units this season (agent_0 took 5.5, the rest 4.0\u20135.0). No one is taking a noticeably larger haul, and the pattern mirrors the 5\u2011unit rule that was discussed last year.",
+      "long_term_thinking": "If everyone continues to take about five units, the stock will decline gradually but should stay above the collapse threshold for several seasons. A few extra units per person could push it below 20 units sooner, risking a full\u2011season closure.",
+      "norm_active": "yes",
+      "norm_content": "\u201cEach fisher should aim for around five units per season to keep the stock sustainable.\u201d",
+      "harvest_reasoning": "To stay aligned with the community\u2019s informal norm and protect the already\u2011strained stock, I will take the agreed\u2011upon five\u2011unit haul. This matches my past practice and keeps the risk of collapse low.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\u201cHey, I\u2019ve been sticking to about five units. Looks like the stock\u2019s still under strain, so let\u2019s keep it that way.\u201d"
+    },
+    "agent_5": {
+      "stock_assessment": "**  \nThe stock is currently at 47.7\u202f/\u202f100.0 units \u2013 roughly 48\u202f% of its carrying capacity. It is clearly under strain; the last collapse happened when the stock fell below 20 units. With the current stock level, a harvest that is too large will push us into another collapse.",
+      "others_behaviour": "**  \nIn Season\u202f1 of Year\u202f2, the other fishers each took about 5\u202funits (agent\u202f0 took 5.5, agents\u202f1\u20114,\u202f6\u20117 took 5.0). I took 4.0 units. In Year\u202f1, Season\u202f2, we all agreed to 4 units each. Thus, the others are taking slightly more than me this season, but there is a clear pattern of reducing to ~4 units when the stock is low.",
+      "long_term_thinking": "**  \nIf we keep harvesting at the current rates (\u22485\u202funits per fisher) the stock will fall from 47.7 to about 8\u202funits in a single season, well below the 20\u2011unit threshold, triggering a closure. Even if we reduce to 4 units per fisher, the total harvest would still likely collapse the stock in a few seasons. A more conservative harvest is required to keep the stock above the collapse threshold and preserve the fishery for the long term.",
+      "norm_active": "forming",
+      "norm_content": "**  \nWe are beginning to agree that each fisher should limit their catch to around 4 units per season to protect the stock.",
+      "harvest_reasoning": "**  \nI will harvest **3.5 units** this season. This amount is below the 4",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_6": {
+      "stock_assessment": "**  \nThe stock is at 47.7\u202f/\u202f100\u202funits \u2013 comfortably above the collapse threshold of 20\u202funits but already below the \u201chealthy\u201d 80\u2011unit mark. It\u2019s under strain; if we keep taking the same amounts as last season, we\u2019ll drive it under 20 in a few rounds.",
+      "others_behaviour": "",
+      "long_term_thinking": "**  \nIf everyone keeps harvesting ~5\u202funits, the community total will be ~40\u202funits per season, leaving only ~8\u202funits of stock. That\u2019s below the 20\u2011unit safety threshold, so the fishery would collapse in the next season, forcing a shut\u2011down and loss of income.",
+      "norm_active": "yes",
+      "norm_content": "**  \nThe community is starting to agree that we need to cut individual catches to about 3\u202funits each to keep the stock above 20\u202funits and avoid collapse.",
+      "harvest_reasoning": "**  \nI need to earn some income but I also want to avoid another collapse that would wipe out my boat loan payments. If everyone cuts back to ~3\u202funits, the community total will be ~24\u202funits, leaving ~24\u202funits of stock \u2013 safely above 20. That\u2019s the best compromise between livelihood and sustainability.",
+      "harvest_amount": 3.0,
+      "what_you_might_say": "**  \n\"Hey, I've been looking at the numbers and if we keep taking about 5 units, the stock will drop below 20 in a season or two. Maybe we should all cut back to around 3 units this season to keep the fishery open and avoid a collapse.\""
+    },
+    "agent_7": {
+      "stock_assessment": "The stock is 47.7\u202f/\u202f100.0 units at the start of Season\u202f2, Year\u202f2. It\u2019s clearly under strain \u2013 the last season we saw a drop from 80\u202f/\u202f100 to 47.7, and the fishery collapsed after Season\u202f2 of Year\u202f1. We have only one season of data at this low level, so uncertainty is high, but the trend is downward.",
+      "others_behaviour": "In Season\u202f1 of Year\u202f2 everyone (except agent\u202f5 who took 4.0) took 5.0 units; agent\u202f0 took 5.5. In Year\u202f1 Season\u202f1, all took 5.0 (agent\u202f6 took 6.5). In Season\u202f2 of Year\u202f1, the highest individual catches were 5.0, with most around 4\u20135. Thus the community\u2019s pattern is roughly 5 units per fisher, with a few slight deviations.",
+      "long_term_thinking": "If the pattern of ~5 units per fisher continues on a stock of 47.7, the total harvest would be ~40 units, leaving only ~7.7 units \u2013 well below the 20\u2011unit collapse threshold. The fishery would close for the remainder of the year, forcing a pause in fishing and a loss of income. To keep the stock above 20 units, the total harvest must stay \u226427.7 units, i.e., an average of \u22643.5 units per fisher.",
+      "norm_active": "yes",
+      "norm_content": "\u201cWe should keep each fisher\u2019s catch under 10 units, and preferably under 5, to avoid stock collapse.\u201d",
+      "harvest_reasoning": "Given the low stock, the community\u2019s tendency to take ~5 units, and my extra land\u2011based income, I will reduce my catch to help preserve the stock. Taking 3.0 units keeps the total harvest \u226424 units (if everyone follows suit), leaving ~23.7 units \u2013 just above the collapse threshold. This protects the fishery for the next season while still providing a modest income.",
+      "harvest_amount": 3.0,
+      "what_you_might_say": "\"Hey, the stock\u2019s down to 47.7. If we all cut back to about 3 units, we should keep the fishery open next season. What do you think?\""
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 3,
+      "initiator": "agent_3",
+      "responder": "agent_7",
+      "turns": [
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_7",
+          "content": "**  \n\u201cHey, the stock\u2019s only at 47.7 right now \u2013 we\u2019re under strain. I\u2019m planning to take about 3\u202funits. Maybe we should all keep it low this season to avoid another collapse.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_3",
+          "content": "I agree, let's keep it low this season. 3 units each sounds reasonable.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_7",
+          "content": "I'll stick to 3 units. Let me know if anyone else has a different plan.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_3",
+          "content": "I'm also planning 3 units. Let's keep an eye on the stock.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_7",
+          "content": "Thanks, I'll stick with 3 units. Let me know if anything changes.",
+          "speech_act": "closing",
+          "turn_number": 4
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 5
+    },
+    {
+      "tick": 3,
+      "initiator": "agent_2",
+      "responder": "agent_6",
+      "turns": [
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_6",
+          "content": "**  \n\u201cHey, I\u2019m planning to keep my haul at five units again. The stock is still low, so let\u2019s stay cautious and avoid pushing it over the edge.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_2",
+          "content": "Five units will push the stock further down; we should reduce to 3 units or less.",
+          "speech_act": "warning",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_6",
+          "content": "I see your point, but 3 units might be too low for us to cover our costs. Could we consider 4 units instead?",
+          "speech_act": "question",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_2",
+          "content": "4 units would push the stock over the edge again. We need to cap at 3 units or less.",
+          "speech_act": "disagreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_6",
+          "content": "I hear your concern; I'll reduce my haul to 3 units to help protect the stock.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_2",
+          "content": "Great, let's stick to 3 units and monitor the stock closely.",
+          "speech_act": "closing",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "warning_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 3,
+      "initiator": "agent_1",
+      "responder": "agent_0",
+      "turns": [
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_0",
+          "content": "\u201cHey, the stock is at 47.7, so we\u2019re under strain. If we all limit ourselves to about 3 units this season, we can keep the fishery open for the rest of the year. Let\u2019s coordinate.\u201d",
+          "speech_act": "proposal",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_1",
+          "content": "I agree to take 3 units this season to help keep the fishery open.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_0",
+          "content": "Thanks for agreeing. I\u2019ll keep my catch at 3 units and will report back after each trip.",
+          "speech_act": "statement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_1",
+          "content": "Sounds good, 3 units. I\u2019ll keep my catch at 3 units and report after each trip.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_0",
+          "content": "I'll do the same and keep you updated.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_1",
+          "content": "Thanks, I\u2019ll stick to 3 units and will update after each trip.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 3,
+      "initiator": "agent_4",
+      "responder": "agent_5",
+      "turns": [
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_5",
+          "content": "\u201cHey, I\u2019ve been sticking to about five units. Looks like the stock\u2019s still under strain, so let\u2019s keep it that way.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_4",
+          "content": "I agree, 4 units is a good limit. I will stick to 4 units this season.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_5",
+          "content": "Got it, 4 units. We'll keep a close eye on the stock and adjust if needed.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_4",
+          "content": "Okay, 4 units for this season.  \nWe'll keep monitoring the stock closely.  \nWe'll adjust if it changes.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_5",
+          "content": "Alright, four units it is. We'll keep a close eye and adjust if needed.",
+          "speech_act": "closing",
+          "turn_number": 4
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 5
+    }
+  ],
+  "norm_adoption_rate": 0.875,
+  "n_conversations": 4,
+  "n_proposals": 1,
+  "n_agreements": 11,
+  "n_warnings": 1
+}
+{
+  "tick": 4,
+  "year": 2,
+  "season_in_year": 1,
+  "season_label": "Year 2, Season 1",
+  "closed_season": false,
+  "condition": "full_social",
+  "replication": 0,
+  "stock_after": 51.392,
+  "stock_pct": 0.51392,
+  "collapsed": false,
+  "harvests": {
+    "agent_0": 4.5,
+    "agent_1": 3.0,
+    "agent_2": 4.0,
+    "agent_3": 4.5,
+    "agent_4": 5.0,
+    "agent_5": 5.0,
+    "agent_6": 5.0,
+    "agent_7": 5.0
+  },
+  "actual_yields": {
+    "agent_0": 4.5,
+    "agent_1": 3.0,
+    "agent_2": 4.0,
+    "agent_3": 4.5,
+    "agent_4": 5.0,
+    "agent_5": 5.0,
+    "agent_6": 5.0,
+    "agent_7": 5.0
+  },
+  "total_harvest": 36.0,
+  "mean_harvest": 4.5,
+  "harvest_variance": 0.5,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "**  \nThe stock is currently at 80\u202f/\u202f100 units \u2013 abundant, but the fishery has collapsed twice in the last two years when the community harvested roughly 5\u20136 units per person in the first two seasons. If we keep that pattern, we risk another collapse by the end of season\u202f2.",
+      "others_behaviour": "**  \nMost fishers have taken between 5\u202fand\u202f6\u202funits in season\u202f1, and 4.5\u202fto\u202f5.5\u202funits in season\u202f2. A few have taken slightly less (\u2248\u202f4\u202funits), but there is no clear move toward a lower quota. The high\u2011harvest pattern is still the norm.",
+      "long_term_thinking": "**  \nContinuing the current pattern will almost certainly lead to another collapse at the end of season\u202f2, forcing a two\u2011season closure and a loss of income. A modest reduction now can prevent collapse and keep the fishery open for the rest of the year.",
+      "norm_active": "yes",
+      "norm_content": "** The community has an informal understanding that each person should aim for about five units per season to keep the stock healthy.",
+      "harvest_reasoning": "**  \nI will harvest slightly below the informal norm to reduce risk while still maintaining a reasonable catch. Taking 4.5\u202funits keeps me within the community\u2019s expected range but gives a small buffer against over\u2011exploitation.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "**  \n\"Hey, I think we should keep our hauls around five units to avoid another collapse. I'm planning to take about 4.5 units this season.\""
+    },
+    "agent_1": {
+      "stock_assessment": "**  \nThe stock is at 80.0 / 100.0 units \u2013 80\u202f% of full capacity. It\u2019s abundant, but our past experience shows that two seasons of moderate harvesting often bring the stock below the 20\u202funit threshold, causing a collapse.",
+      "others_behaviour": "**  \nOther fishers typically take ~5\u202funits in Season\u202f1 and ~3\u20134\u202funits in Season\u202f2. No one is taking a noticeably larger share this year, but the pattern is clear: a \u201c5\u2011unit first, 3\u2011unit second\u201d rhythm.",
+      "long_term_thinking": "**  \nIf we keep taking ~5\u202funits in Season\u202f1 and ~3\u20134\u202funits in Season\u202f2, the stock will be heavily depleted after Season\u202f2 and likely collapse again, shutting the fishery for the rest of the year. A more conservative catch in Season\u202f2 would reduce that risk.",
+      "norm_active": "yes",
+      "norm_content": "**  \nThe community is converging on a norm of about 5\u202funits in Season\u202f1 and 3\u20134\u202funits in Season\u202f2 to avoid overfishing.",
+      "harvest_reasoning": "**  \nTo stay within the emerging norm while protecting the stock, I\u2019ll take the lower end of the Season\u202f2 range\u20143\u202funits. This keeps the total harvest in line with past seasons and reduces the chance of collapse.",
+      "harvest_amount": 3.0,
+      "what_you_might_say": "**  \n\"Hey, I\u2019ve seen how the stock collapsed after the second season. I\u2019m planning to keep my catch to about 3 units this year. What do you think?\""
+    },
+    "agent_2": {
+      "stock_assessment": "**  \nThe stock is currently at 80\u202f/\u202f100 units \u2013 it looks abundant, but the last two seasons show that harvesting around 40\u202funits total (\u22485\u202funits per fisher) leads to a collapse (stock falls below 20). So while the stock is healthy now, it is vulnerable to over\u2011exploitation.",
+      "others_behaviour": "**  \nMost fishers are still taking about 5\u202funits each (e.g., Year\u202f2\u202fSeason\u202f1 community total 39.5). No one is drastically under\u2011harvesting or over\u2011harvesting beyond that pattern. The pattern mirrors the pre\u2011collapse regime.",
+      "long_term_thinking": "**  \nIf we keep harvesting ~5\u202funits per fisher for several more seasons, the stock will collapse again, forcing a closure and loss of income for the whole community.",
+      "norm_active": "forming",
+      "norm_content": "** Each fisher should take no more than 4\u20135\u202funits per season to keep the stock healthy.",
+      "harvest_reasoning": "**  \nGiven the risk of collapse, I\u2019ll aim for the lower end of the agreed range. Harvesting 4\u202funits keeps me within the community\u2019s informal agreement and reduces the chance of another collapse.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "**  \n\u201cHey, let\u2019s keep our hauls at 4 units again this season. Last year we almost collapsed, and we need to protect the fishery for everyone.\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "The stock is currently at 80.0\u202f/\u202f100.0 units \u2013 comfortably high and in the \u201cabundant\u201d phase. No immediate signs of over\u2011exploitation this season.",
+      "others_behaviour": "Across the last two years the pattern is:  \n- Most fishers take 5.0 units (sometimes 5.5).  \n- Agent\u202f6 sometimes takes 6.5, Agent\u202f7 dips to 3.0 in some seasons.  \n- No one is taking more than 6.5 or less than 3.0.  \nSo the community is hovering around 4\u20135\u202funits per person.",
+      "long_term_thinking": "If we keep harvesting at the current average (\u22484\u20135\u202funits each), the community total will stay in the 32\u201340\u202funit range. Historically, totals above ~35\u202funits when the stock is around 45\u201350\u202funits have led to collapse. To avoid a repeat, we need to keep the total harvest below that threshold over several seasons.",
+      "norm_active": "yes",
+      "norm_content": "\"We should keep each catch around 4\u20135\u202funits so we don\u2019t risk depleting the stock.\"",
+      "harvest_reasoning": "I want a decent volume for the processor but also want to stay below the collapse threshold. Taking 4.5\u202funits balances these concerns: it\u2019s close to the community average, gives me a good price, and keeps the total harvest in a safer range if others also stay around 4\u20135 units.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "\"Hey, the stock looks good. I\u2019m planning to take about 4.5 units this season. Let\u2019s keep it moderate so we don\u2019t risk a collapse.\""
+    },
+    "agent_4": {
+      "stock_assessment": "**  \nThe stock is at 80.0\u202f/\u202f100.0 units \u2013 abundant and healthy.  The last collapse happened when the stock fell below 20.0\u202funits after the second season of a year, so the risk is clear if we keep over\u2011harvesting.",
+      "others_behaviour": "**  \nOther fishers have consistently taken around 5.0\u202funits per season.  A few (agent_0, agent_6) have gone slightly above 5.0 in Season\u202f1 of previous years, but no one is taking a dramatically larger haul.  The pattern is fairly uniform.",
+      "long_term_thinking": "**  \nIf we continue to harvest ~5\u202funits each for two consecutive seasons, the stock will collapse as it did in Years\u202f1 and\u202f2.  The stock will recover only after a closed season, so we must avoid that pattern.",
+      "norm_active": "yes",
+      "norm_content": "** Each fisher should take about 5\u202funits per season to keep the stock sustainable.",
+      "harvest_reasoning": "**  \nI will harvest 5.0\u202funits this season.  The stock is currently abundant, the norm is clear, and I want to maintain the agreed\u2011upon limit that has proven to keep the fishery open.  Reducing below the norm would be unnecessary risk for me; staying at 5.0 units keeps us within the sustainable window and preserves the tradition of fairness.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\"Hey, the stock looks good today.  Let\u2019s stick to the 5\u2011unit rule we\u2019ve been using; that\u2019s what keeps the fishery from collapsing.  How about you?\""
+    },
+    "agent_5": {
+      "stock_assessment": "The stock is at 80.0/100.0 units, indicating an abundant early\u2011season supply with plenty of fish left to catch.",
+      "others_behaviour": "In the last few seasons the other fishers have taken between 3 and 6.5 units each, with most hovering around 5 units. No one has consistently taken a dramatically higher",
+      "long_term_thinking": "",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_6": {
+      "stock_assessment": "",
+      "others_behaviour": "",
+      "long_term_thinking": "",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_7": {
+      "stock_assessment": "**  \nThe stock is currently at 80.0/100.0 units \u2013 abundant.  Past seasons have shown that a total community catch of ~40 units (\u22485 units per fisher) leaves the stock around 40 units, safely above the collapse threshold (~20 units).  If we were to exceed that total by a significant margin the stock would fall below 20 and the fishery would close.",
+      "others_behaviour": "**  \nIn every season the majority of fishers have taken roughly 5 units.  The largest deviations have been a few fishers taking 5.5\u20136.5 units, but no one has taken an extreme amount.  The pattern is consistent with an informal \u201c5\u2011unit each\u201d agreement.",
+      "long_term_thinking": "**  \nMaintaining the ~5\u2011unit catch per fisher keeps the stock above the collapse threshold, allowing the fishery to remain open for the rest of the year.  If several fishers increase their take significantly, the stock will drop below 20 units and the fishery will shut down, forcing everyone to wait for the next year.",
+      "norm_active": "yes",
+      "norm_content": "** \u201cEach fisher should take about 5 units per season so that the stock stays healthy and the fishery remains open.\u201d",
+      "harvest_reasoning": "**  \nTo preserve the shared resource and honor the community\u2019s informal norm, I will harvest 5.0 units this season.  This keeps the stock above the collapse threshold and respects the agreement that has proven effective in the past.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "**  \n\u201cHey, let\u2019s stick to about 5 units each this season, just like we agreed before.  That keeps the stock healthy and avoids another collapse.\u201d"
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 4,
+      "initiator": "agent_1",
+      "responder": "agent_0",
+      "turns": [
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_0",
+          "content": "**  \n\"Hey, I\u2019ve seen how the stock collapsed after the second season. I\u2019m planning to keep my catch to about 3 units this year. What do you think?\"",
+          "speech_act": "question",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_1",
+          "content": "I think that's a good plan; 3 units should help the stock recover. Let's stick to that.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_0",
+          "content": "Thanks, agent_0. I'll stick to 3 units this season and keep monitoring the stock.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_1",
+          "content": "Great, 3 units each. Let's monitor the stock.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_0",
+          "content": "Got it, 3 units. I'll keep an eye on the stock.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_1",
+          "content": "Alright, let's keep to 3 units and watch the stock.",
+          "speech_act": "closing",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 6
+    },
+    {
+      "tick": 4,
+      "initiator": "agent_4",
+      "responder": "agent_6",
+      "turns": [
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_6",
+          "content": "**  \n\"Hey, the stock looks good today.  Let\u2019s stick to the 5\u2011unit rule we\u2019ve been using; that\u2019s what keeps the fishery from collapsing.  How about you?\"",
+          "speech_act": "proposal",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_4",
+          "content": "I'm fine with 5 units; that keeps the fishery healthy and meets my needs. I'll stick to that for this season.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_6",
+          "content": "Sounds good, 5 units each it is. We'll keep the stock healthy and head out.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_4",
+          "content": "Sure, let's head out and stick to the 5\u2011unit plan.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_6",
+          "content": "Alright, let's get out there and keep it steady.",
+          "speech_act": "closing",
+          "turn_number": 4
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 5
+    },
+    {
+      "tick": 4,
+      "initiator": "agent_7",
+      "responder": "agent_3",
+      "turns": [
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_3",
+          "content": "**  \n\u201cHey, let\u2019s stick to about 5 units each this season, just like we agreed before.  That keeps the stock healthy and avoids another collapse.\u201d",
+          "speech_act": "agreement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_7",
+          "content": "I think we can push to 6 units each this season, given the abundance. That would increase our volume and the processor's reward. Let's keep the stock healthy by monitoring.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_3",
+          "content": "I think 5 units is still safest. Pushing to 6 could risk collapse.",
+          "speech_act": "disagreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_7",
+          "content": "I think we can safely aim for 6 units each this season, given the abundance and monitoring.",
+          "speech_act": "proposal",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_3",
+          "content": "I disagree; we should stay at 5 units to keep the fishery safe.",
+          "speech_act": "disagreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_7",
+          "content": "I propose we each take 6 units this season; the stock is healthy and the processor rewards volume.",
+          "speech_act": "proposal",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_rejected",
+      "n_turns": 6
+    },
+    {
+      "tick": 4,
+      "initiator": "agent_2",
+      "responder": "agent_5",
+      "turns": [
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_5",
+          "content": "**  \n\u201cHey, let\u2019s keep our hauls at 4 units again this season. Last year we almost collapsed, and we need to protect the fishery for everyone.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_2",
+          "content": "I can reduce my haul to 4 units this season, but I hope everyone else does the same.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_5",
+          "content": "I agree, I'll keep my haul at 4 units this season.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_2",
+          "content": "Thanks, let's all keep it at 4 units.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_5",
+          "content": "Glad we\u2019re on the same page. I\u2019ll keep my haul at 4 units this season. Let\u2019s keep an eye on the stock.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_2",
+          "content": "Thanks, I\u2019ll keep my haul at 4 units. We'll monitor the stock closely.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 6
+    }
+  ],
+  "norm_adoption_rate": 0.75,
+  "n_conversations": 4,
+  "n_proposals": 4,
+  "n_agreements": 13,
+  "n_warnings": 0
+}
+{
+  "tick": 5,
+  "year": 2,
+  "season_in_year": 2,
+  "season_label": "Year 2, Season 2",
+  "closed_season": false,
+  "condition": "full_social",
+  "replication": 0,
+  "stock_after": 80.0,
+  "stock_pct": 0.8,
+  "collapsed": false,
+  "harvests": {
+    "agent_0": 5.0,
+    "agent_1": 4.0,
+    "agent_2": 3.5,
+    "agent_3": 5.0,
+    "agent_4": 4.0,
+    "agent_5": 4.0,
+    "agent_6": 5.0,
+    "agent_7": 5.0
+  },
+  "actual_yields": {
+    "agent_0": 5.0,
+    "agent_1": 4.0,
+    "agent_2": 3.5,
+    "agent_3": 5.0,
+    "agent_4": 4.0,
+    "agent_5": 4.0,
+    "agent_6": 5.0,
+    "agent_7": 5.0
+  },
+  "total_harvest": 35.5,
+  "mean_harvest": 4.4375,
+  "harvest_variance": 0.38839285714285715,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "",
+      "others_behaviour": "",
+      "long_term_thinking": "",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_1": {
+      "stock_assessment": "**  \nThe stock is at 51.4\u202f/\u202f100.0 units \u2013 below the 60\u2011unit \u201chealthy\u201d level but well above the 20\u2011unit collapse threshold. It\u2019s under strain, but still recoverable if we keep harvests moderate.",
+      "others_behaviour": "**  \nIn Season\u202f1 of Year\u202f3, most fishers (agents\u202f0,\u202f3,\u202f4,\u202f5,\u202f6,\u202f7) took 5\u202funits; a few took 4.5 or 4.0. None took less than 3\u202funits (my own 3.0). The pattern is a \u201c5\u2011unit\u201d norm, which historically led to collapse when repeated.",
+      "long_term_thinking": "**  \nIf the 5\u2011unit pattern continues, the community harvest would be ~40\u202funits this season, dropping the stock to ~11.4\u202funits \u2013 below collapse. The fishery would close next season, forcing a full\u2011year pause and a loss of income. A reduction to ~4\u202funits per fisher would keep the stock above 20\u202funits and allow continued fishing.",
+      "norm_active": "forming",
+      "norm_content": "**  \n\u201cWe should aim to keep each fisher\u2019s catch around 4 units to keep the stock from collapsing.\u201d",
+      "harvest_reasoning": "**  \nTo protect the stock and our livelihood, I\u2019ll follow the emerging norm of 4\u202funits. This reduces the risk of collapse and aligns with the suggestion from agent\u202f6 in Year\u202f1, Season\u202f2.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "**  \n\u201cHey, the stock\u2019s at 51.4 now. I\u2019m planning to take 4 units this season. If we all keep it around that, we should avoid collapse and keep the fishery open. What do you think?\u201d"
+    },
+    "agent_2": {
+      "stock_assessment": "**  \nThe stock is at 51.4/100.0 units \u2013 below the 60\u2011unit \u201chealthy\u201d level but still above the 20\u2011unit collapse threshold. If the community continues to take roughly 4\u20135 units each this season, the remaining stock will drop to ~15\u201119 units, triggering a collapse. A modest reduction in haul size is therefore needed to keep the stock above the safe level.",
+      "others_behaviour": "**  \nAll eight fishers have been taking between 3.0 and 5.0 units this season. The pattern is that most are around 4\u20135 units, with a few (agent_1, agent_3, agent_6, agent_7) taking 3\u20134 units. No one is taking a dramatically larger share, but the collective total is still high enough to risk collapse.",
+      "long_term_thinking": "**  \nIf we keep taking ~4.5 units each for the rest of the year, the stock will fall below 20 units before the end of Season\u202f2, causing a collapse. A small reduction (\u22483.5 units each) will leave about 21.4 units, keeping the fishery open for the next season and allowing the stock to recover.",
+      "norm_active": "yes",
+      "norm_content": "**  \n\u201cWe should keep our hauls to about 3.5\u20134.0 units this season so the stock stays above the collapse threshold.\u201d",
+      "harvest_reasoning": "**  \nGiven the current stock level, the observed pattern of others, and the risk of collapse, I will harvest 3.5 units. This keeps the total harvest below the critical 32\u2011unit limit, leaving enough stock for recovery while still earning a livelihood.",
+      "harvest_amount": 3.5,
+      "what_you_might_say": "**  \n\u201cIf you\u2019re still planning on taking 4\u20135 units, we might collapse before the season ends. Let\u2019s keep it to about 3.5 units so the fishery stays open for everyone next year.\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "The stock is at 51.4\u202f/\u202f100.0 units \u2013 it\u2019s below the 80\u2011unit baseline but still well above the collapse threshold of 20\u202funits. It\u2019s recovering after the last closed seasons, but any large additional harvest could push it into the danger zone.",
+      "others_behaviour": "In Season\u202f1 this year, most fishers took 4.5\u20135.0 units. In the two collapse seasons, several fishers also took 5.0 units, pushing the community total above 32 units. There\u2019s no extreme over\u2011take; the pattern is a moderate, roughly equal",
+      "long_term_thinking": "",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_4": {
+      "stock_assessment": "The stock is at 51.4/100.0 units \u2013 still above the collapse threshold (20.0) but clearly under strain. A few seasons ago we saw the stock collapse after season\u202f2 when the community took roughly 32\u202funits from a stock of 47\u201348 units.",
+      "others_behaviour": "In Season\u202f1 of Year\u202f3 the other fishers took: 4.5, 3.0, 4.0, 4.5, 5.0, 5.0, 5.0. No one went above 5.0 units, and the highest haul was 5.0. The pattern is fairly even, but the 5\u2011unit peak is the upper bound.",
+      "long_term_thinking": "If we keep taking about 36\u202funits as in Season\u202f1, the stock would fall to roughly 15\u202funits \u2013 below the 20\u2011unit collapse threshold \u2013 and the fishery would close for the rest of the year. Repeated collapses would erode the stock\u2019s ability to recover, so we need to reduce the total catch.",
+      "norm_active": "yes",
+      "norm_content": "\"We should each take about five units so the stock stays healthy.\"",
+      "harvest_reasoning": "To avoid collapse I\u2019ll cut back by one unit. Taking 4.0\u202funits keeps the community total lower (\u2248\u202f31\u202funits) and leaves the stock above 20\u202funits after the season, giving the stock a chance to recover.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "\"Hey, the stock's at 51.4 now and last year we collapsed when we took too much. I think we should all cut back to about 4 units each this season so we stay above the 20\u2011unit threshold and keep the fishery open.\""
+    },
+    "agent_5": {
+      "stock_assessment": "The stock is at 51.4/100 units \u2013 below the healthy 80\u2011unit level, but still above the collapse threshold of 20 units. It is under strain and likely growing slowly during the season.",
+      "others_behaviour": "In the last season most fishers took 4\u20135 units (agent_4\u20117 took 5, agent_0 took 4.5, agent_2 4, agent_3 4.5). No one is taking more than 5 units, and a few are taking 3 units. The pattern is fairly consistent around the 4\u20135 unit range.",
+      "long_term_thinking": "If we continue harvesting at 5 units each, the stock would fall below 20 units within a season and collapse. Reducing to about 4 units each would keep the stock above 20 for a few more seasons but still risks collapse if we keep the same pattern long\u2011term; a more sustainable regime would require even lower totals or active rest periods.",
+      "norm_active": "forming",
+      "norm_content": "Each fisher should aim for about 4\u20135 units to keep the stock from collapsing.",
+      "harvest_reasoning": "To avoid pushing the already strained stock into collapse, I will take 4 units this season \u2013 a modest cut from the 5\u2011unit norm that still meets my livelihood needs while helping preserve the fishery.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "\"Hey, the stock looks a bit low. Maybe we should aim for about 4 units"
+    },
+    "agent_6": {
+      "stock_assessment": "",
+      "others_behaviour": "",
+      "long_term_thinking": "",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_7": {
+      "stock_assessment": "The stock is at 51.4\u202f/\u202f100.0 units \u2013 clearly under strain but not yet collapsed.",
+      "others_behaviour": "Most fishers (agents\u202f0,\u202f3,\u202f4,\u202f5,\u202f6,\u202f7) are taking ~5\u202funits each; agents\u202f1 and\u202f2 are taking ~3\u20134\u202funits. No one is taking markedly more than 5\u202funits.",
+      "long_term_thinking": "If the current ~5\u2011",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 5,
+      "initiator": "agent_4",
+      "responder": "agent_5",
+      "turns": [
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_5",
+          "content": "\"Hey, the stock's at 51.4 now and last year we collapsed when we took too much. I think we should all cut back to about 4 units each this season so we stay above the 20\u2011unit threshold and keep the fishery open.\"",
+          "speech_act": "warning",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_4",
+          "content": "I agree, let's each aim for 4 units this season to keep the stock healthy.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_5",
+          "content": "Great, let's all keep it at 4 units. We'll monitor the stock and adjust if needed.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_4",
+          "content": "Sounds good, I'll stick to 4 units.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_5",
+          "content": "Alright, let's stick to 4 units each. We'll keep an eye on the stock and adjust if needed.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_4",
+          "content": "Understood, I'll aim for 4 units this season. Let's keep each other posted on the stock.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "warning_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 5,
+      "initiator": "agent_1",
+      "responder": "agent_2",
+      "turns": [
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_2",
+          "content": "**  \n\u201cHey, the stock\u2019s at 51.4 now. I\u2019m planning to take 4 units this season. If we all keep it around that, we should avoid collapse and keep the fishery open. What do you think?\u201d",
+          "speech_act": "question",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_1",
+          "content": "I think 4 units sounds reasonable, but I'm still worried about the recent collapses. Maybe we should keep it a bit conservative, around 3.5 units. That way we reduce the risk.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_2",
+          "content": "I understand your concern about the recent collapses. I think 3.75 units would be a good compromise that keeps us safe while still covering my costs. Let\u2019s agree on that for this season.",
+          "speech_act": "proposal",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_1",
+          "content": "3.75 feels a bit high for me. I'd prefer to stay at 3.5 units.",
+          "speech_act": "disagreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_2",
+          "content": "Alright, 3.5 units it is. We'll stick with that and keep an eye on the stock.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_1",
+          "content": "Thanks, let's keep it at 3.5 units.",
+          "speech_act": "closing",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    }
+  ],
+  "norm_adoption_rate": 0.5,
+  "n_conversations": 2,
+  "n_proposals": 1,
+  "n_agreements": 7,
+  "n_warnings": 1
+}
+{
+  "tick": 6,
+  "year": 2,
+  "season_in_year": 3,
+  "season_label": "Year 2, Season 3",
+  "closed_season": false,
+  "condition": "full_social",
+  "replication": 0,
+  "stock_after": 52.425,
+  "stock_pct": 0.52425,
+  "collapsed": false,
+  "harvests": {
+    "agent_0": 4.5,
+    "agent_1": 4.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 4.0,
+    "agent_5": 5.0,
+    "agent_6": 3.5,
+    "agent_7": 4.0
+  },
+  "actual_yields": {
+    "agent_0": 4.5,
+    "agent_1": 4.0,
+    "agent_2": 5.0,
+    "agent_3": 5.0,
+    "agent_4": 4.0,
+    "agent_5": 5.0,
+    "agent_6": 3.5,
+    "agent_7": 4.0
+  },
+  "total_harvest": 35.0,
+  "mean_harvest": 4.375,
+  "harvest_variance": 0.3392857142857143,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "The stock is currently at 80.0\u202f/\u202f100.0 units \u2013 abundant but already under strain. Historically, harvesting about 4\u20135\u202funits per fisher (\u224832\u201340\u202funits total) has led to collapse, so the remaining 80\u202funits are at risk if we continue the same pattern.",
+      "others_behaviour": "Past seasons show most fishers taking roughly 4.5\u20135.5\u202funits, with a few taking slightly less. No one is taking significantly less; the community consistently harvests in the 4\u20135\u202funit range, and the highest hauls were 5.5\u202funits.",
+      "long_term_thinking": "If we all keep taking ~5\u202funits per season, the community harvest will be ~40\u202funits, leaving ~40\u202funits stock. In the past, similar totals have triggered collapse (e.g., 32\u202funits \u2192 collapse, 35.5\u202funits \u2192 collapse). Repeated high harvests will likely push the stock below the critical 20\u202funit threshold within a few seasons.",
+      "norm_active": "yes",
+      "norm_content": "\"We aim to keep each fisher\u2019s haul around five units to maintain a healthy fishery.\"",
+      "harvest_reasoning": "I want to respect the community norm while reducing risk. Taking 4.5\u202funits keeps me within the accepted range but lowers the total community harvest by about 0.5\u202funits per fisher, which could help keep the stock above the collapse threshold. As a new member, aligning with the norm also helps build trust.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "\"Hey, the stock looks good today, but let\u2019s keep our hauls around five units to avoid another collapse. I\u2019m planning to take 4.5 units.\""
+    },
+    "agent_1": {
+      "stock_assessment": "The stock is currently at 80.0\u202f/\u202f100.0 units \u2013 well above the critical 20\u2011unit threshold that triggered past collapses. The fishery is open and the stock is abundant.",
+      "others_behaviour": "Looking at the last three years\u2019 catches:  \n- Most fishers consistently took 4\u20135 units each season.  \n- A few took 5.5 units (agent_0 in Year\u202f2\u202fS1).  \n- No one was harvesting below 3 units.  \nThe pattern is a steady \u201c4\u20135\u202funit\u201d norm that has repeatedly pushed the community total near 35\u201340 units, which historically led to collapse.",
+      "long_term_thinking": "If we keep harvesting around 4\u20135 units per person, the community total will stay near 32\u201340 units. Past experience shows that such totals have collapsed the stock in the following season, forcing a closed period and loss of income. Repeated collapses would erode the fishery\u2019s sustainability and our livelihoods.",
+      "norm_active": "yes",
+      "norm_content": "\"We should keep our individual catches to about 4 units each so the community total stays below 30 units and the fishery stays open.\"",
+      "harvest_reasoning": "To protect the stock and maintain a steady income, I will harvest 4 units. This aligns with the emerging norm, keeps the community total under the historical collapse threshold, and preserves the fishery for the next season.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "\"Hey, I was thinking we could aim for around 4 units each this season to keep the fishery open. What do you think?\""
+    },
+    "agent_2": {
+      "stock_assessment": "The stock is currently at 80.0 / 100.0 units, which is comfortably above the collapse threshold (20 units). The recent trend shows a healthy recovery after the previous collapses, so the fishery is in a good position to support a moderate catch this season.",
+      "others_behaviour": "In the past seasons, each fisher has taken between 3.5 and 5.5 units, with most hovering around 4\u20135 units. The community total each season has been roughly 36\u201340 units. No one has been consistently taking far more than the others; the highest hauls were 5.5 units, which were rare and followed an agreement.",
+      "long_term_thinking": "If the community continues to harvest at the current average (\u22484.5\u20135 units per fisher), the stock will decline gradually but remain above the collapse threshold for a few seasons. However, if any fisher deviates significantly upward, the risk of a collapse increases. Maintaining a steady, moderate harvest allows the stock to recover fully in the off\u2011season, sustaining the fishery over the long run.",
+      "norm_active": "yes",
+      "norm_content": "\u201cWe should each aim for about five units to keep the fishery healthy for everyone.\u201d",
+      "harvest_reasoning": "Given the abundant stock, the established community norm, and the need to avoid another collapse, I will harvest the standard 5 units. This keeps me within the agreed target, supports my livelihood, and contributes to the collective effort to preserve the stock for future seasons.",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "\u201cLooks good out there\u2014let\u2019s keep our hauls around five units to stay on the safe side and keep the fishery healthy for everyone.\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "",
+      "others_behaviour": "",
+      "long_term_thinking": "",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_4": {
+      "stock_assessment": "**  \nThe stock is currently at 80\u202f/\u202f100\u202funits \u2013 abundant but still vulnerable. In the past, when the community total exceeded roughly 32\u202funits, the stock collapsed. We have a good recovery window this season, but we must be careful not to repeat the pattern that led to closures.",
+      "others_behaviour": "**  \nMost fishers are taking 4.5\u20135\u202funits. A few take around 3\u20134\u202funits. There is no strict rule yet, but the \u201cfive\u2011unit rule\u201d has been floated and is being followed by several fishers. A handful are consistently above 4\u202funits, which is pushing the total toward collapse.",
+      "long_term_thinking": "**  \nIf we keep the average haul around 4.5\u20135\u202funits, the community total will stay above 32\u202funits and the stock will collapse again, leading to a closed season and a loss of income. Repeated collapses will erode the stock and our livelihoods. Keeping the total at or below 32\u202funits will allow the stock to recover each year.",
+      "norm_active": "forming",
+      "norm_content": "** \u201cWe should aim to keep each fisher\u2019s haul around 4\u202funits to avoid stock collapse.\u201d",
+      "harvest_reasoning": "**  \nGiven the current stock, the pattern of others, and the emerging norm, I will harvest 4.0\u202funits. This keeps the community total at 32\u202funits, matching the threshold that has prevented collapse in the past, and aligns with the cautious approach that is gaining traction.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "**  \n\u201cLet\u2019s keep our hauls to about 4\u202funits this season; it\u2019s the safest way to keep the stock from collapsing again.\u201d"
+    },
+    "agent_5": {
+      "stock_assessment": "The stock is currently at 80.0\u202f/\u202f100.0 units \u2013 abundant but still sensitive to over\u2011extraction. Historically, a community harvest of roughly 35\u201340 units on a 80\u2011unit start has left a healthy remainder (~48\u201352 units), whereas totals above ~48 units on the same start have led to collapse.",
+      "others_behaviour": "In the most recent season (Year\u202f3\u202fSeason\u202f1) every other fisher took 5.0 units, except me who took 5.0 as well that season. In earlier seasons I had taken 4.0 units while the others took 5.0. There is no one consistently taking far more or far less; the pattern is a near\u2011uniform",
+      "long_term_thinking": "",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_6": {
+      "stock_assessment": "The stock is currently at 80\u202f/\u202f100 units \u2013 it\u2019s abundant, but the history shows that when the community harvests around 35\u201340 units in a season the stock collapses (drops below 20\u202funits). The fishery has been open this season, so we\u2019re still in the \u201csafe\u201d zone, but the margin is thin.",
+      "others_behaviour": "All eight fishers have been taking roughly 4\u20135\u202funits per season. No one is noticeably over\u2011taking or under\u2011taking; the pattern is fairly uniform. The only outlier in the past was the 6.5\u202funits I once took, but that was an isolated case and was quickly discussed and adjusted.",
+      "long_term_thinking": "If we continue at 4\u20135\u202funits each, the community will harvest about 32\u201340\u202funits. In the last three collapses that amount of harvest, the stock fell below 20\u202funits and the fishery closed for the rest of the year. Thus, continuing the same pattern risks another collapse, leaving us with no income for the rest of the season and jeopardising the loan repayment.",
+      "norm_active": "yes",
+      "norm_content": "Each fisher should take no more than 4\u202funits in a season to maintain the stock and avoid collapse.",
+      "harvest_reasoning": "I need enough catch to service my loan and feed my family, but I also want to protect the fishery for the next season. A conservative approach\u2014taking 3.5\u202funits\u2014keeps the total harvest below the historical collapse threshold (\u2248\u202f35\u202funits) while still providing a decent haul for my needs. It also signals to the community that I\u2019m committed to sustainable fishing.",
+      "harvest_amount": 3.5,
+      "what_you_might_say": "\"Hey, I\u2019ve been thinking that if we all keep our catches around 3\u20134\u202funits, we can avoid the risk of collapse and keep the fishery open. What do you think about trying that this season?\""
+    },
+    "agent_7": {
+      "stock_assessment": "**  \nThe stock is currently at 80.0/100.0 units \u2013 well above the collapse threshold, but the community has collapsed twice when the total harvest was in the 32\u201339 unit range. The stock is abundant now, yet the risk of a future collapse is still high if we keep harvesting at the same intensity.",
+      "others_behaviour": "**  \nMost fishers (agents 0\u20136) are taking 4\u20135 units per season. Agent_7 has been consistent at 5 units when the stock was abundant. No one is taking a markedly lower or higher amount; the pattern is fairly uniform, with 5 units being the common maximum.",
+      "long_term_thinking": "**  \nIf we continue to harvest ~5 units each, the community total will hover around 35\u201340 units. Historical data show that this level of extraction led to stock collapse in the following season. A collapse means a closed fishery for the rest of the year, loss of income, and a reset of the stock to 80.0 units next year. To avoid that, the community should aim to keep the total harvest below ~32 units, which would require each fisher to reduce intake by about 1\u20132 units.",
+      "norm_active": "yes",
+      "norm_content": "**  \n\"We should keep our individual catches below 5 units each season to prevent the fishery from collapsing.\"",
+      "harvest_reasoning": "**  \nI need to supplement my land\u2011based income, but I also want to avoid another collapse that would hurt everyone\u2019s livelihood. Taking 4 units reduces the total harvest by about 1 unit per person, bringing the community total closer to the safe threshold while still providing a decent catch for me.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "**  \n\"Hey, I was thinking we might keep our catches around 4 units this season. It could help us avoid another collapse and keep the fishery open for everyone.\""
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 6,
+      "initiator": "agent_2",
+      "responder": "agent_6",
+      "turns": [
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_6",
+          "content": "\u201cLooks good out there\u2014let\u2019s keep our hauls around five units to stay on the safe side and keep the fishery healthy for everyone.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_2",
+          "content": "I agree, five units is a safe target. I'll aim for 4.5 to stay on the safe side.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_6",
+          "content": "4.5 units sounds good, I'll stick to five units. We'll keep it under the safe limit.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_2",
+          "content": "Great, let's stick to those limits. Good luck out there.",
+          "speech_act": "closing",
+          "turn_number": 3
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 4
+    },
+    {
+      "tick": 6,
+      "initiator": "agent_4",
+      "responder": "agent_3",
+      "turns": [
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_3",
+          "content": "**  \n\u201cLet\u2019s keep our hauls to about 4\u202funits this season; it\u2019s the safest way to keep the stock from collapsing again.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_4",
+          "content": "I understand the risk, but I'd like to take 6 units this season to maximize my revenue.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_3",
+          "content": "Taking 6 units would push us past the safe limit and risk collapse again. We should stick to 4 units.",
+          "speech_act": "warning",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_4",
+          "content": "I understand the risk, but I'd like to take 5 units this season to balance risk and revenue. Could we agree on 5 units?",
+          "speech_act": "proposal",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_3",
+          "content": "I can agree to 5 units this season, but we need to keep a close eye on the stock.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_4",
+          "content": "Sounds good, 5 units it is. We'll keep an eye on the stock.",
+          "speech_act": "agreement",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 6,
+      "initiator": "agent_7",
+      "responder": "agent_0",
+      "turns": [
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_0",
+          "content": "**  \n\"Hey, I was thinking we might keep our catches around 4 units this season. It could help us avoid another collapse and keep the fishery open for everyone.\"",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_7",
+          "content": "I think 5 units would be a better target for us this season. That way we can still keep the stock healthy while meeting our needs.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_0",
+          "content": "I see your point, but 5 units might be a bit risky. How about we aim for 4.5 units? That keeps us under the strain threshold.",
+          "speech_act": "proposal",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_7",
+          "content": "4.5 units works for me; let's keep it that way.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_0",
+          "content": "Great, 4.5 units it is. Let's stick to that and keep the fishery healthy. Thanks for agreeing.",
+          "speech_act": "agreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_7",
+          "content": "Sounds good. I'll aim for 4.5 units this season.",
+          "speech_act": "closing",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 6
+    },
+    {
+      "tick": 6,
+      "initiator": "agent_1",
+      "responder": "agent_5",
+      "turns": [
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_5",
+          "content": "\"Hey, I was thinking we could aim for around 4 units each this season to keep the fishery open. What do you think?\"",
+          "speech_act": "question",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_1",
+          "content": "4 units each sounds reasonable to keep the stock healthy. I'm okay with that.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_5",
+          "content": "Great, let's stick to 4 units. I'll adjust my plan accordingly.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_1",
+          "content": "Got it, I'll stick to 4 units this season. Thanks for coordinating.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_5",
+          "content": "All set, thanks.",
+          "speech_act": "closing",
+          "turn_number": 4
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 5
+    }
+  ],
+  "norm_adoption_rate": 0.75,
+  "n_conversations": 4,
+  "n_proposals": 4,
+  "n_agreements": 9,
+  "n_warnings": 1
+}
+{
+  "tick": 7,
+  "year": 2,
+  "season_in_year": 4,
+  "season_label": "Year 2, Season 4",
+  "closed_season": false,
+  "condition": "full_social",
+  "replication": 0,
+  "stock_after": 80.0,
+  "stock_pct": 0.8,
+  "collapsed": false,
+  "harvests": {
+    "agent_0": 4.5,
+    "agent_1": 4.0,
+    "agent_2": 4.0,
+    "agent_3": 4.0,
+    "agent_4": 5.0,
+    "agent_5": 5.0,
+    "agent_6": 4.0,
+    "agent_7": 3.5
+  },
+  "actual_yields": {
+    "agent_0": 4.5,
+    "agent_1": 4.0,
+    "agent_2": 4.0,
+    "agent_3": 4.0,
+    "agent_4": 5.0,
+    "agent_5": 5.0,
+    "agent_6": 4.0,
+    "agent_7": 3.5
+  },
+  "total_harvest": 34.0,
+  "mean_harvest": 4.25,
+  "harvest_variance": 0.2857142857142857,
+  "cot_outputs": {
+    "agent_0": {
+      "stock_assessment": "The stock is currently at 52.4/100.0 units\u2014well below the healthy 80\u2011unit level and still under strain. No growth has occurred since Season\u202f1 of Year\u202f4, so the fishery is in a fragile state.",
+      "others_behaviour": "Other fishers are taking 3.5\u20135.0 units each, with the majority at 4.0\u20135.0 units. No one is taking an extreme amount; the community appears to be following a \u201c\u22484.5\u202funits\u201d pattern.",
+      "long_term_thinking": "If the current pattern continues (\u224835\u201336\u202funits harvested each season), the stock will keep declining and is likely to collapse again within a season, as happened in Years\u202f2 and\u202f3. A collapse would close the fishery for the rest of the year and force us all to wait for recovery.",
+      "norm_active": "yes",
+      "norm_content": "Each fisher takes around 4.5\u202funits to keep the fishery healthy.",
+      "harvest_reasoning": "I will harvest 4.5\u202funits because:  \n1. It aligns with the established norm and maintains my reputation.  \n2. It keeps the total community harvest near the 35\u2011unit threshold that has historically avoided collapse.  \n3. It balances my livelihood needs with the need to keep the stock above the critical 20\u2011unit collapse point.",
+      "harvest_amount": 4.5,
+      "what_you_might_say": "\u201cHey, the stock is low\u2014let\u2019s stick to about 4.5 units this season to keep it from collapsing again.\u201d"
+    },
+    "agent_1": {
+      "stock_assessment": "**  \nThe stock at the start of Season\u202f2 is 52.4\u202f/\u202f100.0 units \u2013 clearly below the healthy 80\u2011unit baseline and already in the \u201cunder\u2011strain\u201d zone. The last time we saw a stock of ~51\u201352 units (Year\u202f3\u202fSeason\u202f2) the fishery collapsed after the season, so we\u2019re in a precarious spot.",
+      "others_behaviour": "**  \nIn Season\u202f1 of Year\u202f4, the other fishers took between 3.5 and 5.0 units, with most clustering around 4\u20135 units. No one was taking an extreme amount, but the average was roughly 4.4 units per fisher.",
+      "long_term_thinking": "**  \nIf we keep taking ~4\u20135 units per fisher, the total catch will be ~35\u201340 units, which will push the stock well below the 20\u2011unit collapse threshold. We need to cut the total harvest by about 5\u201310 units to keep the fishery open.",
+      "norm_active": "forming",
+      "norm_content": "**  \n\"We should keep each catch around 4 units so the stock stays above the collapse threshold.\"",
+      "harvest_reasoning": "**  \nTo avoid collapse I\u2019ll take 4.0 units \u2013 the same as I did in Season\u202f1 and the lowest common denominator that keeps the community safe.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "**  \n\"Let\u2019s keep it at 4 units each this season so we don\u2019t collapse the fishery.\""
+    },
+    "agent_2": {
+      "stock_assessment": "The stock is at 52.4\u202f/\u202f100.0 units \u2013 below the 80\u2011unit baseline but above the collapse threshold. It\u2019s still under strain and any high\u2011haul season could push it below 20\u202funits again.",
+      "others_behaviour": "In Season\u202f1 of Year\u202f4, the community\u2019s hauls ranged from 3.5 to 5.0 units, with several fishers (agent_0, agent_3, agent_5) taking the full 5\u202funits. Agent_2 previously took 5\u202funits as well. No one has been reducing their catch in recent seasons.",
+      "long_term_thinking": "If the current pattern of many 5\u2011unit hauls continues, the stock will likely collapse again in the next Season\u202f2, forcing a closed season and loss of income for all. A reduction now would give the stock a chance to rebuild.",
+      "norm_active": "yes",
+      "norm_content": "The community generally agrees to keep individual hauls around five units (or less) to protect the stock.",
+      "harvest_reasoning": "To avoid another collapse while staying within the community\u2019s informal norm, I\u2019ll take slightly less than the usual 5\u202funits. A 4\u2011unit haul reduces pressure on the stock and aligns with the earlier agreement to keep hauls modest.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "\u201cHey, I\u2019ve been looking at the numbers \u2013 the stock is still low. If we all keep taking 5, we risk another collapse. Maybe we can aim for 4 units each this season to give the fish a chance to rebound.\u201d"
+    },
+    "agent_3": {
+      "stock_assessment": "The stock is at 52.4\u202f/\u202f100.0 units, clearly below the healthy 80\u2011unit baseline and under \u201cstrain.\u201d In the last season (Year\u202f4\u202fSeason\u202f1) the community took 35\u202funits, which left the stock at 52.4. If we keep the same total harvest, the stock will collapse again, as it did in Years\u202f2 and\u202f3 after a 35\u2011unit haul.",
+      "others_behaviour": "- Agents\u202f2,\u202f3,\u202f5 each took 5\u202funits (the highest).  \n- Agents\u202f0,\u202f1,\u202f4,\u202f7 took 4\u20134.5\u202funits.  \n- Agent\u202f6 took only 3.5\u202funits.  \nThus the pattern is a \u201chigh\u2011harvest\u201d group (5\u202funits) and a \u201cmoderate\u2011harvest\u201d group (\u22484\u202funits). No one is taking drastically less than 4, and the high group is at risk of pushing the stock below 20.",
+      "long_term_thinking": "If we continue harvesting about 35\u202funits each season, the stock will collapse within a season, forcing a closure for the remainder of the year and loss of all future catches. To keep the fishery open, we need to reduce the total community harvest to roughly 25\u201330\u202funits per season, which would leave the stock above the collapse threshold.",
+      "norm_active": "yes",
+      "norm_content": "\"We are collectively agreeing to cut individual catches to around 4 units to keep the stock from collapsing.\"",
+      "harvest_reasoning": "I want to secure a decent volume for the processor, but I also need to avoid a collapse that would shut the fishery for the rest of the year. The stock is already low, and the last season\u2019s 35\u2011unit haul led to a collapse in previous years. By taking 4\u202funits I keep the total harvest near 25\u201330\u202funits, which should keep the stock above 20 and allow the fishery to stay open. This is a compromise between maximizing my revenue and preserving the shared resource.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "\"Hey, I've seen the stock is at 52.4 now. I think we should aim for about 4 units each this season to keep it from collapsing again. What do you think?\""
+    },
+    "agent_4": {
+      "stock_assessment": "",
+      "others_behaviour": "",
+      "long_term_thinking": "",
+      "norm_active": "no",
+      "norm_content": "",
+      "harvest_reasoning": "",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_5": {
+      "stock_assessment": "The stock is 52.4\u202f/\u202f100.0 units \u2013 it\u2019s under strain but still above the 20\u2011unit collapse threshold. A few more successful trips could push it below that critical level.",
+      "others_behaviour": "In Season\u202f1 of Year\u202f4, four fishers (agents\u202f2,\u202f3,\u202f5,\u202f6) took 5\u202funits each, while the others took 3.5\u20134.5\u202funits. No one is taking less than 3.5\u202funits, and the \u201chigh\u2011catch\u201d fishers consistently hit the 5\u2011unit mark. The pattern is that the community is still willing to take the maximum that the stock can afford before it collapses.",
+      "long_term_thinking": "If the same total catch (\u224835\u202funits) continues, the stock will fall below 20\u202funits next season, causing a collapse and a shut\u2011down for the rest of the year. Even a slight increase in individual harvests would accelerate that collapse.",
+      "norm_active": "yes",
+      "norm_content": "\u201cEach fisher should keep their catch around 5\u202funits or less so the stock stays above the collapse threshold.\u201d",
+      "harvest_reasoning": "I need to balance my own livelihood with the risk of collapse. Taking 5\u202funits",
+      "harvest_amount": 5.0,
+      "what_you_might_say": "nothing"
+    },
+    "agent_6": {
+      "stock_assessment": "The stock is at 52.4\u202f/\u202f100.0 units \u2013 below the 60\u2011unit \u201chealthy\u201d level but still comfortably above the collapse threshold of 20 units. It is under strain, and any further large\u2011scale harvest could push it below 20.",
+      "others_behaviour": "In Season\u202f1 of Year\u202f4, most fishers took 4\u20135 units; I took 3.5 units, the lowest. In prior years, the pattern was similar: a few took 5 units while the rest took 4. If Season\u202f2 continues this pattern, the total harvest will likely exceed 32 units, which would collapse the stock.",
+      "long_term_thinking": "If every fisher keeps taking 4\u20135 units, the stock will drop below 20 after Season\u202f2, forcing a closure for the rest of the year. That would mean no catch in the following seasons and a larger loan debt. The only way to avoid collapse is to cap total harvest at ~32 units (\u22484 units per fisher).",
+      "norm_active": "yes",
+      "norm_content": "\u201cWe should each take around 4 units this season so the stock stays above the collapse threshold.\u201d",
+      "harvest_reasoning": "To protect the stock and avoid another collapse, I will harvest 4 units. This aligns with the emerging norm, keeps the total harvest around 32 units, and still gives me a decent catch to help pay off the boat loan.",
+      "harvest_amount": 4.0,
+      "what_you_might_say": "\u201cHey, the stock\u2019s at 52.4, so let\u2019s keep it at 4 units each this season to avoid another collapse.\u201d"
+    },
+    "agent_7": {
+      "stock_assessment": "The stock is at 52.4/100.0 units \u2013 still below the 80\u2011unit recovery level but well above the collapse threshold of 20 units. It is \u201cunder strain\u201d and has been in a pattern of gradual recovery after the two closed seasons, yet the recent harvests have been high enough to push the stock close to collapse again.",
+      "others_behaviour": "Across the eight fishers, harvests have been fairly uniform: 4.0\u20135.0 units per trip, with a few 3.5\u2011unit trips. No one is taking an outlier amount; the highest are the 5\u2011unit catches and the lowest are 3.5 units. The pattern is a near\u2011even spread around the 4\u20135 unit mark.",
+      "long_term_thinking": "If the current pattern (\u22485 units per fisher) continues, the community total will exceed 32.4 units, which will bring the stock below 20 units and trigger a collapse for the rest of the year. Repeated collapses would wipe out the stock each year, leaving the fishery closed permanently for the season.",
+      "norm_active": "yes",
+      "norm_content": "\u201cEveryone should take about 4\u20135 units per season to keep the stock from collapsing.\u201d",
+      "harvest_reasoning": "To avoid a repeat collapse, I will reduce my harvest to 3.5 units. That brings the projected community total to 32.0 units (8 \u00d7 4.0 would be 32.0, but with my 3.5 I will need the others to also cut back to ~4.0 units). This keeps the stock above the 20\u2011unit threshold (52.4\u202f\u2013\u202f32.0\u202f=\u202f20.4) and preserves the fishery for the next season.",
+      "harvest_amount": 3.5,
+      "what_you_might_say": "\u201cHey, I\u2019m planning to take 3.5 units this season. Let\u2019s all aim for 4 units or less so we keep the stock above the collapse level.\u201d"
+    }
+  },
+  "dialogue_records": [
+    {
+      "tick": 7,
+      "initiator": "agent_7",
+      "responder": "agent_6",
+      "turns": [
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_6",
+          "content": "\u201cHey, I\u2019m planning to take 3.5 units this season. Let\u2019s all aim for 4 units or less so we keep the stock above the collapse level.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_7",
+          "content": "I'll aim for 4 units this season to cover my loan payments, staying within the 4\u2011unit limit. That should keep the stock from collapsing.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_6",
+          "content": "Sounds good, I\u2019ll stick to 3.5 units. Let\u2019s keep the total under 4 to avoid collapse.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_6",
+          "listener_id": "agent_7",
+          "content": "Got it, I'll stay at 4 units. If everyone else keeps under 4, we should avoid collapse. Let's stay cautious.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_7",
+          "listener_id": "agent_6",
+          "content": "Got it, I\u2019ll stay at 3.5 units. Let\u2019s keep monitoring the stock.",
+          "speech_act": "closing",
+          "turn_number": 4
+        }
+      ],
+      "conversation_type": "norm_negotiated_accepted",
+      "n_turns": 5
+    },
+    {
+      "tick": 7,
+      "initiator": "agent_3",
+      "responder": "agent_2",
+      "turns": [
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_2",
+          "content": "\"Hey, I've seen the stock is at 52.4 now. I think we should aim for about 4 units each this season to keep it from collapsing again. What do you think?\"",
+          "speech_act": "question",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_3",
+          "content": "I agree, 4 units each sounds reasonable to avoid another collapse.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_2",
+          "content": "Great, 4 units each works. I'll stick to 4 units for this season. Let's keep an eye on the stock to avoid collapse.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_2",
+          "listener_id": "agent_3",
+          "content": "I agree, 4 units each sounds reasonable to avoid another collapse.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_3",
+          "listener_id": "agent_2",
+          "content": "Thanks, let's keep monitoring the stock closely.",
+          "speech_act": "closing",
+          "turn_number": 4
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 5
+    },
+    {
+      "tick": 7,
+      "initiator": "agent_0",
+      "responder": "agent_4",
+      "turns": [
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_4",
+          "content": "\u201cHey, the stock is low\u2014let\u2019s stick to about 4.5 units this season to keep it from collapsing again.\u201d",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_0",
+          "content": "I think we should stick to five units per person. That keeps the stock stable and follows our tradition.",
+          "speech_act": "proposal",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_4",
+          "content": "I think 4.5 is safest for the stock, but we could try 4.75 to honor tradition.",
+          "speech_act": "proposal",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_0",
+          "content": "I think we should stick to five units per person. That keeps the stock stable. Let's go with five.",
+          "speech_act": "proposal",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_0",
+          "listener_id": "agent_4",
+          "content": "I think 5 is a bit high for this season; we should stick to 4.5 units. That keeps the stock safer.",
+          "speech_act": "disagreement",
+          "turn_number": 4
+        },
+        {
+          "speaker_id": "agent_4",
+          "listener_id": "agent_0",
+          "content": "I hear your concern, but the tradition has always been five units. We need to stick to that to keep the stock stable. Let's go with five.",
+          "speech_act": "proposal",
+          "turn_number": 5
+        }
+      ],
+      "conversation_type": "norm_negotiated_rejected",
+      "n_turns": 6
+    },
+    {
+      "tick": 7,
+      "initiator": "agent_1",
+      "responder": "agent_5",
+      "turns": [
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_5",
+          "content": "**  \n\"Let\u2019s keep it at 4 units each this season so we don\u2019t collapse the fishery.\"",
+          "speech_act": "statement",
+          "turn_number": 0
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_1",
+          "content": "I agree, 4 units each will keep the stock safe.",
+          "speech_act": "agreement",
+          "turn_number": 1
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_5",
+          "content": "Thanks, let\u2019s stick to 4 units each and monitor the stock.",
+          "speech_act": "agreement",
+          "turn_number": 2
+        },
+        {
+          "speaker_id": "agent_5",
+          "listener_id": "agent_1",
+          "content": "Sure, I'll stick to 4 units each this season.",
+          "speech_act": "agreement",
+          "turn_number": 3
+        },
+        {
+          "speaker_id": "agent_1",
+          "listener_id": "agent_5",
+          "content": "Thanks for confirming. We'll monitor the stock.",
+          "speech_act": "closing",
+          "turn_number": 4
+        }
+      ],
+      "conversation_type": "general_conversation",
+      "n_turns": 5
+    }
+  ],
+  "norm_adoption_rate": 0.875,
+  "n_conversations": 4,
+  "n_proposals": 5,
+  "n_agreements": 8,
+  "n_warnings": 0
+}
